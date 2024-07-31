@@ -1,7 +1,7 @@
 
-
 .skills-main-div {
   display: flex;
+  flex-direction: column;
 }
 
 .skills-header {
@@ -60,10 +60,6 @@
   .skills-header {
     font-size: 30px;
   }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
   .skills-main-div {
     flex-direction: column;
   }
@@ -73,10 +69,6 @@
   }
   .skills-text {
     font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
   }
   .skills-image-div {
     order: 2;
@@ -203,7 +195,6 @@ input[type="radio"]:checked ~ div {
   padding: 1rem;
 }
 
-
 /* Definindo a animação */
 @keyframes slideIn {
   from {
@@ -217,8 +208,10 @@ input[type="radio"]:checked ~ div {
 }
 
 .sites1 {
+  display: flex;
   font-size: 1.2rem;
   padding: 0;
+  align-items: center;
 }
 
 .SD12 {
@@ -229,10 +222,8 @@ input[type="radio"]:checked ~ div {
   position: relative;
   animation: slideIn 1s forwards;
   padding-top: 8rem;
-  padding-bottom: 2rem;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
-
 
 .SD123 {
   text-align: left;
@@ -254,7 +245,6 @@ input[type="radio"]:checked ~ div {
   padding: 50px;
   font-family: 'Roboto', sans-serif;
   height: 100%;
-
 }
 
 .card {
@@ -268,7 +258,6 @@ input[type="radio"]:checked ~ div {
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
   margin-left: 2rem;
   margin-top: 1rem;
-  
 }
 
 .card img {
@@ -326,10 +315,6 @@ input[type="radio"]:checked ~ div {
   opacity: 1;
 }
 
-.material-symbols-outlined {
-  vertical-align: middle;
-}
-
 .equipa {
   display: flex;
   flex-direction: row;
@@ -344,7 +329,9 @@ input[type="radio"]:checked ~ div {
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -373,8 +360,22 @@ input[type="radio"]:checked ~ div {
 }
 
 .icon {
-  margin-right: 5rem; /* Ajuste este valor conforme necessário */
-
+  margin-right: 2rem;
   width: 3rem;
   height: auto;
+}
+
+.simbolo {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  color: #CCED31;
+  box-shadow: 0 0 5px #CCED31;
+  text-shadow: 0 0 5px #caed3183;
+  width: 10rem;
 }
