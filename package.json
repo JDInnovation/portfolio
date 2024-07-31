@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.6.2",
+    "ajv-keywords": "^3.5.2",
     "apollo-boost": "^0.4.9",
     "baseui": "^12.2.0",
     "bootstrap": "^5.2.3",
@@ -16,7 +18,7 @@
     "glamor": "^2.20.40",
     "graphql": "^15.8.0",
     "node-fetch": "^3.3.0",
-    "radium": "^0.26.2",
+    
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-cursor-custom": "^1.2.4",
