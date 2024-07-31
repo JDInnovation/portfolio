@@ -6,6 +6,12 @@ import "./Skills.css";
 import myImage from "../../assets/images/david1a.jpg";
 import myimage2 from"../../assets/images/david1a.jpg";
 import ecom from "../../assets/images/ecom.png";
+import webs from "../../assets/images/webs.png";
+import marketing from "../../assets/images/marketing.png";
+import branding from "../../assets/images/branding.png";
+import shopify from "../../assets/images/shopify.png";
+import woo from "../../assets/images/iwoocommerce.png";
+import wix from "../../assets/images/icons8-wix-256.png";
 
 function SkillSection(props) {
   const theme = props.theme;
@@ -40,34 +46,62 @@ function SkillSection(props) {
           </label>
           <div>
           Nosso serviço de e-commerce oferece soluções completas para sua loja online. Desenvolvemos plataformas personalizadas, otimizadas para conversão, com design responsivo e integrações seguras. Aumente suas vendas com uma experiência de compra fluida, gestão eficiente de produtos e suporte contínuo. Transforme visitantes em clientes fiéis.
+          <h2 className="simbolo">
+          <img src={wix} alt="Descrição da Imagem" className="icon" />
+          <img src={woo} alt="Descrição da Imagem" className="icon" />
+          <img src={shopify} alt="Descrição da Imagem" className="icon" />
+          </h2>
           </div> 
+          
         </article> 
         
 
         <article>
           <input id="article2" type="radio" name="articles" />
           <label htmlFor="article2">
-            <h2 className="sites1">•  SITES</h2>
+            <h2 className="sites1">
+            <img src={webs} alt="Descrição da Imagem" className="icon" />
+              
+              •  SITES
+              
+              </h2>
           </label>
           <div>
           Oferecemos criação de sites modernos e responsivos, adaptados às necessidades do seu negócio. Desenvolvemos sites intuitivos, com design atraente e navegação eficiente. Nossa equipe garante performance otimizada, SEO amigável e suporte contínuo. Estabeleça sua presença online de forma profissional e atraia mais clientes.
+          <h2 className="simbolo">
+          <img src={wix} alt="Descrição da Imagem" className="icon" />
+          <img src={woo} alt="Descrição da Imagem" className="icon" />
+          <img src={shopify} alt="Descrição da Imagem" className="icon" />
+          </h2>
           </div>
         </article>
 
         <article>
           <input id="article3" type="radio" name="articles" />
           <label htmlFor="article3">
-            <h2 className="sites1">•  MARKETING</h2>
+            <h2 className="sites1">
+            <img src={marketing} alt="Descrição da Imagem" className="icon" />
+              •  MARKETING
+              </h2>
           </label>
           <div>
           Maximize sua visibilidade com nossas estratégias de marketing digital. Especializados em Google Ads e campanhas em redes sociais, impulsionamos seu alcance e engajamento. Analisamos e otimizamos anúncios para garantir resultados efetivos, aumentando conversões e ROI. Atraia e retenha clientes com marketing direcionado e eficiente.
+          <h2 className="simbolo">
+          <img src={wix} alt="Descrição da Imagem" className="icon" />
+          <img src={woo} alt="Descrição da Imagem" className="icon" />
+          <img src={shopify} alt="Descrição da Imagem" className="icon" />
+          </h2>
+          
           </div>
         </article>
 
         <article>
           <input id="article4" type="radio" name="articles" />
           <label htmlFor="article4">
-            <h2 className="sites1">•  BRANDING</h2>
+            <h2 className="sites1">
+            <img src={branding} alt="Descrição da Imagem" className="icon" />
+              •  BRANDING
+              </h2>
           </label>
           <div>
           Destaque-se no mercado com nosso serviço de branding. Criamos identidades visuais impactantes e coerentes, refletindo a essência do seu negócio. Desenvolvemos logotipos, paletas de cores e materiais de comunicação que fortalecem sua marca. Construa uma presença sólida e memorável, conquistando a lealdade de seus clientes.
@@ -75,7 +109,6 @@ function SkillSection(props) {
         </article>
       </div>
     </div>
-
 
     <div>
 <h1 className="SD123">QUEM SOMOS</h1>
