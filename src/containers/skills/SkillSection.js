@@ -44,6 +44,7 @@ function SkillSection(props) {
                         <h2 className="sites1">
                           <img src={ecom} alt="Descrição da Imagem" className="icon" title="E-Commerce" />
                           • E-COMMERCE
+                          <p className="setinha">▼</p>
                         </h2>
                       </label>
                       <div>
@@ -61,8 +62,10 @@ function SkillSection(props) {
                       <label htmlFor="article2">
                         <h2 className="sites1">
                           <img src={webs} alt="Descrição da Imagem" className="icon" title="Sites" />
-                          • SITES
+                          • SITES 
+                          <p className="setinha">▼</p>
                         </h2>
+                       
                       </label>
                       <div>
                         Oferecemos criação de sites modernos e responsivos, adaptados às necessidades do seu negócio. Desenvolvemos sites intuitivos, com design atraente e navegação eficiente. Nossa equipe garante performance otimizada, SEO amigável e suporte contínuo. Estabeleça sua presença online de forma profissional e atraia mais clientes.
@@ -84,6 +87,7 @@ function SkillSection(props) {
                         <h2 className="sites1">
                           <img src={marketing} alt="Descrição da Imagem" className="icon" title="Marketing" />
                           • MARKETING
+                          <p className="setinha">▼</p>
                         </h2>
                       </label>
                       <div>
@@ -102,6 +106,7 @@ function SkillSection(props) {
                         <h2 className="sites1">
                           <img src={branding} alt="Descrição da Imagem" className="icon" title="Branding" />
                           • BRANDING
+                          <p className="setinha">▼</p>
                         </h2>
                       </label>
                       <div>
@@ -121,22 +126,7 @@ function SkillSection(props) {
                   <h3>O nosso compromisso é entregar soluções inovadoras e personalizadas que impulsionem os negócios e projetos dos nossos clientes. Cada projeto é uma nova oportunidade para superar expectativas e alcançar resultados excepcionais.</h3>
                   <h3>Deixe-nos transformar suas ideias em realidade digital com eficiência e criatividade.</h3>
                   <div className="equipa">
-                    <main>
-                      <div className="card">
-                        <img src={myImage2} alt="Descrição da Imagem" />
-                        <div className="card-content">
-                          <h2>João Teixeira</h2>
-                          <p>Autodidata em tecnologia, João é especialista em desenvolvimento de software, trazendo inovação e eficiência para cada projeto.</p>
-                        </div>
-                      </div>
-                      <div className="card">
-                        <img src={myImage2} alt="Descrição da Imagem" />
-                        <div className="card-content">
-                          <h2>David Claro</h2>
-                          <p>Designer talentoso, David transforma conceitos em interfaces intuitivas e atraentes, elevando a experiência do usuário em cada solução digital.</p>
-                        </div>
-                      </div>
-                    </main>
+                    
                   </div>
                 </div>
 

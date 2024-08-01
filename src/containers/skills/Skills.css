@@ -1,4 +1,4 @@
-
+/* Estrutura principal da secção */
 .skills-main-div {
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
 .skills-main-div > * {
   flex: 1;
   margin-top: 2rem;
-  margin-bottom: 12rem;
+
 }
 
 .skills-image-div > * {
@@ -42,7 +42,7 @@
   font-family: "Google Sans Regular";
 }
 
-/* Media Query */
+/* Media Query para tamanhos menores */
 @media (max-width: 1380px) {
   .skills-heading {
     font-size: 40px;
@@ -78,24 +78,8 @@
   }
 }
 
-/* Core styles/functionality */
-.tab input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
 
-.tab__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.35s;
-}
-
-.tab input:checked ~ .tab__content {
-  max-height: 90rem;
-}
-
-/* Visual styles */
+/* Estilos principais da accordion */
 .accordion {
   color: var(--theme);
   border-radius: 0.5rem;
@@ -116,6 +100,7 @@
 .tab__label {
   justify-content: space-between;
   padding: 2rem;
+  transition: color 0.4s, font-size 0.4s; /* Adicionada transição para cor e tamanho do texto */
 }
 
 .tab__label::after {
@@ -129,6 +114,16 @@
 
 .tab input:checked + .tab__label::after {
   transform: rotate(270deg);
+}
+
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.tab input:checked ~ .tab__content {
+  max-height: 90rem;
 }
 
 .tab__content p {
@@ -146,10 +141,7 @@
   --theme: var(--secondary);
 }
 
-/* Arrow animation */
-.tab input:not(:checked) + .tab__label:hover::after {
-  animation: bounce 0.5s infinite;
-}
+
 
 @keyframes bounce {
   25% {
@@ -169,12 +161,14 @@ article {
   font-size: 1rem;
 }
 
+/* Efeito de hover no artigo */
 article:hover {
-  color: #CCED31;
   box-shadow: 0 0 5px #CCED31;
-  text-shadow: 0 0 5px #caed3183;
+  text-shadow: 0 0 5px #caed3127;
+  background-color: #333; /* Cor de fundo no hover */
 }
 
+/* Estilo para inputs tipo radio */
 input[type="radio"] {
   appearance: none;
   position: fixed;
@@ -182,18 +176,43 @@ input[type="radio"] {
   left: -100vh;
 }
 
+/* Transição e estilo do conteúdo dos artigos */
 input[type="radio"] ~ div {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s;
+  transition: max-height 0.9s;
 }
 
+/* Estilo aplicado quando o artigo está selecionado */
 input[type="radio"]:checked ~ div {
   max-height: 70vh;
-  background-color: #5e5e5b00;
+  background-color: #333; /* Cor de fundo no hover */
   border-radius: 1rem;
   padding: 1rem;
 }
+
+/* Estilo aplicado quando o artigo está selecionado para mudar a cor e o tamanho do título e do ícone */
+input[type="radio"]:checked + label > .sites1 {
+  color: #CCED31; /* Cor do título quando o artigo está selecionado */
+  font-size: 1.4rem; /* Tamanho maior do título */
+}
+
+input[type="radio"]:checked + label > .sites1 > .icon {
+  transform: scale(1.2); /* Aumenta o ícone */
+  transition: transform 0.4s; /* Transição suave para o aumento do ícone */
+}
+
+input[type="radio"] + label > .sites1 {
+  transition: color 0.4s, font-size 0.4s; /* Transição suave para cor e tamanho do título */
+}
+
+input[type="radio"] + label > .sites1 > .icon {
+  transition: transform 0.4s; /* Transição suave para o ícone */
+}
+
+
+
+
 
 /* Definindo a animação */
 @keyframes slideIn {
@@ -212,6 +231,8 @@ input[type="radio"]:checked ~ div {
   font-size: 1.2rem;
   padding: 0;
   align-items: center;
+  margin: 10px;
+ 
 }
 
 .SD12 {
@@ -221,8 +242,8 @@ input[type="radio"]:checked ~ div {
   font-size: 3rem;
   position: relative;
   animation: slideIn 1s forwards;
-  padding-top: 8rem;
-  margin-bottom: 4rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .SD123 {
@@ -232,9 +253,8 @@ input[type="radio"]:checked ~ div {
   font-size: 3rem;
   position: relative;
   animation: slideIn 1s forwards;
-  padding-top: 8rem;
-  padding-bottom: 2rem;
-  margin-bottom: 8rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .main3 {
@@ -328,21 +348,21 @@ input[type="radio"]:checked ~ div {
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
+/* Remove extra left and right margins, devido ao padding nas colunas */
 .row {
   margin: 0 -5px;
 }
 
-/* Clear floats after the columns */
+/* Clear floats após as colunas */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the counter cards */
+/* Estilo dos cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adiciona o efeito de "card" */
   padding: 16px;
   text-align: center;
   color: #CCED31;
@@ -350,7 +370,7 @@ input[type="radio"]:checked ~ div {
   text-shadow: 0 0 5px #caed3183;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
+/* Colunas responsivas - layout de uma coluna (vertical) em telas pequenas */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -371,11 +391,18 @@ input[type="radio"]:checked ~ div {
 }
 
 .card3 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adiciona o efeito de "card" */
   padding: 16px;
   text-align: center;
   color: #CCED31;
   box-shadow: 0 0 5px #CCED31;
   text-shadow: 0 0 5px #caed3183;
   width: 10rem;
+}
+
+.setinha {
+position: absolute;
+right: 20%;
+opacity: 0.5;
+
 }
