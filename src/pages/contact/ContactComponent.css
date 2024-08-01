@@ -45,19 +45,19 @@
 form {
   display: flex;
   flex-direction: column;
-  min-width: 800px;
+  max-width: 750px; /* Ajuste a largura máxima */
+  width: 100%; /* Para garantir que o formulário não fique muito largo */
   margin: 0 auto;
   padding: 20px 20px;
   border: 1px solid #383838;
   
   /* From https://css.glass */
-background: rgba(115, 115, 115, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.4px);
--webkit-backdrop-filter: blur(7.4px);
-border: 1px solid #a5c50784;
-
+  background: rgba(115, 115, 115, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid #a5c50784;
 }
 
 .form-title {
@@ -85,7 +85,6 @@ form textarea {
   border-radius: 5px;
   font-size: 16px;
   background-color: #ffffff;
-
 }
 
 form button.form-button {
@@ -230,10 +229,35 @@ form button.form-button:hover {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  justify-content: flex-start; /* Alinhar à esquerda */
+  text-align: left; /* Garantir que o texto esteja alinhado à esquerda */
 }
 
-.consent-container input {
+.consent-container input[type="checkbox"] {
+  width: 20px; /* Aumentar a largura do checkbox */
+  height: 20px; /* Aumentar a altura do checkbox */
   margin-right: 10px;
+  cursor: pointer; /* Mostrar que é clicável */
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #b6d109;
+  border-radius: 4px;
+}
+
+.consent-container input[type="checkbox"]:checked {
+  background-color: white;
+}
+
+.consent-container input[type="checkbox"]:checked::before {
+  content: '✔';
+  font-size: 18px; /* Tamanho do símbolo */
+  color: #b6d109; /* Cor do símbolo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .consent-text {
@@ -244,6 +268,13 @@ form button.form-button:hover {
 .consent-text a {
   color: #b6d109; /* Cor similar ao tema do seu site */
   text-decoration: underline;
+  white-space: nowrap;
+}
+
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 @media (max-width: 1380px) {
