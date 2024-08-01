@@ -226,6 +226,25 @@ form button.form-button:hover {
 .placeholder {
   visibility: hidden;
 }
+.consent-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.consent-container input {
+  margin-right: 10px;
+}
+
+.consent-text {
+  font-size: 14px;
+  color: #ffffff; /* Cor branca para o texto */
+}
+
+.consent-text a {
+  color: #b6d109; /* Cor similar ao tema do seu site */
+  text-decoration: underline;
+}
 
 @media (max-width: 1380px) {
   .contact-heading-text {

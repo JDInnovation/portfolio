@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from "react-google-recaptcha";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Fade } from "react-reveal";
@@ -14,22 +15,32 @@ export default function Contact(props) {
     phone: '',
     contactTime: '',
     service: '',
-    message: ''
+    message: '',
+    consent: false
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false); // Estado de loading
+  const [recaptchaValue, setRecaptchaValue] = useState(null); // Estado do reCAPTCHA
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: type === 'checkbox' ? checked : value
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!recaptchaValue) {
+      alert("Por favor, confirme o reCAPTCHA.");
+      return;
+    }
+    if (!formData.consent) {
+      alert("Por favor, dê seu consentimento.");
+      return;
+    }
     setLoading(true); // Ativar loading
 
     setTimeout(() => {
@@ -51,9 +62,11 @@ export default function Contact(props) {
       phone: '',
       contactTime: '',
       service: '',
-      message: ''
+      message: '',
+      consent: false
     });
     setFormSubmitted(false);
+    setRecaptchaValue(null); // Resetar reCAPTCHA
   };
 
   return (
@@ -131,15 +144,12 @@ export default function Contact(props) {
                       required
                     >
                       <option value="" disabled>Selecione um horário</option>
-                      <option value="9-10">9-10</option>
-                      <option value="10-11">10-11</option>
-                      <option value="11-12">11-12</option>
-                      <option value="12-13">12-13</option>
-                      <option value="13-14">13-14</option>
-                      <option value="14-15">14-15</option>
-                      <option value="15-16">15-16</option>
-                      <option value="16-17">16-17</option>
-                      <option value="17-18">17-18</option>
+                      <option value="8-10">8-10</option>
+                      <option value="10-12">10-12</option>
+                      <option value="12-14">12-14</option>
+                      <option value="14-16">14-16</option>
+                      <option value="16-18">16-18</option>
+                      <option value="18-20">18-20</option>
                     </select>
                   </div>
                   <div className="form-group">
@@ -167,7 +177,24 @@ export default function Contact(props) {
                       placeholder="Mensagem (opcional)"
                     />
                   </div>
-
+                  <div className="form-group consent-container">
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      checked={formData.consent}
+                      onChange={handleChange}
+                      required
+                    />
+                    <label className="consent-text">
+                      Mediante o seu consentimento, os seus dados pessoais serão tratados pela MEDCR ("Medicare"), enquanto responsável pelo tratamento, para: Envio de comunicações relativas a outros produtos, planos e serviços Medicare (incluindo promoções e campanhas), através de contactos telefónicos, SMS, MMS, e-mails e outros meios de contacto. Para obter mais informações sobre os termos do tratamento dos seus dados pela Medicare, consulte a nossa <a href="URL_DA_POLITICA_DE_PRIVACIDADE" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.
+                    </label>
+                  </div>
+                  <div className="form-group">
+                    <ReCAPTCHA
+                      sitekey="6LdNeB0qAAAAAKhCMX6HO5cl6-daM_GcUTt5D0tG"
+                      onChange={(value) => setRecaptchaValue(value)}
+                    />
+                  </div>
                   <button type="submit" className="form-button">LIGUEM-ME GRÁTIS!</button>
                 </form>
 
