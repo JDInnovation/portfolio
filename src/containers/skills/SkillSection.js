@@ -1,4 +1,6 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
+import { useInView } from "react-intersection-observer";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
@@ -25,8 +27,20 @@ import seo from "../../assets/images/seo.png";
 import illustrator from "../../assets/images/illustrator.png";
 import photoshop from "../../assets/images/photoshop.png";
 
+function AnimatedNumber({ number }) {
+  const { number: animatedNumber } = useSpring({
+    from: { number: 1 },
+    number,
+    delay: 300,
+    config: { duration: 5000 },
+  });
+
+  return <animated.div>{animatedNumber.to(n => n.toFixed(0))}</animated.div>;
+}
+
 function SkillSection(props) {
   const theme = props.theme;
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.8 });
 
   return (
     <div>
@@ -65,7 +79,6 @@ function SkillSection(props) {
                           • SITES 
                           <p className="setinha">▼</p>
                         </h2>
-                       
                       </label>
                       <div>
                         Oferecemos criação de sites modernos e responsivos, adaptados às necessidades do seu negócio. Desenvolvemos sites intuitivos, com design atraente e navegação eficiente. Nossa equipe garante performance otimizada, SEO amigável e suporte contínuo. Estabeleça sua presença online de forma profissional e atraia mais clientes.
@@ -130,7 +143,7 @@ function SkillSection(props) {
                   </div>
                 </div>
 
-                <div>
+                <div ref={ref}>
                   <h1 className="SD12">O QUE JÁ FIZEMOS</h1>
                   <h3>Dois jovens autodidatas com mais de cinco anos de colaboração, são a força por trás de um negócio de soluções digitais inovadoras. Juntos, desenvolveram mais de 50 projetos, combinando suas habilidades em tecnologia e design para criar produtos digitais de alto impacto. Sua dedicação e expertise transformam ideias em soluções eficientes, destacando-se no mercado pela criatividade e qualidade.</h3>
                   <div className="equipa">
@@ -138,26 +151,26 @@ function SkillSection(props) {
                       <div className="row">
                         <div className="column">
                           <div className="card3">
-                            <h2>18</h2>
-                            <h3>Estratégias criadas</h3>
+                            {inView && <AnimatedNumber number={43} />}
+                            <h3>Clientes Satisfeitos</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
-                            <h2>34</h2>
-                            <h3>Estratégias criadas</h3>
+                            {inView && <AnimatedNumber number={63} />}
+                            <h3>Serviços Realizados</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
-                            <h2>34</h2>
-                            <h3>Estratégias criadas</h3>
+                            {inView && <AnimatedNumber number={9} />}
+                            <h3>Campanhas de Marketing</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
-                            <h2>34</h2>
-                            <h3>Estratégias criadas</h3>
+                            {inView && <AnimatedNumber number={13} />}
+                            <h3>Packs de Branding Criados</h3>
                           </div>
                         </div>
                       </div>
@@ -179,8 +192,7 @@ function SkillSection(props) {
           );
         } else {
           return (
-            <div key={"skills-" + index} className="skills-main-div">
-            </div>
+            <div key={"skills-" + index} className="skills-main-div"></div>
           );
         }
       })}
