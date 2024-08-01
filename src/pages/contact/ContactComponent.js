@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
+import loadingGif from '../../assets/images/loading.gif'; // Importe o gif de loading
 
 export default function Contact(props) {
   const theme = props.theme;
@@ -17,6 +18,7 @@ export default function Contact(props) {
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false); // Estado de loading
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,12 +30,18 @@ export default function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_dq9gfwh', 'template_cp61hip', e.target, 'dXVyQQhCKcgjFrK0q')
-      .then((result) => {
-        setFormSubmitted(true);
-      }, (error) => {
-        alert('Erro ao enviar a mensagem. Tente novamente.');
-      });
+    setLoading(true); // Ativar loading
+
+    setTimeout(() => {
+      emailjs.sendForm('service_dq9gfwh', 'template_cp61hip', e.target, 'dXVyQQhCKcgjFrK0q')
+        .then((result) => {
+          setLoading(false); // Desativar loading
+          setFormSubmitted(true);
+        }, (error) => {
+          setLoading(false); // Desativar loading
+          alert('Erro ao enviar a mensagem. Tente novamente.');
+        });
+    }, 2000); // Simulando um tempo de carregamento adicional de 2 segundos
   };
 
   const handleNewContact = () => {
@@ -73,94 +81,102 @@ export default function Contact(props) {
           <div className="contact-form-div">
             {formSubmitted ? (
               <div className="thank-you-message">
-                <h2>Obrigado pelo seu contato!</h2>
-                <p>Entraremos em contato com você em breve.</p>
+                <h2>Obrigado!</h2>
+                <p>Entraremos em contato em breve. Esteja atento.</p>
                 <button onClick={handleNewContact} className="form-button">Enviar outro contato</button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
-                <h2 className="form-title">ORÇAMENTO GRÁTIS:</h2>
-                <div className="form-group">
-                  <label>Nome:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Seu nome"
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label>Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Seu email"
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label>Número de Telefone:</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="Seu número de telefone"
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label>Horário de Contacto:</label>
-                  <select
-                    name="contactTime"
-                    value={formData.contactTime}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="" disabled>Selecione um horário</option>
-                    <option value="9-10">9-10</option>
-                    <option value="10-11">10-11</option>
-                    <option value="11-12">11-12</option>
-                    <option value="12-13">12-13</option>
-                    <option value="13-14">13-14</option>
-                    <option value="14-15">14-15</option>
-                    <option value="15-16">15-16</option>
-                    <option value="16-17">16-17</option>
-                    <option value="17-18">17-18</option>
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label>Serviço:</label>
-                  <select
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="" disabled>Selecione um serviço</option>
-                    <option value="website">Criação de Website</option>
-                    <option value="branding">Criação de Branding</option>
-                    <option value="marketing">Campanha de Marketing</option>
-                    <option value="ecommerce">Desenvolvimento de E-commerce</option>
-                    <option value="seo">Otimização SEO</option>
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label>Mensagem:</label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Mensagem (opcional)"
-                  />
-                </div>
+              <>
+                <form onSubmit={handleSubmit} className={loading ? 'hidden' : ''}>
+                  <h2 className="form-title">ORÇAMENTO GRÁTIS:</h2>
+                  <div className="form-group">
+                    <label>Nome:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Seu nome"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Seu email"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Número de Telefone:</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="Seu número de telefone"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Horário de Contacto:</label>
+                    <select
+                      name="contactTime"
+                      value={formData.contactTime}
+                      onChange={handleChange}
+                      required
+                    >
+                      <option value="" disabled>Selecione um horário</option>
+                      <option value="9-10">9-10</option>
+                      <option value="10-11">10-11</option>
+                      <option value="11-12">11-12</option>
+                      <option value="12-13">12-13</option>
+                      <option value="13-14">13-14</option>
+                      <option value="14-15">14-15</option>
+                      <option value="15-16">15-16</option>
+                      <option value="16-17">16-17</option>
+                      <option value="17-18">17-18</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label>Serviço:</label>
+                    <select
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      required
+                    >
+                      <option value="" disabled>Selecione um serviço</option>
+                      <option value="website">Criação de Website</option>
+                      <option value="branding">Criação de Branding</option>
+                      <option value="marketing">Campanha de Marketing</option>
+                      <option value="ecommerce">Desenvolvimento de E-commerce</option>
+                      <option value="seo">Otimização SEO</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label>Mensagem:</label>
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Mensagem (opcional)"
+                    />
+                  </div>
 
-                <button type="submit" className="form-button">Enviar</button>
-              </form>
+                  <button type="submit" className="form-button">LIGUEM-ME GRÁTIS!</button>
+                </form>
+
+                {loading && (
+                  <div className="loading">
+                    <img src={loadingGif} alt="Loading..." />
+                  </div>
+                )}
+              </>
             )}
           </div>
         </Fade>
