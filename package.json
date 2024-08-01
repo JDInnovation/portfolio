@@ -66,15 +66,24 @@
   "react-dom": "^18.2.0",
   
     
+<<<<<<< HEAD
+=======
+  "react-google-recaptcha": "^3.1.0",
+  
+    
+>>>>>>> 0e61010cb3894d49f2e684a3a44f1858ac755c59
   "react-helmet": "^6.1.0",
   
     
   "react-icons": "^4.7.1",
   
     
+<<<<<<< HEAD
   "react-intersection-observer": "^9.13.0",
   
     
+=======
+>>>>>>> 0e61010cb3894d49f2e684a3a44f1858ac755c59
   "react-is": "^18.2.0",
   
     
@@ -90,7 +99,11 @@
   "react-scripts": "5.0.1",
   
     
+<<<<<<< HEAD
   "react-spring": "^9.7.4",
+=======
+  "react-spring": "^9.6.1",
+>>>>>>> 0e61010cb3894d49f2e684a3a44f1858ac755c59
   
     
   "react-tooltip": "^5.7.1",
