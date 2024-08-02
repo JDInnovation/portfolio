@@ -12,7 +12,7 @@ const greeting = {
   title2: "",
   logo_name: "Innovation Studio",
   // nickname: "",
-  full_name: "Sumit Sharma",
+  full_name: "Sumitii Sharma",
   subTitle1: "Software Developer.",
   subTitle2: "Full Stack Developer.",
   subTitle: "Full Stack Developer, Life Long Learner.",
