@@ -3,10 +3,7 @@ import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
-import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import "./Skills.css";
-import myImage from "../../assets/images/david1a.jpg";
-import myImage2 from "../../assets/images/david1a.jpg";
 import ecom from "../../assets/images/ecom.png";
 import webs from "../../assets/images/webs.png";
 import marketing from "../../assets/images/marketing.png";
@@ -26,6 +23,11 @@ import facebook from "../../assets/images/facebook (3).png";
 import seo from "../../assets/images/seo.png";
 import illustrator from "../../assets/images/illustrator.png";
 import photoshop from "../../assets/images/photoshop.png";
+import clientsi from "../../assets/images/users-avatar.png";
+import projecti from "../../assets/images/project.png";
+import yeari from "../../assets/images/calendar (1).png";
+import patni from "../../assets/images/heart-partner-handshake.png";
+import worker from "../../assets/images/office-worker.png";
 
 function AnimatedNumber({ number }) {
   const { number: animatedNumber } = useSpring({
@@ -49,7 +51,7 @@ function SkillSection(props) {
           return (
             <div key={"skills-" + index} className="skills-main-div">
               <div className="skills-text-div">
-                <div>
+                <div className="secq">
                   <h1 className="SD12">SOLUÇÕES DIGITAIS</h1>
                   <div className="accordion">
                     <article>
@@ -133,44 +135,51 @@ function SkillSection(props) {
                   </div>
                 </div>
 
-                <div>
+                <div className="secq3">
                   <h1 className="SD123">QUEM SOMOS</h1>
-                  <h3>Somos uma equipa dinâmica de apaixonados por desenvolvimento de soluções digitais. Com uma experiência sólida em criação de sites, e-commerce, marketing digital e branding, já realizamos mais de 40 projetos, cada um deles contribuindo para o aperfeiçoamento contínuo dos nossos serviços.</h3>
-                  <h3>O nosso compromisso é entregar soluções inovadoras e personalizadas que impulsionem os negócios e projetos dos nossos clientes. Cada projeto é uma nova oportunidade para superar expectativas e alcançar resultados excepcionais.</h3>
-                  <h3>Deixe-nos transformar suas ideias em realidade digital com eficiência e criatividade.</h3>
-                  <div className="equipa">
-                    
+                  <div className="artqd">
+                  <h4 className="qsdef">Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br></br> Desde 2019, João Teixeira e David Claro trabalham 
+                    juntos para oferecer soluções perfeitas e adaptadas aos objetivos de cada negócio, com foco em aumentar a visibilidade e a faturação dos nossos clientes. <br></br>
+                    Em projetos maiores, reunimos freelancers especializados para agilizar o processo e garantir resultados de alta qualidade.</h4>
+                    <div className="caixa1">
+                    <img src={worker} alt="Descrição da Imagem" className="icon8" title="Branding" /> 
+                    </div>
+
                   </div>
                 </div>
 
                 <div ref={ref}>
-                  <h1 className="SD12">O QUE JÁ FIZEMOS</h1>
-                  <h3>Dois jovens autodidatas com mais de cinco anos de colaboração, são a força por trás de um negócio de soluções digitais inovadoras. Juntos, desenvolveram mais de 50 projetos, combinando suas habilidades em tecnologia e design para criar produtos digitais de alto impacto. Sua dedicação e expertise transformam ideias em soluções eficientes, destacando-se no mercado pela criatividade e qualidade.</h3>
+                  <h1 className="SD12">A NOSSA MISSÃO</h1>
+                  <h4 className="missao20">Valorizamos a confiança e buscamos relações duradouras e benéficas com nossos clientes. <br></br>Oferecemos total personalização durante a criação dos projetos e garantimos orçamentos precisos para cada serviço. <br></br>Nossa missão é tornar o processo simples e satisfatório, sempre focando na satisfação total dos nossos clientes.</h4>
                   <div className="equipa">
                     <main className="main3">
                       <div className="row">
                         <div className="column">
                           <div className="card3">
-                            {inView && <AnimatedNumber number={43} />}
-                            <h3>Clientes Satisfeitos</h3>
+                            {inView && <AnimatedNumber number={6} />}
+                            <img src={yeari} alt="Descrição da Imagem" className="icon7" title="Sites" />
+                            <h3 className="numberdef">Anos<br></br>Experiencia</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
-                            {inView && <AnimatedNumber number={63} />}
-                            <h3>Serviços Realizados</h3>
+                            {inView && <AnimatedNumber number={54} />}
+                            <img src={projecti} alt="Descrição da Imagem" className="icon7" title="Sites" />
+                            <h3 className="numberdef">Projetos<br></br>Realizados</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
-                            {inView && <AnimatedNumber number={9} />}
-                            <h3>Campanhas de Marketing</h3>
+                            {inView && <AnimatedNumber number={43}/>}
+                            <img src={clientsi} alt="Descrição da Imagem" className="icon7" title="Sites" />
+                            <h3 className="numberdef">Clientes<br></br>Satisfeitos</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
-                            {inView && <AnimatedNumber number={13} />}
-                            <h3>Packs de Branding Criados</h3>
+                            {inView && <AnimatedNumber number={4} />}
+                            <img src={patni} alt="Descrição da Imagem" className="icon7" title="Sites" />
+                            <h3 className="numberdef">Parceiros<br></br>Estratégicos</h3>
                           </div>
                         </div>
                       </div>

@@ -152,6 +152,8 @@ article {
   cursor: pointer;
   transition: background-color 0.7s ease, box-shadow 0.4s ease;
   font-size: 1rem;
+  background-color: #333;
+
 }
 
 article:hover {
@@ -217,11 +219,16 @@ input[type="radio"] + label > .sites1 > .icon {
   margin: 10px;
 }
 
+.secq {
+position: relative;
+margin: auto;
+}
+
 .SD12 {
   text-align: right;
-  color: #CCED31;
-  text-shadow: 0 0 5px #caed3183;
-  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #caed3132;
+  font-size: 4rem;
   position: relative;
   animation: slideIn 1s forwards;
   padding-top: 3rem;
@@ -230,9 +237,9 @@ input[type="radio"] + label > .sites1 > .icon {
 
 .SD123 {
   text-align: left;
-  color: #CCED31;
-  text-shadow: 0 0 5px #caed3183;
-  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #caed314c;
+  font-size: 4rem;
   position: relative;
   animation: slideIn 1s forwards;
   padding-top: 3rem;
@@ -244,9 +251,9 @@ input[type="radio"] + label > .sites1 > .icon {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 50px;
   font-family: 'Roboto', sans-serif;
   height: 100%;
+  width: 100%;
 }
 
 .card {
@@ -319,25 +326,22 @@ input[type="radio"] + label > .sites1 > .icon {
 
 .equipa {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 30%;
 }
 
 .row {
-  margin: 0 -5px;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -368,19 +372,57 @@ input[type="radio"] + label > .sites1 > .icon {
 }
 
 .card3 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 2rem;
   text-align: center;
-  color: #CCED31;
-  box-shadow: 0 0 5px #CCED31;
-  text-shadow: 0 0 5px #caed3183;
-  width: 10rem;
-  font-size: 1.3rem;
-  gap: 3rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #caed3154;
+  width: 100%;
+  font-size: 3rem;
+  font-style: bold
 }
 
 .setinha {
   position: absolute;
-  right: 20%;
+  right: 5%;
   opacity: 0.5;
+}
+
+.missao20 {
+text-align: end;
+padding:1rem;
+}
+
+.numberdef {
+  font-size: 1.2rem;
+}
+
+.icon7 {
+width: 3.5rem;
+padding-top: 1.3rem;
+}
+
+.artqd {
+  width: 100%;
+  display: flex;
+  max-height: 80vh;
+  align-items: center;
+}
+
+.caixa1{
+display: flex;
+width: 30%;
+justify-content: flex-end;
+align-items: center;
+}
+
+.qsdef {
+  width: 70%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #333;
+}
+
+.icon8 {
+  width: 250px;
+  height: auto;
 }

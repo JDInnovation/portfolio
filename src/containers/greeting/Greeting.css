@@ -1,12 +1,15 @@
 .main {
-  width: 75%;
-  padding: 0px 10px;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
   margin: 0px auto;
   margin-top: 4rem;
 }
 
+
+
 .greet-main {
-  max-width: 1370px;
+  max-width: 70%;
   padding: 10px 10px;
   margin: 0px auto;
   margin-top: 6vh;
@@ -88,6 +91,8 @@
   cursor: pointer;
 }
 
+
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
@@ -155,4 +160,11 @@
     justify-content: center;
     text-align: center;
   }
+
+
+
+
+
+
 }
+
