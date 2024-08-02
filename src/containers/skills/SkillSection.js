@@ -29,12 +29,14 @@ import yeari from "../../assets/images/calendar (1).png";
 import patni from "../../assets/images/heart-partner-handshake.png";
 import worker from "../../assets/images/office-worker.png";
 
+import davide from "../../assets/images/d12.png";
+import joaoe from "../../assets/images/j12.png";
 function AnimatedNumber({ number }) {
   const { number: animatedNumber } = useSpring({
     from: { number: 1 },
     number,
-    delay: 300,
-    config: { duration: 5000 },
+    delay: 400,
+    config: { duration: 6000 },
   });
 
   return <animated.div>{animatedNumber.to(n => n.toFixed(0))}</animated.div>;
@@ -142,7 +144,34 @@ function SkillSection(props) {
                     juntos para oferecer soluções perfeitas e adaptadas aos objetivos de cada negócio, com foco em aumentar a visibilidade e a faturação dos nossos clientes. <br></br>
                     Em projetos maiores, reunimos freelancers especializados para agilizar o processo e garantir resultados de alta qualidade.</h4>
                     <div className="caixa1">
-                    <img src={worker} alt="Descrição da Imagem" className="icon8" title="Branding" /> 
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+        <img src={joaoe} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
+        </div>
+        <div class="team-content">
+          <h3 class="name">João Teixeira</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <p>emailz@rapaz</p>
+        </ul>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+        <img src={davide} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
+        </div>
+        <div class="team-content">
+          <h3 class="name">David Claro</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+        <p>emailz@rapaz</p>
+        </ul>
+      </div>
+    </div>
                     </div>
 
                   </div>
