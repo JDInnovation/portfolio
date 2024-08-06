@@ -152,6 +152,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
 
   .portfolio-repo-btn-div {
@@ -161,8 +162,20 @@
     text-align: center;
   }
 
+  .main {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0px auto;
+   
+  }
 
-
+  .greeting-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+  }
 
 
 

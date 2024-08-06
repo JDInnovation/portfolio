@@ -4,7 +4,6 @@ import { Fade } from "react-reveal";
 import { style } from "glamor";
 import Typewriter from "typewriter-effect";
 import FeelingProud from "./FeelingProud";
-import WaveHand from "../../assets/images/waving-hand.png";
 import "./Greeting.css";
 
 export default function Greeting(props) {

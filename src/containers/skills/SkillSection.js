@@ -4,6 +4,8 @@ import { useInView } from "react-intersection-observer";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import "./Skills.css";
+
+// Importing images
 import ecom from "../../assets/images/ecom.png";
 import webs from "../../assets/images/webs.png";
 import marketing from "../../assets/images/marketing.png";
@@ -28,9 +30,9 @@ import projecti from "../../assets/images/project.png";
 import yeari from "../../assets/images/calendar (1).png";
 import patni from "../../assets/images/heart-partner-handshake.png";
 import worker from "../../assets/images/office-worker.png";
-
 import davide from "../../assets/images/d12.png";
 import joaoe from "../../assets/images/j12.png";
+
 function AnimatedNumber({ number }) {
   const { number: animatedNumber } = useSpring({
     from: { number: 1 },
@@ -140,46 +142,53 @@ function SkillSection(props) {
                 <div className="secq3">
                   <h1 className="SD123">QUEM SOMOS</h1>
                   <div className="artqd">
-                  <h4 className="qsdef">Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br></br> Desde 2019, João Teixeira e David Claro trabalham 
-                    juntos para oferecer soluções perfeitas e adaptadas aos objetivos de cada negócio, com foco em aumentar a visibilidade e a faturação dos nossos clientes. <br></br>
-                    Em projetos maiores, reunimos freelancers especializados para agilizar o processo e garantir resultados de alta qualidade.</h4>
-                    <div className="caixa1">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="our-team">
-        <div class="picture">
-        <img src={joaoe} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
-        </div>
-        <div class="team-content">
-          <h3 class="name">João Teixeira</h3>
-          <h4 class="title">Web Developer</h4>
-        </div>
-        <ul class="social">
-          <p>emailz@rapaz</p>
-        </ul>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="our-team">
-        <div class="picture">
-        <img src={davide} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
-        </div>
-        <div class="team-content">
-          <h3 class="name">David Claro</h3>
-          <h4 class="title">Web Developer</h4>
-        </div>
-        <ul class="social">
-        <p>emailz@rapaz</p>
-        </ul>
-      </div>
-    </div>
+                    <div className="tmd">
+                    <h4 className="qsdef">
+                      Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br /> 
+                      Desde 2019, João Teixeira e David Claro trabalham juntos para oferecer soluções perfeitas e adaptadas aos objetivos de cada negócio, com foco em aumentar a visibilidade e a faturação dos nossos clientes. <br /> 
+                      Em projetos maiores, reunimos freelancers especializados para agilizar o processo e garantir resultados de alta qualidade.
+                    </h4>
                     </div>
-
+                    <div className="caixa1">
+                      <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="our-team">
+                          <div className="picture">
+                            <img src={joaoe} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
+                          </div>
+                          <div className="team-content">
+                            <h3 className="name">João Teixeira</h3>
+                            <h4 className="title">Web Developer</h4>
+                          </div>
+                          <ul className="social">
+                            <p>emailz@rapaz</p>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="our-team">
+                          <div className="picture">
+                            <img src={davide} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
+                          </div>
+                          <div className="team-content">
+                            <h3 className="name">David Claro</h3>
+                            <h4 className="title">Web Developer</h4>
+                          </div>
+                          <ul className="social">
+                            <p>emailz@rapaz</p>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <div ref={ref}>
                   <h1 className="SD12">A NOSSA MISSÃO</h1>
-                  <h4 className="missao20">Valorizamos a confiança e buscamos relações duradouras e benéficas com nossos clientes. <br></br>Oferecemos total personalização durante a criação dos projetos e garantimos orçamentos precisos para cada serviço. <br></br>Nossa missão é tornar o processo simples e satisfatório, sempre focando na satisfação total dos nossos clientes.</h4>
+                  <h4 className="missao20">
+                    Valorizamos a confiança e buscamos relações duradouras e benéficas com nossos clientes. <br />
+                    Oferecemos total personalização durante a criação dos projetos e garantimos orçamentos precisos para cada serviço. <br />
+                    Nossa missão é tornar o processo simples e satisfatório, sempre focando na satisfação total dos nossos clientes.
+                  </h4>
                   <div className="equipa">
                     <main className="main3">
                       <div className="row">
@@ -187,32 +196,39 @@ function SkillSection(props) {
                           <div className="card3">
                             {inView && <AnimatedNumber number={6} />}
                             <img src={yeari} alt="Descrição da Imagem" className="icon7" title="Sites" />
-                            <h3 className="numberdef">Anos<br></br>Experiencia</h3>
+                            <h3 className="numberdef">Anos<br />Experiencia</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
                             {inView && <AnimatedNumber number={54} />}
                             <img src={projecti} alt="Descrição da Imagem" className="icon7" title="Sites" />
-                            <h3 className="numberdef">Projetos<br></br>Realizados</h3>
+                            <h3 className="numberdef">Projetos<br />Realizados</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
-                            {inView && <AnimatedNumber number={43}/>}
+                            {inView && <AnimatedNumber number={43} />}
                             <img src={clientsi} alt="Descrição da Imagem" className="icon7" title="Sites" />
-                            <h3 className="numberdef">Clientes<br></br>Satisfeitos</h3>
+                            <h3 className="numberdef">Clientes<br />Satisfeitos</h3>
                           </div>
                         </div>
                         <div className="column">
                           <div className="card3">
                             {inView && <AnimatedNumber number={4} />}
                             <img src={patni} alt="Descrição da Imagem" className="icon7" title="Sites" />
-                            <h3 className="numberdef">Parceiros<br></br>Estratégicos</h3>
+                            <h3 className="numberdef">Parceiros<br />Estratégicos</h3>
                           </div>
                         </div>
                       </div>
                     </main>
+                  </div>
+                </div>
+                <div>
+                  <h1 className="SD123">Obtenha Orçamento Gratis</h1>
+                  <div>
+                    <h3>Quer serviços de alta qualidade a preços acessíveis? Estamos aqui para ajudar! Clique no botão abaixo e receba um orçamento personalizado que atenda às suas necessidades e expectativas.</h3>
+                    <button className="button">pedir orçamento</button>
                   </div>
                 </div>
 
