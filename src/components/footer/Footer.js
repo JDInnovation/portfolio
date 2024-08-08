@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Fade } from "react-reveal";
 import { NavLink } from "react-router-dom";
 import { motion } from 'framer-motion';
@@ -10,6 +11,12 @@ const footerVariants = {
 };
 
 export default function Footer(props) {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="footer-div">
       <Fade>
