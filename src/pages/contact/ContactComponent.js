@@ -248,8 +248,8 @@ export default function Contact(props) {
                 title="Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.406877614601!2d-122.07851468468238!3d37.38557427982913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e33d9c6e1d%3A0x6c1e9451c3be4a70!2sGoogleplex!5e0!3m2!1sen!2sus!4v1634863112130!5m2!1sen!2sus"
                 width="100%"
-                height="340"
-                style={{ border: 0 }}
+                height="100%"
+                style={{ border: 0, flexGrow: 1 }}
                 allowFullScreen=""
                 loading="lazy">
               </iframe>
