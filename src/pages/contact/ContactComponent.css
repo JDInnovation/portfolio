@@ -1,21 +1,19 @@
 .contact-main {
   width: 100vw;
-  background-color: #222324; /* Background color similar to your website's theme */
+  background-color: #222324;
 }
 
 .basic-contact {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 5%;
   padding: 20px 0;
 }
 
 .contact-heading-div {
   text-align: center;
   margin-top: 40px;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .contact-heading-text {
@@ -23,7 +21,7 @@
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
-  color: #a5c507; /* Color similar to your website's theme */
+  color: #a5c507;
 }
 
 .contact-header-detail-text {
@@ -31,7 +29,7 @@
   line-height: 30px;
   margin-top: 20px;
   font-family: "Google Sans Medium";
-  color: #ffffff; /* Color similar to your website's theme */
+  color: #ffffff;
 }
 
 .contact-form-div {
@@ -45,13 +43,11 @@
 form {
   display: flex;
   flex-direction: column;
-  max-width: 750px; /* Ajuste a largura máxima */
-  width: 100%; /* Para garantir que o formulário não fique muito largo */
+  max-width: 750px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 20px;
   border: 1px solid #383838;
-  
-  /* From https://css.glass */
   background: rgba(115, 115, 115, 0);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -73,7 +69,7 @@ form {
 form label {
   margin-bottom: 5px;
   font-weight: bold;
-  color: #ffffff; /* White color for labels */
+  color: #ffffff;
 }
 
 form input,
@@ -98,8 +94,8 @@ form button.form-button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 50%;
-  margin: 0 auto; /* Adicione esta linha */
-  display: block; /* Adicione esta linha */
+  margin: 0 auto;
+  display: block;
 }
 
 form button.form-button:hover {
@@ -176,22 +172,46 @@ form button.form-button:hover {
 
 .contact-info {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: stretch; /* Ajuste para que os elementos tenham a mesma altura */
   margin-top: 40px;
   padding: 20px;
-  background-color: #393a3b;
-  border-radius: 5px;
+  border: 1px solid #383838;
+  background: rgba(115, 115, 115, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid #a5c50784;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 10px; /* Ajustar margem para espaçamento uniforme */
+  gap: 30px; /* Ajuste para adicionar espaço entre os cartões */
 }
 
 .contact-info-left,
 .contact-info-right {
   flex: 1;
-  margin: 10px;
-  padding: 20px;
-  background-color: #484848;
+  padding: 10px;
+  background-color: #2e2e2e00;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-left {
+  margin-right: 10px;
+}
+
+.contact-info-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-right iframe {
+  flex-grow: 1;
 }
 
 .contact-info-left h2,
@@ -207,37 +227,41 @@ form button.form-button:hover {
   color: #ffffff;
   line-height: 1.5;
 }
+
 .loading {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  height: 600px; 
+  height: 600px;
 }
 
 .loading img {
   width: 100px;
   height: 100px;
 }
+
 .hidden {
   display: none;
 }
+
 .placeholder {
   visibility: hidden;
 }
+
 .consent-container {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  justify-content: flex-start; /* Alinhar à esquerda */
-  text-align: left; /* Garantir que o texto esteja alinhado à esquerda */
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .consent-container input[type="checkbox"] {
-  width: 20px; /* Aumentar a largura do checkbox */
-  height: 20px; /* Aumentar a altura do checkbox */
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
-  cursor: pointer; /* Mostrar que é clicável */
+  cursor: pointer;
   position: relative;
   -webkit-appearance: none;
   appearance: none;
@@ -252,8 +276,8 @@ form button.form-button:hover {
 
 .consent-container input[type="checkbox"]:checked::before {
   content: '✔';
-  font-size: 18px; /* Tamanho do símbolo */
-  color: #b6d109; /* Cor do símbolo */
+  font-size: 18px;
+  color: #b6d109;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -262,11 +286,11 @@ form button.form-button:hover {
 
 .consent-text {
   font-size: 14px;
-  color: #ffffff; /* Cor branca para o texto */
+  color: #ffffff;
 }
 
 .consent-text a {
-  color: #b6d109; /* Cor similar ao tema do seu site */
+  color: #b6d109;
   text-decoration: underline;
   white-space: nowrap;
 }
@@ -301,5 +325,52 @@ form button.form-button:hover {
   .contact-info-right {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .contact-box {
+    margin: 0;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-box {
+    flex-wrap: nowrap;
+  }
+
+  .our-team {
+    width: 150px;
+  }
+
+  .contact-heading-text {
+    font-size: 24px;
+  }
+
+  .contact-header-detail-text {
+    font-size: 14px;
+  }
+
+  .form-title {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+
+  .thank-you-message {
+    padding: 10px;
+  }
+
+  .thank-you-message h2 {
+    font-size: 20px;
+  }
+
+  .thank-you-message p {
+    font-size: 16px;
   }
 }

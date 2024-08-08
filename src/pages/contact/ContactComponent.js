@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import loadingGif from '../../assets/images/loading.gif'; // Importe o gif de loading
+import loadingGif from '../../assets/images/loading.gif';
+import davide from "../../assets/images/d12.png";
+import joaoe from "../../assets/images/j12.png";
 
 export default function Contact(props) {
   const theme = props.theme;
@@ -20,8 +22,16 @@ export default function Contact(props) {
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false); // Estado de loading
-  const [recaptchaValue, setRecaptchaValue] = useState(null); // Estado do reCAPTCHA
+  const [loading, setLoading] = useState(false);
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
+
+  const loadingRef = useRef(null);
+
+  useEffect(() => {
+    if (loading && loadingRef.current) {
+      loadingRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [loading]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -41,18 +51,18 @@ export default function Contact(props) {
       alert("Por favor, dê seu consentimento.");
       return;
     }
-    setLoading(true); // Ativar loading
+    setLoading(true);
 
     setTimeout(() => {
       emailjs.sendForm('service_dq9gfwh', 'template_cp61hip', e.target, 'dXVyQQhCKcgjFrK0q')
         .then((result) => {
-          setLoading(false); // Desativar loading
+          setLoading(false);
           setFormSubmitted(true);
         }, (error) => {
-          setLoading(false); // Desativar loading
+          setLoading(false);
           alert('Erro ao enviar a mensagem. Tente novamente.');
         });
-    }, 2000); // Simulando um tempo de carregamento adicional de 2 segundos
+    }, 2000);
   };
 
   const handleNewContact = () => {
@@ -66,7 +76,7 @@ export default function Contact(props) {
       consent: false
     });
     setFormSubmitted(false);
-    setRecaptchaValue(null); // Resetar reCAPTCHA
+    setRecaptchaValue(null);
   };
 
   return (
@@ -199,7 +209,7 @@ export default function Contact(props) {
                 </form>
 
                 {loading && (
-                  <div className="loading">
+                  <div className="loading" ref={loadingRef}>
                     <img src={loadingGif} alt="Loading..." />
                   </div>
                 )}
@@ -209,19 +219,45 @@ export default function Contact(props) {
         </Fade>
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-info">
-            <div className="contact-info-left">
-              <h2>Contato</h2>
-              <p><strong>David Claro</strong><br />CEO<br />913467759</p>
-              <p><strong>João Brites</strong><br />CEO<br />912084991</p>
+            <div className="contact-box">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="our-team">
+                  <div className="picture">
+                    <img src={joaoe} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
+                  </div>
+                  <div className="team-content">
+                    <h3 className="name">João Teixeira</h3>
+                    <h4>913467759</h4>
+                    <h4 className="title">Web Developer</h4>
+                  </div>
+                  <ul className="social">
+                    <p>emailz@rapaz</p>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="our-team">
+                  <div className="picture">
+                    <img src={davide} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
+                  </div>
+                  <div className="team-content">
+                    <h3 className="name">David Claro</h3>
+                    <h4>913467759</h4>
+                    <h4 className="title">Web Developer</h4>
+                  </div>
+                  <ul className="social">
+                    <p>emailz@rapaz</p>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div className="contact-info-right">
-              <h2>Localização</h2>
               <iframe
                 title="Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.406877614601!2d-122.07851468468238!3d37.38557427982913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e33d9c6e1d%3A0x6c1e9451c3be4a70!2sGoogleplex!5e0!3m2!1sen!2sus!4v1634863112130!5m2!1sen!2sus"
                 width="100%"
-                height="300"
-                style={{ border: 0 }}
+                height="100%"
+                style={{ border: 0, flexGrow: 1 }}
                 allowFullScreen=""
                 loading="lazy">
               </iframe>
