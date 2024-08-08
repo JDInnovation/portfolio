@@ -24,7 +24,7 @@
 .qsdef {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 300px;
   padding: 2rem;
   border-radius: 1rem;
   background-color: #333;
@@ -42,7 +42,7 @@
 .tmd {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 300px;
   border-radius: 1rem;
   background-color: #333;
   height: 100%;
@@ -58,9 +58,10 @@
     gap: 1rem;
   }
 
+
+
   .caixa1 {
     justify-content: center;
-    min-width: auto;
     gap: 1rem;
     flex-direction: column;
     align-items: center;
@@ -122,13 +123,18 @@
   .skills-image-div > * {
     margin-top: 0px;
   }
+  .secq {
+    position: relative;
+    margin: auto;
+    max-width: 320px;
+  }
 }
 
 /* General styles */
 .skills-main-div {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  
 }
 
 .skills-header {
@@ -603,3 +609,4 @@ input[type="radio"] + label > .sites1 > .icon {
 .hidden {
   opacity: 0;
 }
+
