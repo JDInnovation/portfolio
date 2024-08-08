@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import Header from "../../components/header/Header";
@@ -24,6 +24,14 @@ export default function Contact(props) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [recaptchaValue, setRecaptchaValue] = useState(null);
+
+  const loadingRef = useRef(null);
+
+  useEffect(() => {
+    if (loading && loadingRef.current) {
+      loadingRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [loading]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -201,7 +209,7 @@ export default function Contact(props) {
                 </form>
 
                 {loading && (
-                  <div className="loading">
+                  <div className="loading" ref={loadingRef}>
                     <img src={loadingGif} alt="Loading..." />
                   </div>
                 )}
