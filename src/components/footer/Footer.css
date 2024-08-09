@@ -1,34 +1,36 @@
 .footer-div {
-  margin-top: 2rem;
+  margin-top: 1rem;  /* Reduzido para melhor ajuste em mobile */
   background-color: #292a2d;
   color: #ffffff;
-  padding: 2rem;
+  padding: 1rem;  /* Reduzido para melhor ajuste em mobile */
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1rem;  /* Reduzido para melhor ajuste em mobile */
+  padding: 1rem;  /* Reduzido para melhor ajuste em mobile */
 }
 
 .footer-content h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;  /* Reduzido para melhor ajuste em mobile */
   text-align: center;
+  font-size: 1.2rem; /* Reduzir o tamanho da fonte para telas menores */
 }
 
 .footer-section {
   flex: 1;
-  margin: 1rem;
+  margin: 0.5rem;  /* Reduzido para melhor ajuste em mobile */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .footer-section h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;  /* Reduzido para melhor ajuste em mobile */
   text-align: center;
+  font-size: 1.2rem; /* Ajustado para telas menores */
 }
 
 .footer-menu ul,
@@ -41,7 +43,7 @@
 .footer-menu ul li,
 .footer-contact ul li {
   margin: 0;
-  padding: 0;
+  padding: 0.3rem 0; /* Reduzir o espaçamento entre os itens em mobile */
 }
 
 .footer-section ul li a,
@@ -49,6 +51,7 @@
   color: #b6d109;
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 1.2rem; /* Reduzir o tamanho da fonte para telas menores */
 }
 
 .footer-section ul li a:hover,
@@ -57,7 +60,7 @@
 }
 
 .footer-zaask .zaask-logo {
-  width: 50px;
+  width: 50px; /* Ajustado para telas menores */
   height: auto;
   transition: transform 0.3s;
 }
@@ -69,8 +72,10 @@
 .footer-text {
   text-align: center;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 1rem;  /* Reduzido para melhor ajuste em mobile */
   text-decoration: none;
+  font-size: 0.9rem; /* Reduzir o tamanho da fonte para o texto de direitos autorais */
+  letter-spacing: 0.05em;
 }
 
 .footer-section ul {
@@ -83,7 +88,7 @@
 .footer-section ul li {
   margin: 0;
   padding: 0;
-  max-height: 30px;
+  max-height: 25px;  /* Reduzido para melhor ajuste em mobile */
 }
 
 .footer-section ul li a {
@@ -91,13 +96,10 @@
   color: white;
 }
 
-
-
-/* Adicionando a linha verde abaixo do item ativo no primeiro ul */
 .footer-menu ul li a.current-link {
   position: relative;
   font-weight: bolder;
-  margin: 0; /* Remove a margem adicional */
+  margin: 0;
 }
 
 .footer-menu ul li a.current-link::after {
@@ -117,27 +119,13 @@
   width: 100%;
 }
 
-/* Adicionando o efeito de escala em hover apenas para o primeiro ul */
 .footer-section ul li:hover {
   transform: scale(1.05);
   transition: transform 0.3s;
 }
 
- .zaask-logo:hover,
- .footer-map iframe:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
-}
-
-
-
-.footer-map iframe {
-  width: 100%;
-  max-width: 300px;
-  height: 200px;
-}
-span{
-  font-size: 1.3rem;
+span {
+  font-size: 1.2rem; /* Ajustado para telas menores */
   font-weight: bold;
 }
 
@@ -150,5 +138,10 @@ span{
 
   .footer-section {
     align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
   }
 }
