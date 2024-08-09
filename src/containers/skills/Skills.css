@@ -53,7 +53,7 @@ min-width: 56%;
   min-width: 300px;
   border-radius: 1rem;
   background-color: #333;
-  height: 100%;
+  min-height: 100%;
   color: white;
 }
 

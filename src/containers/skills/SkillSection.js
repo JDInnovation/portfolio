@@ -159,16 +159,16 @@ function SkillSection(props) {
                   
                  
                   <div className="artqd">
-                  <FadeInSection delay={400} duration={600} direction="left">
+                  
                     <div className="tmd">
-                    <h4 className="qsdef">
+                    <p className="qsdef">
                       Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br /> 
                       Desde 2019, João Teixeira e David Claro trabalham juntos para oferecer soluções perfeitas e adaptadas aos objetivos de cada negócio, com foco em aumentar a visibilidade e a faturação dos nossos clientes. <br /> 
                       Em projetos maiores, reunimos freelancers especializados para agilizar o processo e garantir resultados de alta qualidade.
-                    </h4>
+                    </p>
                     </div>
-                    </FadeInSection>
-                    <FadeInSection delay={700} duration={300} direction="right">
+                    
+                    
                     <div className="caixa1">
                       <div className="cartoesapr">
                         <div className="our-team">
@@ -199,7 +199,7 @@ function SkillSection(props) {
                         </div>
                       </div>
                     </div>
-                    </FadeInSection>
+                    
                   </div>
                 </div>
                 
