@@ -143,6 +143,7 @@ width: 50%;
 .skills-main-div {
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
   
 }
 
@@ -357,7 +358,7 @@ input[type="radio"] + label > .sites1 > .icon {
   text-shadow: 0 0 5px #caed3132;
   font-size: 4rem;
   position: relative;
-  animation: slideIn 1s forwards;
+ 
   margin-bottom: 3rem;
 }
 

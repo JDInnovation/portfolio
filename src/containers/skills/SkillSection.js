@@ -3,6 +3,7 @@ import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
+import FadeInSection from "./FadeInSection";
 import "./Skills.css";
 
 // Importing images
@@ -41,6 +42,9 @@ function AnimatedNumber({ number }) {
     config: { duration: 6000 },
   });
 
+
+  
+
   return <animated.div>{animatedNumber.to(n => n.toFixed(0))}</animated.div>;
 }
 
@@ -55,14 +59,20 @@ function SkillSection(props) {
           return (
             <div key={"skills-" + index} className="skills-main-div">
               <div className="skills-text-div">
+              
                 <div className="secq">
+                <FadeInSection delay={700} duration={1500} direction="right">
+                   
                   <h1 className="SD12">SOLUÇÕES DIGITAIS</h1>
+                  </FadeInSection>
+                  
                   <div className="accordion">
+                  
                     <article>
-                      <input id="article1" type="radio" name="articles" defaultChecked />
-                      <label htmlFor="article1">
+                      <input id="article1" type="radio" name="articles" defaultChecked   />
+                      <label htmlFor="article1" >
                         <h2 className="sites1">
-                          <img src={ecom} alt="Descrição da Imagem" className="icon" title="E-Commerce" />
+                          <img src={ecom} alt="Descrição da Imagem" className="icon" title="E-Commerce"  />
                           • E-COMMERCE
                           <p className="setinha">▼</p>
                         </h2>
@@ -76,6 +86,7 @@ function SkillSection(props) {
                         </h2>
                       </div>
                     </article>
+                    
 
                     <article>
                       <input id="article2" type="radio" name="articles" />
@@ -138,10 +149,17 @@ function SkillSection(props) {
                     </article>
                   </div>
                 </div>
+                
 
+                
                 <div className="secq3">
+                <FadeInSection delay={100} duration={1000} direction="left">
                   <h1 className="SD123">QUEM SOMOS</h1>
+                  </FadeInSection>
+                  
+                 
                   <div className="artqd">
+                  <FadeInSection delay={500} duration={1200} direction="left">
                     <div className="tmd">
                     <h4 className="qsdef">
                       Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br /> 
@@ -149,6 +167,8 @@ function SkillSection(props) {
                       Em projetos maiores, reunimos freelancers especializados para agilizar o processo e garantir resultados de alta qualidade.
                     </h4>
                     </div>
+                    </FadeInSection>
+                    <FadeInSection delay={1200} duration={600} direction="right">
                     <div className="caixa1">
                       <div className="cartoesapr">
                         <div className="our-team">
@@ -179,16 +199,24 @@ function SkillSection(props) {
                         </div>
                       </div>
                     </div>
+                    </FadeInSection>
                   </div>
                 </div>
+                
 
+                
                 <div ref={ref}>
+                <FadeInSection delay={100} duration={1000} direction="right">
                   <h1 className="SD12">A NOSSA MISSÃO</h1>
+                  </FadeInSection>
+                  <FadeInSection delay={600} duration={1200} direction="right">
                   <h4 className="missao20">
                     Valorizamos a confiança e buscamos relações duradouras e benéficas com nossos clientes. <br />
                     Oferecemos total personalização durante a criação dos projetos e garantimos orçamentos precisos para cada serviço. <br />
                     Nossa missão é tornar o processo simples e satisfatório, sempre focando na satisfação total dos nossos clientes.
                   </h4>
+                  </FadeInSection>
+                  <FadeInSection delay={700} duration={1500} direction="left"></FadeInSection>
                   <div className="equipa">
                     <main className="main3">
                       <div className="row">
@@ -224,6 +252,8 @@ function SkillSection(props) {
                     </main>
                   </div>
                 </div>
+                
+                <FadeInSection>
                 <div className="secq4">
                   <h1 className="SD123">Obtenha Orçamento Gratis</h1>
                   <div>
@@ -231,16 +261,7 @@ function SkillSection(props) {
                     <button className="button">pedir orçamento</button>
                   </div>
                 </div>
-
-                <Fade right duration={2000}>
-                  <div style={{ textAlign: "center" }}>
-                    {skill.skills.map((skillSentence, skillIndex) => (
-                      <p key={"skill-sentence-" + skillIndex} className="subTitle skills-text" style={{ color: theme.secondaryText }}>
-                        {skillSentence}
-                      </p>
-                    ))}
-                  </div>
-                </Fade>
+                </FadeInSection>
               </div>
             </div>
           );
