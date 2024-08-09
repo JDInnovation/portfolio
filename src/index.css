@@ -56,6 +56,7 @@ code {
 html,
 body {
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -89,5 +90,6 @@ body {
   body {
     font-size: 16px;
     line-height: normal;
+    overflow-x: hidden;
   }
 }

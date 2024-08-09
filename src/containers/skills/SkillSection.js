@@ -61,7 +61,7 @@ function SkillSection(props) {
               <div className="skills-text-div">
               
                 <div className="secq">
-                <FadeInSection delay={700} duration={1500} direction="right">
+                <FadeInSection delay={200} duration={750} direction="right">
                    
                   <h1 className="SD12">SOLUÇÕES DIGITAIS</h1>
                   </FadeInSection>
@@ -153,13 +153,13 @@ function SkillSection(props) {
 
                 
                 <div className="secq3">
-                <FadeInSection delay={100} duration={1000} direction="left">
+                <FadeInSection delay={100} duration={500} direction="left">
                   <h1 className="SD123">QUEM SOMOS</h1>
                   </FadeInSection>
                   
                  
                   <div className="artqd">
-                  <FadeInSection delay={500} duration={1200} direction="left">
+                  <FadeInSection delay={400} duration={600} direction="left">
                     <div className="tmd">
                     <h4 className="qsdef">
                       Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br /> 
@@ -168,7 +168,7 @@ function SkillSection(props) {
                     </h4>
                     </div>
                     </FadeInSection>
-                    <FadeInSection delay={1200} duration={600} direction="right">
+                    <FadeInSection delay={700} duration={300} direction="right">
                     <div className="caixa1">
                       <div className="cartoesapr">
                         <div className="our-team">
@@ -206,17 +206,17 @@ function SkillSection(props) {
 
                 
                 <div ref={ref}>
-                <FadeInSection delay={100} duration={1000} direction="right">
+                <FadeInSection delay={100} duration={500} direction="right">
                   <h1 className="SD12">A NOSSA MISSÃO</h1>
                   </FadeInSection>
-                  <FadeInSection delay={600} duration={1200} direction="right">
+                  <FadeInSection delay={300} duration={600} direction="right">
                   <h4 className="missao20">
                     Valorizamos a confiança e buscamos relações duradouras e benéficas com nossos clientes. <br />
                     Oferecemos total personalização durante a criação dos projetos e garantimos orçamentos precisos para cada serviço. <br />
                     Nossa missão é tornar o processo simples e satisfatório, sempre focando na satisfação total dos nossos clientes.
                   </h4>
                   </FadeInSection>
-                  <FadeInSection delay={700} duration={1500} direction="left"></FadeInSection>
+                  <FadeInSection delay={400} duration={700} direction="left">
                   <div className="equipa">
                     <main className="main3">
                       <div className="row">
@@ -251,6 +251,7 @@ function SkillSection(props) {
                       </div>
                     </main>
                   </div>
+                  </FadeInSection>
                 </div>
                 
                 <FadeInSection>
