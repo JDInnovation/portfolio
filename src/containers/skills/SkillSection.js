@@ -150,7 +150,7 @@ function SkillSection(props) {
                     </h4>
                     </div>
                     <div className="caixa1">
-                      <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div className="cartoesapr">
                         <div className="our-team">
                           <div className="picture">
                             <img src={joaoe} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
@@ -164,7 +164,7 @@ function SkillSection(props) {
                           </ul>
                         </div>
                       </div>
-                      <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div className="cartoesapr">
                         <div className="our-team">
                           <div className="picture">
                             <img src={davide} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
