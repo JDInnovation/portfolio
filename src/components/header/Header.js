@@ -113,9 +113,7 @@ function Header(props) {
                 Contacto
               </NavLink>
             </li>
-            <button {...styles} onClick={changeTheme}>
-              {icon}
-            </button>
+
           </ul>
         </header>
       </div>
@@ -123,4 +121,4 @@ function Header(props) {
   );
 }
 
-export default Header;
+export default Header;

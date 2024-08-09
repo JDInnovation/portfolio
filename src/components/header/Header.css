@@ -81,6 +81,7 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  margin-top: 20px;
 }
 
 .header .menu-icon .navicon {
@@ -308,6 +309,7 @@
   .header {
     padding-top: 10px;
     text-align: center;
+    padding: 10px 20px;
   }
 }
 
@@ -316,4 +318,3 @@
     font-size: 12px;
   }
 }
-
