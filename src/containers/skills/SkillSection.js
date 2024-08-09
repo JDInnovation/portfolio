@@ -224,10 +224,10 @@ function SkillSection(props) {
                     </main>
                   </div>
                 </div>
-                <div>
+                <div className="secq4">
                   <h1 className="SD123">Obtenha Orçamento Gratis</h1>
                   <div>
-                    <h3>Quer serviços de alta qualidade a preços acessíveis? Estamos aqui para ajudar! Clique no botão abaixo e receba um orçamento personalizado que atenda às suas necessidades e expectativas.</h3>
+                    <h4 className="missao20">Quer serviços de alta qualidade a preços acessíveis? Estamos aqui para ajudar! Clique no botão abaixo e receba um orçamento personalizado que atenda às suas necessidades e expectativas.</h4>
                     <button className="button">pedir orçamento</button>
                   </div>
                 </div>
