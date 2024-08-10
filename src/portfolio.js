@@ -8,14 +8,14 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Impulsionando negócios",
+  title: "Impulsione o seu Negócio",
   title2: "",
   logo_name: "Innovation Studio",
   // nickname: "",
-  full_name: "Sumitii Sharma",
-  subTitle1: "Software Developer.",
-  subTitle2: "Full Stack Developer.",
-  subTitle: "Full Stack Developer, Life Long Learner.",
+  full_name: "Nexum",
+  subTitle1: "Lojas de E-Comerce",
+  subTitle2: "Sites Empresariais",
+  subTitle: "Life Long Learner.",
   resumeLink:
     "https://drive.google.com/file/d/1-SSCPhVG80IDtpx7_TPpsLfJyEA7NEtv/view?usp=drive_link",
   mail: "mailto:sumitsharma9968@gmail.com",

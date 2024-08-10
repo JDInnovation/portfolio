@@ -24,7 +24,7 @@
 
 .greeting-main > * {
   /* flex: 1; */
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .button-greeting-div {
@@ -45,7 +45,7 @@
 }
 
 .greeting-text-div {
-  font-size: 40px;
+ 
   margin-bottom: 40px;
   display: inline-flex;
   line-height: 4rem;
@@ -55,6 +55,7 @@
 
 .greeting-text-static {
   margin-right: 5px;
+  margin-bottom: 20px;
 }
 
 .greeting-image-div > * {
@@ -74,21 +75,50 @@
   height: auto;
 }
 
-.button {
-  text-decoration: none;
-  color: rgb(44, 44, 44);
-  padding: 15px 15px;
-  margin-top: 25px;
-  border-radius: 40px;
-  border-width: 0px;
-  margin-bottom: 20px;
-  width: 200px;
-  height: 50px;
-  font-weight: bold;
-  font-family: "Google Sans Regular";
-  font-size: 17px;
-  transition: all 0.2s ease-in-out;
+/* CSS */
+.button2 {
+  align-items: center;
+  appearance: none;
+  background-color: #CCED31;
+  border-radius: 1rem;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#6f8608 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
   cursor: pointer;
+  display: inline-flex;
+  font-family: "Google Sans Regular",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 15px;
+}
+
+.button2:focus {
+  box-shadow: #8da817 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button2:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button2:active {
+  box-shadow: #8da817 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
 
@@ -104,7 +134,7 @@
   }
 
   .greeting-text-div {
-    font-size: 30px;
+    
     margin-bottom: 20px;
     /* text-align: center; */
   }
@@ -115,13 +145,13 @@
 }
 
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+  .button2 {
+    font-size: 14px;
   }
 
   .greeting-text {
-    font-size: 40px;
-    margin-top: 0px;
+    font-size: 42px;
+    margin-top: 20px;
     text-align: center;
   }
 

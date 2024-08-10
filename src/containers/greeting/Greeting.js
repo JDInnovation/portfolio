@@ -57,12 +57,12 @@ export default function Greeting(props) {
               <div className="portfolio-repo-btn-div">
                 <a
                   {...styles}
-                  className="button"
+                  className="button2"
                   target="_blank"
                   rel="noopener noreferrer"
                   href={greeting.resumeLink}
                 >
-                  Contactar
+                  Fale com um especialista
                 </a>
               </div>
             </div>
