@@ -196,7 +196,7 @@ export default function Contact(props) {
                       required
                     />
                     <label className="consent-text">
-                      Mediante o seu consentimento, os seus dados pessoais serão tratados pela JD, enquanto responsável pelo tratamento, para: Envio de comunicações relativas a outros serviços (incluindo promoções e campanhas), através de contactos telefónicos, SMS, MMS, e-mails e outros meios de contacto. Para obter mais informações sobre os termos do tratamento dos seus dados pela JD, consulte a nossa <a href="URL_DA_POLITICA_DE_PRIVACIDADE" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.
+                      Mediante o seu consentimento, os seus dados pessoais serão tratados pela JD para uma questão de marketing.
                     </label>
                   </div>
                   <div className="form-group recaptcha-container">
