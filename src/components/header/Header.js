@@ -88,11 +88,22 @@ function Header(props) {
           >
             Portfolio
           </NavLink>
+
+          <div className="mobile-menu-logo">
+            <img src={logo} alt="Logo" className="mobile-logo-image" />
+          </div>
+
           <NavLink
             to="/contact"
-            className={({ isActive }) => (isActive ? "mobile-menu-item active" : "mobile-menu-item")}
+            className="mobile-menu-item"
           >
             Contacto
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="mobile-menu-item"
+          >
+            Orçamento
           </NavLink>
         </div>
       )}
