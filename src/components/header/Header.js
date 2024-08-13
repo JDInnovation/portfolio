@@ -112,7 +112,7 @@ function Header(props) {
                 : "mobile-menu-item"
             }
           >
-            Orçamento
+            preços
           </NavLink>
         </div>
       )}
