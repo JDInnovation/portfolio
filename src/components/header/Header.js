@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import "./Header.css";
 import logo from "../../assets/images/logojd.png";
@@ -7,6 +7,7 @@ import logo from "../../assets/images/logojd.png";
 function Header(props) {
   const theme = props.theme;
   const link = settings.isSplash ? "/splash" : "home";
+  const location = useLocation();
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -95,13 +96,21 @@ function Header(props) {
 
           <NavLink
             to="/contact"
-            className="mobile-menu-item"
+            className={({ isActive }) =>
+              location.pathname === "/contact" && location.search !== "?type=orcamento"
+                ? "mobile-menu-item active"
+                : "mobile-menu-item"
+            }
           >
             Contacto
           </NavLink>
           <NavLink
-            to="/contact"
-            className="mobile-menu-item"
+            to="/contact?type=orcamento"
+            className={({ isActive }) =>
+              location.search === "?type=orcamento"
+                ? "mobile-menu-item active"
+                : "mobile-menu-item"
+            }
           >
             Orçamento
           </NavLink>
