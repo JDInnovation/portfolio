@@ -225,7 +225,7 @@ export default function Contact(props) {
                   <div className="picture">
                     <img src={joaoe} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
                   </div>
-                  <div className="team-content">
+                  <div className="team-content width-team">
                     <h3 className="name">João Teixeira</h3>
                     <h4>913467759</h4>
                     <h4 className="title">Web Developer</h4>
@@ -240,7 +240,7 @@ export default function Contact(props) {
                   <div className="picture">
                     <img src={davide} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
                   </div>
-                  <div className="team-content">
+                  <div className="team-content  width-team ">
                     <h3 className="name">David Claro</h3>
                     <h4>913467759</h4>
                     <h4 className="title">Web Developer</h4>

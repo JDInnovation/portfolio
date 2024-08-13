@@ -300,6 +300,9 @@ form button.form-button:hover {
   justify-content: center;
   margin-top: 10px;
 }
+.width-team{
+width: 150px;
+}
 
 @media (max-width: 1380px) {
   .contact-heading-text {
@@ -330,6 +333,9 @@ form button.form-button:hover {
   .contact-box {
     margin: 0;
     gap: 20px;
+  }
+  .footer-section{
+    text-align: center;
   }
 }
 
