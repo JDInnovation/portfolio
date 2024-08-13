@@ -309,7 +309,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 15px 10px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    
     z-index: 100;
   }
 
