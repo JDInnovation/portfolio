@@ -91,7 +91,8 @@ function Header(props) {
           </NavLink>
 
           <div className="mobile-menu-logo">
-            <img src={logo} alt="Logo" className="mobile-logo-image" />
+          <NavLink
+            to="/home"> <img src={logo} alt="Logo" className="mobile-logo-image" /></NavLink>
           </div>
 
           <NavLink
