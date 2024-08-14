@@ -1,74 +1,34 @@
-import React, { useState } from "react";
-import { Fade } from "react-reveal";
-import { NavLink, Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
-import { CgSun } from "react-icons/cg/";
-import { HiMoon } from "react-icons/hi";
-import { style } from "glamor";
 import "./Header.css";
-
-import logo from "../../assets/images/logojd.png"
+import logo from "../../assets/images/logojd.png";
 
 function Header(props) {
   const theme = props.theme;
-
-  const styles = style({
-    cursor: "pointer",
-    height: "45px",
-    width: "45px",
-    marginRight: "5px",
-    marginLeft: "15px",
-    paddingTop: "5px",
-    borderRadius: "50%",
-    border: "none",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#CCED31",
-    outline: "none",
-    transition: "all 0.2s ease-in-out",
-    ":hover": {
-      boxShadow: `0 3px 8px ${props.theme.name === "light" ? "#CCED31" : "#646464"
-        }`,
-    },
-  });
-
   const link = settings.isSplash ? "/splash" : "home";
+  const location = useLocation();
 
-  const [currTheme, setCurrTheme] = useState(props.theme);
+  const [isMobile, setIsMobile] = useState(false);
 
-  function changeTheme() {
-    if (currTheme === "light") {
-      props.setTheme("dark");
-      localStorage.setItem("theme", "dark");
-      setCurrTheme("dark");
-    } else {
-      props.setTheme("light");
-      localStorage.setItem("theme", "light");
-      setCurrTheme("light");
-    }
-  }
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
 
-  const icon =
-    props.theme.name === "dark" ? (
-      <HiMoon
-        strokeWidth={1}
-        size={20}
-        color={props.theme.name === "light" ? "#FFFFFF" : "#A7A7A7"}
-      />
-    ) : (
-      <CgSun
-        strokeWidth={1}
-        size={20}
-        color={props.theme.name === "light" ? "#FFFFFF" : "#A7A7A7"}
-      />
-    );
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Check on mount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
-    <Fade top duration={1000} distance="20px">
+    <>
       <div
-        className={`${props.theme.name === "light"
-            ? "header-container-light"
-            : "header-container-dark"
+        className={`${props.theme.name === "light" ? "header-container-light" : "header-container-dark"
           }`}
       >
         <header className="header">
@@ -82,9 +42,7 @@ function Header(props) {
           <ul className="menu">
             <li className="homei-li">
               <NavLink
-                className={({ isActive }) =>
-                  isActive ? "current-link" : "homei"
-                }
+                className={({ isActive }) => (isActive ? "current-link" : "homei")}
                 to="/home"
                 tag={Link}
                 style={{ color: theme.text }}
@@ -113,12 +71,54 @@ function Header(props) {
                 Contacto
               </NavLink>
             </li>
-
           </ul>
         </header>
       </div>
-    </Fade>
+
+      {isMobile && (
+        <div className="mobile-menu">
+          <NavLink
+            to="/home"
+            className={({ isActive }) => (isActive ? "mobile-menu-item active" : "mobile-menu-item")}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/experience"
+            className={({ isActive }) => (isActive ? "mobile-menu-item active" : "mobile-menu-item")}
+          >
+            Portfolio
+          </NavLink>
+
+          <div className="mobile-menu-logo">
+          <NavLink
+            to="/home"> <img src={logo} alt="Logo" className="mobile-logo-image" /></NavLink>
+          </div>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              location.pathname === "/contact" && location.search !== "?type=orcamento"
+                ? "mobile-menu-item active"
+                : "mobile-menu-item"
+            }
+          >
+            Contacto
+          </NavLink>
+          <NavLink
+            to="/contact?type=orcamento"
+            className={({ isActive }) =>
+              location.search === "?type=orcamento"
+                ? "mobile-menu-item active"
+                : "mobile-menu-item"
+            }
+          >
+            preços
+          </NavLink>
+        </div>
+      )}
+    </>
   );
 }
 
-export default Header;
+export default Header;
