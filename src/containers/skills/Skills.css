@@ -30,6 +30,7 @@ width:50%
 
 /* Styles for .qsdef */
 .qsdef {
+  color: #6e6d6d;
   display: flex;
   flex-direction: column;
   min-width: 300px;
@@ -171,7 +172,7 @@ width:50%
 
 .skills-main-div > * {
   flex: 1;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .skills-image-div > * {
@@ -365,8 +366,8 @@ input[type="radio"] + label > .sites1 > .icon {
   text-shadow: 0 0 5px #caed3132;
   font-size: 4rem;
   position: relative;
- 
   margin-bottom: 3rem;
+  
 }
 
 @media (max-width: 768px) {
@@ -545,6 +546,7 @@ input[type="radio"] + label > .sites1 > .icon {
 }
 
 .missao20 {
+  color: #737373;
   text-align: end;
   padding: 1rem;
 }
@@ -666,3 +668,65 @@ input[type="radio"] + label > .sites1 > .icon {
   opacity: 0;
 }
 
+.sec13-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Largura total da viewport */
+  height: 100%; /* Altura que desejar para a div */
+  background: linear-gradient(90deg, rgba(48,48,48,0.8828781512605042) 0%, rgba(93,93,93,1) 35%, rgba(101,99,99,1) 46%, rgba(57,57,57,0.9108893557422969) 100%);
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+  pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
+  border-bottom: 2px solid #ffffff; 
+  border-top: 2px solid #ffffff;  
+  margin-top: 40px;
+}
+
+.sec13-container {
+  position: relative;
+  z-index: 1; /* Para garantir que o conteúdo fique acima do fundo */
+
+}
+
+.sec14-background {
+  position: absolute;
+  top: 0;
+ 
+  width: 300vh; /* Largura total da viewport */
+  height: 100%;/* Altura que desejar para a div */
+  background: linear-gradient(90deg, rgba(48,48,48,0.8828781512605042) 0%, rgba(93,93,93,1) 23%, rgba(101,99,99,1) 43%, rgba(57,57,57,0.9108893557422969) 100%);
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+  pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
+  border-bottom: 2px solid #ffffff; 
+  border-top: 2px solid #ffffff; 
+  transform: translateX(-22rem);
+}
+
+.sec14-container {
+  position: relative;
+  z-index: 1; /* Para garantir que o conteúdo fique acima do fundo */
+  padding-bottom: 0.1rem;
+  height: 100%;
+  
+}
+
+.sec15-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  left:-30rem;
+  width: 700vw; /* Largura total da viewport */
+  height: 100%; /* Altura que desejar para a div */
+  background: linear-gradient(90deg, rgba(48,48,48,0.8828781512605042) 0%, rgba(93,93,93,1) 35%, rgba(101,99,99,1) 46%, rgba(57,57,57,0.9108893557422969) 100%);
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+  pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
+  border-bottom: 2px solid #ffffff; 
+  border-top: 2px solid #ffffff; 
+  padding-bottom:20rem;
+}
+
+.sec15-container {
+  position: relative;
+  z-index: 1; /* Para garantir que o conteúdo fique acima do fundo */
+  padding-bottom: 20px; /* Ajuste de espaço conforme necessário */
+}

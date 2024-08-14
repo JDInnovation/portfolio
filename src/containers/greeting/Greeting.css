@@ -33,6 +33,7 @@
 }
 
 .greeting-text {
+  color: #1D1D1D;
   margin-top: 110px;
   font-size: 70px;
   font-family: "Google Sans Bold";
@@ -54,6 +55,7 @@
 }
 
 .greeting-text-static {
+  color: #1D1D1D;
   margin-right: 5px;
   margin-bottom: 20px;
 }

@@ -59,11 +59,13 @@ function SkillSection(props) {
           return (
             <div key={"skills-" + index} className="skills-main-div">
               <div className="skills-text-div">
+              <div className="sec13-background2"></div>
               
                 <div className="secq">
                 <FadeInSection delay={200} duration={750} direction="right">
                    
                   <h1 className="SD12">SOLUÇÕES DIGITAIS</h1>
+                  <p className="missao20">As nossas soluções digitais abrangem desde a criação de lojas online e websites profissionais até estratégias de marketing e branding profissional. Explore os nossos serviços de E-commerce, Desenvolvimento de Sites, Marketing Digital e Branding a seguir. Estamos prontos para elevar sua presença digital ao próximo nível com soluções personalizadas para a necessidade de casa projeto.</p>
                   </FadeInSection>
                   
                   <div className="accordion">
@@ -152,60 +154,62 @@ function SkillSection(props) {
                 
 
                 
-                <div className="secq3">
-                <FadeInSection delay={100} duration={500} direction="left">
-                  <h1 className="SD123">QUEM SOMOS</h1>
-                  </FadeInSection>
-                  
-                 
-                  <div className="artqd">
-                  
-                    <div className="tmd">
-                    <p className="qsdef">
-                      Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br /> 
-                      Desde 2019, João Teixeira e David Claro trabalham juntos para oferecer soluções perfeitas e adaptadas aos objetivos de cada negócio, com foco em aumentar a visibilidade e a faturação dos nossos clientes. <br /> 
-                      Em projetos maiores, reunimos freelancers especializados para agilizar o processo e garantir resultados de alta qualidade.
-                    </p>
-                    </div>
-                    
-                    
-                    <div className="caixa1">
-                      <div className="cartoesapr">
-                        <div className="our-team">
-                          <div className="picture">
-                            <img src={joaoe} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
-                          </div>
-                          <div className="team-content">
-                            <h3 className="name">João Teixeira</h3>
-                            <h4 className="title">Web Developer</h4>
-                          </div>
-                          <ul className="social">
-                            <p>emailz@rapaz</p>
-                          </ul>
-                        </div>
-                      </div>
-                      <div className="cartoesapr">
-                        <div className="our-team">
-                          <div className="picture">
-                            <img src={davide} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
-                          </div>
-                          <div className="team-content">
-                            <h3 className="name">David Claro</h3>
-                            <h4 className="title">Web Developer</h4>
-                          </div>
-                          <ul className="social">
-                            <p>emailz@rapaz</p>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
+                <div className="sec13-background"></div>
                 
+<div className="sec14-container">
+  <div className="secq3">
+  <div className="sec14-background"></div>
+    <FadeInSection delay={100} duration={500} direction="left">
+      <h1 className="SD123">QUEM SOMOS</h1>
+    </FadeInSection>
+    <div className="artqd">
+      <div className="tmd">
+        <p className="qsdef">
+          Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br /> 
+          Desde 2019, João Teixeira e David Claro trabalham juntos para oferecer soluções perfeitas e adaptadas aos objetivos de cada negócio, com foco em aumentar a visibilidade e a faturação dos nossos clientes. <br /> 
+          Em projetos maiores, reunimos freelancers especializados para agilizar o processo e garantir resultados de alta qualidade.
+        </p>
+      </div>
+      <div className="caixa1">
+        <div className="cartoesapr">
+          <div className="our-team">
+            <div className="picture">
+              <img src={joaoe} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
+            </div>
+            <div className="team-content">
+              <h3 className="name">João Teixeira</h3>
+              <h4 className="title">Web Developer</h4>
+            </div>
+            <ul className="social">
+              <p>emailz@rapaz</p>
+            </ul>
+          </div>
+        </div>
+        <div className="cartoesapr">
+          <div className="our-team">
+            <div className="picture">
+              <img src={davide} alt="Descrição da Imagem" className="img-fluid" title="Branding" />
+            </div>
+            <div className="team-content">
+              <h3 className="name">David Claro</h3>
+              <h4 className="title">Web Developer</h4>
+            </div>
+            <ul className="social">
+              <p>emailz@rapaz</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                
+
 
                 
                 <div ref={ref}>
+                
                 <FadeInSection delay={100} duration={500} direction="right">
                   <h1 className="SD12">A NOSSA MISSÃO</h1>
                   </FadeInSection>
@@ -253,7 +257,8 @@ function SkillSection(props) {
                   </div>
                   </FadeInSection>
                 </div>
-                
+                <div className="sec15-container">
+<div className="sec15-background"></div>
                 <FadeInSection>
                 <div className="secq4">
                   <h1 className="SD123">Obtenha Orçamento Gratis</h1>
@@ -263,6 +268,7 @@ function SkillSection(props) {
                   </div>
                 </div>
                 </FadeInSection>
+              </div>
               </div>
             </div>
           );
