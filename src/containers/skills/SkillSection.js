@@ -59,6 +59,7 @@ function SkillSection(props) {
           return (
             <div key={"skills-" + index} className="skills-main-div">
               <div className="skills-text-div">
+              <div className="sec13-background"></div>
               <div className="sec13-background2"></div>
               
                 <div className="secq">
@@ -154,7 +155,7 @@ function SkillSection(props) {
                 
 
                 
-                <div className="sec13-background"></div>
+                
                 
 <div className="sec14-container">
   <div className="secq3">
