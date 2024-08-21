@@ -258,6 +258,73 @@ function SkillSection(props) {
                   </div>
                   </FadeInSection>
                 </div>
+                <section class="pricing-section">
+  <div class="pricing-header">
+    <h2>Nossos Serviços e Preços</h2>
+    <p>Escolha a solução que melhor atende às necessidades do seu negócio.</p>
+  </div>
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3>Website Simples</h3>
+      <p class="price">€490</p>
+      <ul class="features">
+        <li>Design Responsivo</li>
+        <li>5 Páginas Incluídas</li>
+        <li>Redes Sociais Integradas</li>
+        <li>SEO Básico</li>
+        <li>Formulário Contato</li>
+        <li>Suporte 3 Meses</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <h3>Website Avançado</h3>
+      <p class="price">€990</p>
+      <ul class="features">
+        <li>Design Responsivo Personalizado</li>
+        <li>10 Páginas Incluídas</li>
+        <li>SEO Avançado</li>
+        <li>Blog Integrado</li>
+        <li>Google Analytics</li>
+        <li>Suporte 6 Meses</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <h3>E-commerce Simples</h3>
+      <p class="price">€1.490</p>
+      <ul class="features">
+        
+        <li>50 Produtos Máximos</li>
+        <li>Design Responsivo</li>
+        <li>Pagamentos Integrados</li>
+        <li>SEO Básico</li>
+        <li>Suporte 6 Meses</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <h3>E-commerce Avançado</h3>
+      <p class="price">€2.490</p>
+      <ul class="features">
+        <li>Produtos Ilimitados</li>
+        <li>Design Personalizado Responsivo</li>
+        <li>Marketing Ferramentas</li>
+        <li>Gestão Avançada Stocks</li>
+        <li>Suporte 1 Ano</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <h3>Website Personalizado</h3>
+      <p class="price">€4.900</p>
+      <ul class="features">
+        <li>Solução Sob Medida</li>
+        <li>Design Exclusivo</li>
+        <li>Funcionalidades Customizadas</li>
+        <li>SEO Completo</li>
+        <li>Análise Mensal Performance</li>
+        <li>Suporte Dedicado 1 Ano</li>
+      </ul>
+    </div>
+  </div>
+</section>
                 <div className="sec15-container">
 <div className="sec15-background"></div>
                 <FadeInSection>
@@ -270,7 +337,11 @@ function SkillSection(props) {
                 </div>
                 </FadeInSection>
               </div>
+              
+
+
               </div>
+
             </div>
           );
         } else {
