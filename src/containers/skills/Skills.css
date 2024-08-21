@@ -367,7 +367,7 @@ input[type="radio"] + label > .sites1 > .icon {
   font-size: 4rem;
   position: relative;
   margin-bottom: 3rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
   
 }
 
@@ -680,7 +680,7 @@ input[type="radio"] + label > .sites1 > .icon {
   left: 0;
   width: 100vw; /* Largura total da viewport */
   height:95%; /* Altura que desejar para a div */
-  background: linear-gradient(90deg, rgba(48,48,48,0.8828781512605042) 0%, rgba(93,93,93,1) 35%, rgba(101,99,99,1) 46%, rgba(57,57,57,0.9108893557422969) 100%);
+  background: rgb(201, 201, 201);
   z-index: -1; /* Coloca o fundo atrás do conteúdo */
   pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
   border-bottom: 2px solid #ffffff; 
@@ -697,15 +697,19 @@ input[type="radio"] + label > .sites1 > .icon {
 .sec14-background {
   position: absolute;
   top: 0;
-  width: 300vh; /* Largura total da viewport */
-  height: 100%;/* Altura que desejar para a div */
-  background: linear-gradient(90deg, rgba(48,48,48,0.8828781512605042) 0%, rgba(93,93,93,1) 23%, rgba(101,99,99,1) 43%, rgba(57,57,57,0.9108893557422969) 100%);
+  left: 50%;
+  width: 100vw; /* Largura total da viewport */
+  height: 100%; /* Altura que desejar para a div */
+  
+  background: rgb(201, 201, 201);
   z-index: -1; /* Coloca o fundo atrás do conteúdo */
   pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
+  
   border-bottom: 2px solid #ffffff; 
-  border-top: 2px solid #ffffff; 
-  transform: translateX(-22rem);
+  border-top: 2px solid #ffffff;
+  transform: translateX(-50%); /* Move a div para a esquerda da viewport */
 }
+
 
 .sec14-container {
   position: relative;
@@ -718,17 +722,18 @@ input[type="radio"] + label > .sites1 > .icon {
 .sec15-background {
   position: absolute;
   top: 0;
-  left: 0;
-  left:-30rem;
-  width: 700vw; /* Largura total da viewport */
-  height: 100%; /* Altura que desejar para a div */
-  background: linear-gradient(90deg, rgba(48,48,48,0.8828781512605042) 0%, rgba(93,93,93,1) 35%, rgba(101,99,99,1) 46%, rgba(57,57,57,0.9108893557422969) 100%);
+  left: 50%; /* Centraliza horizontalmente */
+  width: 100vw; /* Ajuste conforme necessário */
+  height: 100%; /* Altura desejada para a div */
+  background: rgb(201, 201, 201);
   z-index: -1; /* Coloca o fundo atrás do conteúdo */
   pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
   border-bottom: 2px solid #ffffff; 
   border-top: 2px solid #ffffff; 
-  padding-bottom:20rem;
+  padding-bottom: 20rem;
+  transform: translateX(-50%); /* Move a div 50% para a esquerda */
 }
+
 
 .sec15-container {
   position: relative;
@@ -745,10 +750,6 @@ input[type="radio"] + label > .sites1 > .icon {
 
 
 }
-
-
-
-
 
 
 .pricing-section {
