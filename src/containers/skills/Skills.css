@@ -39,6 +39,7 @@ width:50%
 
   height: 100%;
   color: white;
+  text-align: left;
 }
 
 /* Styles for .icon8 */
@@ -386,7 +387,7 @@ input[type="radio"] + label > .sites1 > .icon {
 
 .SD123 {
   text-align: left;
-  color: #ffffff;
+  color: #1d1d1d;
   text-shadow: 0 0 5px #caed312b;
   font-size: 4rem;
   position: relative;
