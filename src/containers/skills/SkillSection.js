@@ -508,7 +508,7 @@ function SkillSection(props) {
                 
                   <FadeInSection>
                     <div className="secq4">
-                      <h1 className="SD123">Obtenha Orçamento Gratis</h1>
+                      <h1 className="SD12">Obtenha Orçamento Gratis</h1>
                       <div className="sec7cont">
                         <h4 className="missao20">
                           Quer serviços de alta qualidade a preços acessíveis?

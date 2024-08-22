@@ -30,7 +30,7 @@ width:50%
 
 /* Styles for .qsdef */
 .qsdef {
-  color: #6e6d6d;
+
   display: flex;
   flex-direction: column;
   min-width: 300px;
@@ -38,7 +38,7 @@ width:50%
   border-radius: 1rem;
 
   height: 100%;
-  color: white;
+  color: rgb(33, 32, 32);
   text-align: left;
 }
 
@@ -681,7 +681,7 @@ input[type="radio"] + label > .sites1 > .icon {
   left: 0;
   width: 100vw; /* Largura total da viewport */
   height:95%; /* Altura que desejar para a div */
-  background: rgb(201, 201, 201);
+  background: #bdbcbc;
   z-index: -1; /* Coloca o fundo atrás do conteúdo */
   pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
   border-bottom: 2px solid #ffffff; 
