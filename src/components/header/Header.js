@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { greeting, settings } from "../../portfolio.js";
+import { settings } from "../../portfolio.js";
 import "./Header.css";
 import logo from "../../assets/images/logojd.png";
 
@@ -31,92 +31,92 @@ function Header(props) {
         className={`${props.theme.name === "light" ? "header-container-light" : "header-container-dark"
           }`}
       >
-        <header className="header">
-          <NavLink to={link} tag={Link} className="logo">
-            <img src={logo} alt="Logo" className="logo-image" />
-          </NavLink>
-          <input className="menu-btn" type="checkbox" id="menu-btn" />
-          <label className="menu-icon" htmlFor="menu-btn">
-            <span className="navicon"></span>
-          </label>
-          <ul className="menu">
-            <li className="homei-li">
-              <NavLink
-                className={({ isActive }) => (isActive ? "current-link" : "homei")}
-                to="/home"
-                tag={Link}
-                style={{ color: theme.text }}
-              >
-                Quem Somos
-              </NavLink>
-            </li>
+        {!isMobile ? (
+          <div className="desktop-menu">
+            <NavLink
+              to="/home"
+              className={({ isActive }) => (isActive ? "desktop-menu-item active" : "desktop-menu-item")}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/experience"
+              className={({ isActive }) => (isActive ? "desktop-menu-item active" : "desktop-menu-item")}
+            >
+              Portfolio
+            </NavLink>
 
-            <li>
-              <NavLink
-                className={({ isActive }) => (isActive ? "current-link" : "xp")}
-                to="/experience"
-                tag={Link}
-                style={{ color: theme.text }}
-              >
-                Portfolio
+            <div className="desktop-menu-logo">
+              <NavLink to="/home">
+                <img src={logo} alt="Logo" className="desktop-logo-image" />
               </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className={({ isActive }) => (isActive ? "current-link" : "cr")}
-                to="/contact"
-                tag={Link}
-                style={{ color: theme.text }}
-              >
-                Contacto
-              </NavLink>
-            </li>
-          </ul>
-        </header>
-      </div>
+            </div>
 
-      {isMobile && (
-        <div className="mobile-menu">
-          <NavLink
-            to="/home"
-            className={({ isActive }) => (isActive ? "mobile-menu-item active" : "mobile-menu-item")}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/experience"
-            className={({ isActive }) => (isActive ? "mobile-menu-item active" : "mobile-menu-item")}
-          >
-            Portfolio
-          </NavLink>
-
-          <div className="mobile-menu-logo">
-          <NavLink
-            to="/home"> <img src={logo} alt="Logo" className="mobile-logo-image" /></NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                location.pathname === "/contact" && location.search !== "?type=orcamento"
+                  ? "desktop-menu-item active"
+                  : "desktop-menu-item"
+              }
+            >
+              Contacto
+            </NavLink>
+            <NavLink
+              to="/contact?type=orcamento"
+              className={({ isActive }) =>
+                location.search === "?type=orcamento"
+                  ? "desktop-menu-item active"
+                  : "desktop-menu-item"
+              }
+            >
+              Preços
+            </NavLink>
           </div>
+        ) : (
+          <div className="mobile-menu">
+            <NavLink
+              to="/home"
+              className={({ isActive }) => (isActive ? "mobile-menu-item active" : "mobile-menu-item")}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/experience"
+              className={({ isActive }) => (isActive ? "mobile-menu-item active" : "mobile-menu-item")}
+            >
+              Portfolio
+            </NavLink>
 
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              location.pathname === "/contact" && location.search !== "?type=orcamento"
-                ? "mobile-menu-item active"
-                : "mobile-menu-item"
-            }
-          >
-            Contacto
-          </NavLink>
-          <NavLink
-            to="/contact?type=orcamento"
-            className={({ isActive }) =>
-              location.search === "?type=orcamento"
-                ? "mobile-menu-item active"
-                : "mobile-menu-item"
-            }
-          >
-            preços
-          </NavLink>
-        </div>
-      )}
+            <div className="mobile-menu-logo">
+              <NavLink to="/home">
+                <img src={logo} alt="Logo" className="mobile-logo-image" />
+              </NavLink>
+            </div>
+
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                location.pathname === "/contact" && location.search !== "?type=orcamento"
+                  ? "mobile-menu-item active"
+                  : "mobile-menu-item"
+              }
+            >
+              Contacto
+            </NavLink>
+            <NavLink
+              to="/contact?type=orcamento"
+              className={({ isActive }) =>
+                location.search === "?type=orcamento"
+                  ? "mobile-menu-item active"
+                  : "mobile-menu-item"
+              }
+            >
+              Preços
+            </NavLink>
+          </div>
+        )}
+      </div>
     </>
   );
 }
