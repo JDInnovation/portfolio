@@ -375,7 +375,9 @@ input[type="radio"] + label > .sites1 > .icon {
 @media (max-width: 768px) {
 
   .SD12 {
+
     text-align: center;
+    margin-top: 2rem;
 
   }
 

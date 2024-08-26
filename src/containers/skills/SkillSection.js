@@ -29,7 +29,6 @@ import clientsi from "../../assets/images/users-avatar.png";
 import projecti from "../../assets/images/project.png";
 import yeari from "../../assets/images/calendar (1).png";
 import patni from "../../assets/images/heart-partner-handshake.png";
-import worker from "../../assets/images/office-worker.png";
 import davide from "../../assets/images/d12.png";
 import joaoe from "../../assets/images/j12.png";
 
@@ -191,6 +190,8 @@ function SkillSection(props) {
                         </h2>
                       </div>
                     </article>
+
+
 
                     <article>
                       <input id="article3" type="radio" name="articles" />
