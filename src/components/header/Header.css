@@ -1,4 +1,8 @@
-/* header */
+@import url("https://unpkg.com/papercss@1.9.2/dist/paper.css") layer(csspaper);
+
+.desktop-menu-item:has(span:hover) span:not(:hover) {
+  filter: blur(4px)
+}
 .header-container-light {
   position: sticky;
   inset: 0;
@@ -40,149 +44,62 @@
   text-align: center;
   font-size: 13px;
   text-transform: uppercase;
-  margin: 0 30px;
+  margin: 0 15px;
   z-index: 1;
   overflow: hidden;
+  font-weight: bold;
 }
 
 .desktop-menu-item.active {
   background-color: #b6d109;
   border-radius: 20px;
   padding: 5px 10px;
+  color: black;
+  font-weight: bold;
 }
-
-.blob-container {
+/* .desktop-menu-item:hover{
+  font-size: 15px;
+  transition: ease-in-out .2s;
+}
+ */
+/*  .desktop-menu-item::after {
+  content: "";
   position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 130%;
-  height: 130%;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  left: 0;
+  bottom: 15px;
+  height: 2px;
+  background-color: #b6d109;
+  width: 0;
+  transition: width 0.3s ease;
 }
-
-.blob-svg {
-  --time: 10s;
-  --amount: 3;
+.desktop-menu-item:hover::after {
   width: 100%;
-  height: 100%;
-
-  transform-origin: center;
-  transition: transform 4s ease-in-out;
-  animation: blob-skew calc(var(--time, 30s) * 0.5) linear 0s infinite, blob-turn var(--time, 30s) linear infinite;
-
+  animation: heartbeat116 1.5s infinite;
+} */
+.desktop-menu-item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #b6d109;
+  bottom: 20px;
+  left: 0;
+  transition: width 0.4s;
+  border-radius: 10px;
+}
+.desktop-menu-item:hover::before {
+  width: 100%;
 }
 
-@keyframes blob-turn {
-  0% {
-    transform: rotate(0deg);
+@keyframes heartbeat116 {
+  0%, 100% {
+    width: 100%;
   }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes blob-skew {
-  0% {
-    transform: skewY(0deg);
-  }
-
-  13% {
-    transform: skewY(calc((1.8deg) * var(--amount, 2)));
-  }
-
-  18% {
-    transform: skewY(calc((2.2deg) * var(--amount, 2)));
-  }
-
-  24% {
-    transform: skewY(calc((2.48deg) * var(--amount, 2)));
-  }
-
-  25% {
-    transform: skewY(calc((2.5deg) * var(--amount, 2)));
-  }
-
-  26% {
-    transform: skewY(calc((2.48deg) * var(--amount, 2)));
-  }
-
-  32% {
-    transform: skewY(calc((2.2deg) * var(--amount, 2)));
-  }
-
-  37% {
-    transform: skewY(calc((1.8deg) * var(--amount, 2)));
-  }
-
   50% {
-    transform: skewY(0deg);
-  }
-
-  63% {
-    transform: skewY(calc((-1.8deg) * var(--amount, 2)));
-  }
-
-  68% {
-    transform: skewY(calc((-2.2deg) * var(--amount, 2)));
-  }
-
-  74% {
-    transform: skewY(calc((-2.48deg) * var(--amount, 2)));
-  }
-
-  75% {
-    transform: skewY(calc((-2.5deg) * var(--amount, 2)));
-  }
-
-  76% {
-    transform: skewY(calc((-2.48deg) * var(--amount, 2)));
-  }
-
-  82% {
-    transform: skewY(calc((-2.2deg) * var(--amount, 2)));
-  }
-
-  87% {
-    transform: skewY(calc((-1.8deg) * var(--amount, 2)));
-  }
-
-  100% {
-    transform: skewY(0deg);
+    width: 60%;
   }
 }
 
-@keyframes blob-scale {
-  0% {
-    transform: scaleX(.9) scaleY(1);
-  }
-
-  25% {
-    transform: scaleX(.9) scaleY(.9);
-  }
-
-  50% {
-    transform: scaleX(1) scaleY(.9);
-  }
-
-  75% {
-    transform: scaleX(.9) scaleY(.9);
-  }
-
-  100% {
-    transform: scaleX(.9) scaleY(1);
-  }
-}
-
-.desktop-menu-item:hover .blob-container {
-  opacity: 1;
-}
-
-.desktop-menu-item:hover .blob-svg {
-  transform: scale(1.1);
-}
 
 .desktop-menu-logo {
   position: relative;

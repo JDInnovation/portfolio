@@ -369,9 +369,27 @@ input[type="radio"] + label > .sites1 > .icon {
   position: relative;
   margin-bottom: 3rem;
   margin-top: 10rem;
+  z-index: 2;
   
 }
-
+/* .SD12::before,
+.SD123::after {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 6px;
+  background-color: #b6d109;
+  top: 2.5rem; 
+  right: -10px; 
+  transition: width 0.4s;
+  border-radius: 10px;
+  z-index: 1;
+  animation: none; 
+} */
+.line-animate::before,
+.line-animate::after {
+  animation: lineExpand 0.4s ease-out forwards;
+}
 @media (max-width: 768px) {
 
   .SD12 {
@@ -396,6 +414,7 @@ input[type="radio"] + label > .sites1 > .icon {
   animation: slideIn 1s forwards;
   padding-top: 5rem;
   margin-bottom: 3rem;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -704,7 +723,7 @@ input[type="radio"] + label > .sites1 > .icon {
   width: 100vw; /* Largura total da viewport */
   height: 100%; /* Altura que desejar para a div */
   
-  background: rgb(201, 201, 201);
+  background: rgb(250, 250, 250);
   z-index: -1; /* Coloca o fundo atrás do conteúdo */
   pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
   
@@ -831,5 +850,13 @@ input[type="radio"] + label > .sites1 > .icon {
   .pricing-card {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+}
+@keyframes lineExpand {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% + 20px);
   }
 }
