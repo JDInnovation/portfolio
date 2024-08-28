@@ -34,6 +34,7 @@ const darkTheme = {
   themeColor: "#1d1d1d",
   oppositeThemeColor: "#FFFFFF",
   accentColor: "#CCED00",
+  greetingColor: "#36383a",
   accentBright: "#CCED00",
   projectCard: "#292A2D",
   skinColor: "#F7B799",
