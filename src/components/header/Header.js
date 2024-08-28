@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { settings } from "../../portfolio.js";
 import "./Header.css";
 import logoGif from "../../assets/images/logo_gif.gif"; // GIF animado
-import logoStatic from "../../assets/images/logojd.png"; // Versão estática do logo
+import logoStatic from "../../assets/images/feature.png"; // Versão estática do logo
 
 function Header(props) {
   const theme = props.theme;
@@ -28,7 +28,7 @@ function Header(props) {
     // Reproduzir o GIF ao carregar a página
     setTimeout(() => {
       setLogo(logoStatic); // Troca para o logo estático após 2 segundos
-    }, 2000);
+    }, 3000);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
