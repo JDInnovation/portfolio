@@ -65,7 +65,7 @@
   transition: transform 0.3s;
 }
 
-.footer-zaask .zaask-logo:hover {
+ .zaask-logo:hover {
   transform: scale(1.1);
 }
 
