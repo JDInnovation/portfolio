@@ -702,7 +702,7 @@ input[type="radio"] + label > .sites1 > .icon {
   left: 0;
   width: 100vw; /* Largura total da viewport */
   height:100%; /* Altura que desejar para a div */
-  background: #ca153c;
+  background: #fff5d7;
   z-index: -1; /* Coloca o fundo atrás do conteúdo */
   pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
   border-bottom: 2px solid #ffffff; 
