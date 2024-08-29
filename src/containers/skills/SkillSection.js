@@ -144,7 +144,7 @@ function SkillSection(props) {
                               className="icon"
                               title="Sites"
                             />
-                            • SITES
+                            • WEBSITES
                             <p className="setinha">▼</p>
                           </h2>
                         </label>
