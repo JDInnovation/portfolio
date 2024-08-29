@@ -13,10 +13,13 @@
   max-width: 100%;
   padding: 50px 150px;
   height: 100vh;
-  display: block;
+  display: flex;
   background: #EFEFBB; 
   background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB); 
   background: linear-gradient(to right, #D4D3DD, #EFEFBB); 
+  justify-content: center;
+  align-items: center;
+
 }
 
 .greeting-main {
@@ -208,8 +211,8 @@
 
   .main {
     width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: 0px auto;
 
   }

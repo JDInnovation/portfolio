@@ -129,6 +129,10 @@ width:50%
   }
   .skills-main-div {
     flex-direction: column;
+    padding: 0 20%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .skills-text-div {
     margin-left: 0px;
