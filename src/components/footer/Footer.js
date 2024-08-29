@@ -18,7 +18,9 @@ export default function Footer(props) {
   }, [pathname]);
 
   return (
+    
     <div className="footer-div">
+      <div className="footer-line"></div>
       <Fade>
         <motion.div 
           className="footer-content"

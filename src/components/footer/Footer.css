@@ -1,10 +1,29 @@
 .footer-div {
   margin-top: 1rem;  /* Reduzido para melhor ajuste em mobile */
-  background-color: #292a2d;
+  background-color: rgb(29, 29, 29);
   color: #ffffff;
   padding: 1rem;  /* Reduzido para melhor ajuste em mobile */
+  position: relative;
 }
-
+.footer-line{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 2px;
+  background-color: #CCED00;
+  animation: correr 2.5s ease-in-out  infinite ;
+}
+@keyframes correr{
+  
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100vw);
+  }
+  
+}
 .footer-content {
   display: flex;
   flex-direction: column;

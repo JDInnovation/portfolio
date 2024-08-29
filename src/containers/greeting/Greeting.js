@@ -5,6 +5,7 @@ import { style } from "glamor";
 import Typewriter from "typewriter-effect";
 import FeelingProud from "./FeelingProud";
 import "./Greeting.css";
+import { FaPhoneFlip } from "react-icons/fa6";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -26,7 +27,7 @@ export default function Greeting(props) {
             <div className="greeting-text-container">
               <h1 className="greeting-text">
                 {greeting.title}
-             {greeting.title2}
+                {greeting.title2}
               </h1>
               <div
                 className="greeting-text-div subTitle"
@@ -56,13 +57,14 @@ export default function Greeting(props) {
               </div>
               <div className="portfolio-repo-btn-div">
                 <a
-                  {...styles}
+
                   className="button2"
-                  target="_blank"
                   rel="noopener noreferrer"
-                  href={greeting.resumeLink}
+                  href="#/contact"
                 >
                   Fale com um especialista
+          
+
                 </a>
               </div>
             </div>
@@ -73,5 +75,7 @@ export default function Greeting(props) {
         </div>
       </div>
     </Fade>
+    
   );
+
 }

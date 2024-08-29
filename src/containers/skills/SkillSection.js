@@ -326,7 +326,7 @@ function SkillSection(props) {
                                 <h4 className="title">Web Developer</h4>
                               </div>
                               <ul className="social">
-                                <p>emailz@rapaz</p>
+                                <p>joaoteixeira@click-spot.com</p>
                               </ul>
                             </div>
                           </div>
@@ -345,7 +345,7 @@ function SkillSection(props) {
                                 <h4 className="title">Web Developer</h4>
                               </div>
                               <ul className="social">
-                                <p>emailz@rapaz</p>
+                                <p>davidclaro@click-spot.com</p>
                               </ul>
                             </div>
                           </div>
@@ -380,7 +380,7 @@ function SkillSection(props) {
                                   src={yeari}
                                   alt="Descrição da Imagem"
                                   className="icon7"
-                                  title="Sites"
+                                  title="WEBSITES"
                                 />
                                 <h3 className="numberdef">
                                   Anos
