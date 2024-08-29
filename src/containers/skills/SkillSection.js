@@ -34,10 +34,10 @@ import joaoe from "../../assets/images/j12.png";
 
 function AnimatedNumber({ number }) {
   const { number: animatedNumber } = useSpring({
-    from: { number: 1 },
+    from: { number: 0 }, // Começa a partir de 0
     number,
-    delay: 400,
-    config: { duration: 6000 },
+    delay: 4000, // Pode ajustar conforme necessário
+    config: { duration: 4000 }, // Reduzido para 2 segundos para um efeito mais rápido
   });
 
   return <animated.div>{animatedNumber.to((n) => n.toFixed(0))}</animated.div>;
@@ -45,17 +45,16 @@ function AnimatedNumber({ number }) {
 
 function SkillSection(props) {
   const theme = props.theme;
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.8 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 }); // Ajustado para 0.3
 
   useEffect(() => {
     if (inView) {
-      const elements = document.querySelectorAll('.SD12, .SD123');
+      const elements = document.querySelectorAll('.row');
       elements.forEach(el => {
         el.classList.add('line-animate'); // Adiciona a classe para ativar a animação
       });
     }
   }, [inView]);
-
 
   return (
     <div ref={ref}>

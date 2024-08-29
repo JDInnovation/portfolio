@@ -4,6 +4,7 @@
   color: #ffffff;
   padding: 1rem;  /* Reduzido para melhor ajuste em mobile */
   position: relative;
+  width: 100vw;
 }
 .footer-line{
   position: absolute;
@@ -20,7 +21,7 @@
     transform: translateX(-100%);
   }
   100%{
-    transform: translateX(100vw);
+    transform: translateX(calc(100vw + 45%));
   }
   
 }

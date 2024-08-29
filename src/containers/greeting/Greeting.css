@@ -11,7 +11,7 @@
 
 .greet-main {
   max-width: 100%;
-  padding: 50px 150px;
+  padding: 0px 150px;
   height: 100vh;
   display: flex;
   background: #EFEFBB; 
@@ -75,6 +75,7 @@
   justify-content: center;
   align-items: center;
   width: 600px;
+  justify-content: right;
 }
 
 .greeting-hand-wave {
