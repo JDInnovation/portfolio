@@ -1,5 +1,5 @@
 import React from "react";
-import portfolioPhoto from "../../assets/images/banner1.svg";
+import portfolioPhoto from "../../assets/images/clickspotbb.png";
 import "./FeelingProud.css";
 
 function FeelingProud(props) {
