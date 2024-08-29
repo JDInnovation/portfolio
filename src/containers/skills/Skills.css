@@ -367,9 +367,10 @@ input[type="radio"] + label > .sites1 > .icon {
   text-shadow: 0 0 5px #caed311e;
   font-size: 4rem;
   position: relative;
-  margin-bottom: 3rem;
+/*   margin-bottom: 3rem; */
   margin-top: 10rem;
   z-index: 2;
+
   
 }
 /* .SD12::before,
@@ -696,21 +697,21 @@ input[type="radio"] + label > .sites1 > .icon {
 
 
 
-.sec13-background {
+/* .sec13-background {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw; /* Largura total da viewport */
-  height:100%; /* Altura que desejar para a div */
-  background: #EFEFBB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-  z-index: -1; /* Coloca o fundo atrás do conteúdo */
-  pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
+  width: 100vw; 
+  height:100%; 
+  background: #EFEFBB; 
+  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB); 
+  background: linear-gradient(to right, #D4D3DD, #EFEFBB); 
+  z-index: -1; 
+  pointer-events: none; 
   border-bottom: 2px solid #ffffff; 
   border-top: 2px solid #ffffff;  
   margin-bottom: 70px;
-}
+} */
 
 .sec13-container {
   position: relative;

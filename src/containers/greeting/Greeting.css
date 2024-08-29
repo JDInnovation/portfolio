@@ -3,18 +3,20 @@
   padding-left: 15%;
   padding-right: 15%;
   margin: 0px auto;
+  
 
 }
 
 
 
 .greet-main {
-  max-width: 70%;
-  padding: 10px 10px;
-  margin: 0px auto;
-  margin-top: 6vh;
+  max-width: 100%;
+  padding: 50px 150px;
+  height: 100vh;
   display: block;
-
+  background: #EFEFBB; 
+  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB); 
+  background: linear-gradient(to right, #D4D3DD, #EFEFBB); 
 }
 
 .greeting-main {
