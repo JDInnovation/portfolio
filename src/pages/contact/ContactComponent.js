@@ -145,7 +145,7 @@ export default function Contact(props) {
                       required
                     />
                   </div>
-                  <div className="form-group">
+                  {/* <div className="form-group">
                     <label>Horário de Contacto:</label>
                     <select
                       name="contactTime"
@@ -161,8 +161,8 @@ export default function Contact(props) {
                       <option value="16-18">16-18</option>
                       <option value="18-20">18-20</option>
                     </select>
-                  </div>
-                  <div className="form-group">
+                  </div> */}
+                  {/* <div className="form-group">
                     <label>Serviço:</label>
                     <select
                       name="service"
@@ -177,7 +177,7 @@ export default function Contact(props) {
                       <option value="ecommerce">Desenvolvimento de E-commerce</option>
                       <option value="seo">Otimização SEO</option>
                     </select>
-                  </div>
+                  </div> */}
                   <div className="form-group">
                     <label>Mensagem:</label>
                     <textarea

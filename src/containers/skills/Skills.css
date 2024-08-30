@@ -12,7 +12,7 @@
 
 .cartoesapr {
 
-width:50%
+  width: 250px;
 
 
 }
@@ -24,8 +24,8 @@ width:50%
   width: 50%;
   justify-content: space-between;
   align-items: center;
-  
-  gap:2rem;
+
+  gap: 2rem;
 }
 
 /* Styles for .qsdef */
@@ -59,7 +59,7 @@ width:50%
   flex-direction: column;
   width: 100%;
   border-radius: 1rem;
-  
+
   min-height: 100%;
   color: white;
 }
@@ -73,7 +73,7 @@ width:50%
     gap: 1rem;
   }
 
- 
+
 
 
   .caixa1 {
@@ -94,7 +94,7 @@ width:50%
     width: 100%;
     max-width: 250px;
   }
- 
+
 
 }
 
@@ -109,9 +109,11 @@ width:50%
   .skills-heading {
     font-size: 40px;
   }
+
   .skills-header {
     font-size: 50px;
   }
+
   .artqd {
     display: flex;
     flex-direction: column;
@@ -124,9 +126,11 @@ width:50%
     font-size: 30px;
     text-align: center;
   }
+
   .skills-header {
     font-size: 30px;
   }
+
   .skills-main-div {
     flex-direction: column;
     padding: 0 20%;
@@ -134,21 +138,25 @@ width:50%
     justify-content: center;
     align-items: center;
   }
+
   .skills-text-div {
     margin-left: 0px;
     margin: 20px;
   }
+
   .skills-text {
     font-size: 16px;
   }
+
   .skills-image-div {
     order: 2;
   }
-  .skills-image-div > * {
+
+  .skills-image-div>* {
     margin-top: 0px;
   }
 
- 
+
 }
 
 /* General styles */
@@ -156,7 +164,7 @@ width:50%
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
-  
+
 }
 
 .skills-header {
@@ -175,12 +183,12 @@ width:50%
   font-family: "Google Sans Regular";
 }
 
-.skills-main-div > * {
+.skills-main-div>* {
   flex: 1;
   margin-top: 6rem;
 }
 
-.skills-image-div > * {
+.skills-image-div>* {
   margin-left: 25vh;
   margin-top: 10vh;
   width: 70%;
@@ -229,7 +237,7 @@ width:50%
   transition: all 0.35s;
 }
 
-.tab input:checked + .tab__label::after {
+.tab input:checked+.tab__label::after {
   transform: rotate(270deg);
 }
 
@@ -239,7 +247,7 @@ width:50%
   transition: all 0.35s;
 }
 
-.tab input:checked ~ .tab__content {
+.tab input:checked~.tab__content {
   max-height: 90rem;
 }
 
@@ -263,6 +271,7 @@ width:50%
   25% {
     transform: rotate(90deg) translate(0.25rem);
   }
+
   75% {
     transform: rotate(90deg) translate(-0.25rem);
   }
@@ -273,6 +282,7 @@ width:50%
     opacity: 0;
     transform: translateX(100%);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -284,6 +294,7 @@ width:50%
     opacity: 0;
     transform: translateX(100%);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -315,34 +326,34 @@ input[type="radio"] {
   left: -100vh;
 }
 
-input[type="radio"] ~ div {
+input[type="radio"]~div {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.9s;
 }
 
-input[type="radio"]:checked ~ div {
+input[type="radio"]:checked~div {
   max-height: 70vh;
   background-color: #333;
   border-radius: 1rem;
   padding: 1rem;
 }
 
-input[type="radio"]:checked + label > .sites1 {
+input[type="radio"]:checked+label>.sites1 {
   color: #CCED31;
   font-size: 1.4rem;
 }
 
-input[type="radio"]:checked + label > .sites1 > .icon {
+input[type="radio"]:checked+label>.sites1>.icon {
   transform: scale(1.2);
   transition: transform 0.4s;
 }
 
-input[type="radio"] + label > .sites1 {
+input[type="radio"]+label>.sites1 {
   transition: color 0.4s, font-size 0.4s;
 }
 
-input[type="radio"] + label > .sites1 > .icon {
+input[type="radio"]+label>.sites1>.icon {
   transition: transform 0.4s;
 }
 
@@ -371,12 +382,13 @@ input[type="radio"] + label > .sites1 > .icon {
   text-shadow: 0 0 5px #caed311e;
   font-size: 4rem;
   position: relative;
-/*   margin-bottom: 3rem; */
+  /*   margin-bottom: 3rem; */
   margin-top: 10rem;
   z-index: 2;
 
-  
+
 }
+
 /* .SD12::before,
 .SD123::after {
   content: "";
@@ -408,7 +420,11 @@ input[type="radio"] + label > .sites1 > .icon {
 
 }
 
+.name {
+  margin-bottom: 80px;
+  font-size: 24px;
 
+}
 
 .SD123 {
   text-align: left;
@@ -550,7 +566,7 @@ input[type="radio"] + label > .sites1 > .icon {
 }
 
 .simbolo {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
@@ -565,7 +581,7 @@ input[type="radio"] + label > .sites1 > .icon {
   width: 100%;
   font-size: 3rem;
   font-style: bold;
-  
+
 }
 
 .setinha {
@@ -584,7 +600,7 @@ input[type="radio"] + label > .sites1 > .icon {
 
   .missao20 {
     text-align: center;
-   
+
   }
 
 }
@@ -605,7 +621,6 @@ input[type="radio"] + label > .sites1 > .icon {
   text-align: center;
   overflow: hidden;
   position: relative;
-
   height: auto;
   font-size: 1rem;
 }
@@ -720,7 +735,8 @@ input[type="radio"] + label > .sites1 > .icon {
 
 .sec13-container {
   position: relative;
-  z-index: 1; /* Para garantir que o conteúdo fique acima do fundo */
+  z-index: 1;
+  /* Para garantir que o conteúdo fique acima do fundo */
 
 }
 
@@ -728,53 +744,72 @@ input[type="radio"] + label > .sites1 > .icon {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 100vw; /* Largura total da viewport */
-  height: 100%; /* Altura que desejar para a div */
-  
-  background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #FFFFFF, #cfcbc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  /* Largura total da viewport */
+  height: 100%;
+  /* Altura que desejar para a div */
 
-  z-index: -1; /* Coloca o fundo atrás do conteúdo */
-  pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
-  
-  border-bottom: 2px solid #ffffff; 
+  background: #ECE9E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  z-index: -1;
+  /* Coloca o fundo atrás do conteúdo */
+  pointer-events: none;
+  /* Garante que o fundo não interfira na interação do usuário */
+
+  border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
-  transform: translateX(-50%); /* Move a div para a esquerda da viewport */
+  transform: translateX(-50%);
+  /* Move a div para a esquerda da viewport */
 }
 
 
 .sec14-container {
   position: relative;
-  z-index: 1; /* Para garantir que o conteúdo fique acima do fundo */
+  z-index: 1;
+  /* Para garantir que o conteúdo fique acima do fundo */
   padding-bottom: 0.1rem;
   height: 100%;
-  
+
 }
 
 .sec15-background {
   position: absolute;
   top: 0;
-  left: 50%; /* Centraliza horizontalmente */
-  width: 100vw; /* Ajuste conforme necessário */
-  height: 100%; /* Altura desejada para a div */
-  background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #FFFFFF, #cfcbc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  left: 50%;
+  /* Centraliza horizontalmente */
+  width: 100vw;
+  /* Ajuste conforme necessário */
+  height: 100%;
+  /* Altura desejada para a div */
+  background: #ECE9E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  z-index: -1; /* Coloca o fundo atrás do conteúdo */
-  pointer-events: none; /* Garante que o fundo não interfira na interação do usuário */
-  border-bottom: 2px solid #ffffff; 
-  border-top: 2px solid #ffffff; 
+  z-index: -1;
+  /* Coloca o fundo atrás do conteúdo */
+  pointer-events: none;
+  /* Garante que o fundo não interfira na interação do usuário */
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   padding-bottom: 20rem;
-  transform: translateX(-50%); /* Move a div 50% para a esquerda */
+  transform: translateX(-50%);
+  /* Move a div 50% para a esquerda */
 }
 
 
 .sec15-container {
   position: relative;
-  z-index: 1; /* Para garantir que o conteúdo fique acima do fundo */
- 
+  z-index: 1;
+  /* Para garantir que o conteúdo fique acima do fundo */
+
 }
 
 .sec7cont {
@@ -844,7 +879,7 @@ background: linear-gradient(to left, #FFFFFF, #cfcbc7); /* W3C, IE 10+/ Edge, Fi
   list-style: none;
   padding: 0;
   margin: 0;
-  
+
 }
 
 .pricing-card .features li {
@@ -858,6 +893,12 @@ background: linear-gradient(to left, #FFFFFF, #cfcbc7); /* W3C, IE 10+/ Edge, Fi
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
+  .cartoesapr {
+
+    width: 180px;
+  
+  
+  }
 }
 
 @media (max-width: 600px) {
@@ -866,10 +907,12 @@ background: linear-gradient(to left, #FFFFFF, #cfcbc7); /* W3C, IE 10+/ Edge, Fi
     max-width: 100%;
   }
 }
+
 @keyframes lineExpand {
   from {
     width: 0;
   }
+
   to {
     width: calc(100% + 20px);
   }

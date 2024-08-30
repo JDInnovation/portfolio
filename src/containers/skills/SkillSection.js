@@ -45,7 +45,7 @@ function AnimatedNumber({ number }) {
 
 function SkillSection(props) {
   const theme = props.theme;
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 }); // Ajustado para 0.3
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 }); // Ajustado para 0.3
 
   useEffect(() => {
     if (inView) {
