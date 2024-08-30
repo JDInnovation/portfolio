@@ -66,8 +66,9 @@ export default function Footer(props) {
           <motion.div className="footer-section footer-contact">
             <h4>Contato</h4>
             <ul>
-              <li><span>Email:</span> <a href="mailto:info@jd-invest-group.com">info@jd-invest-group.com</a></li>
-              <li><span>Telefone:</span> <a href="tel:+351123456789">+351 123 456 789</a></li>
+              <li><span>Email:</span> <a href="mailto:geral@click-spot.com">geral@click-spot.com</a></li>
+              <li><span>Telemovel:</span> <a href="tel:+35913467759">+351 913 467 759 </a></li>
+              <li><span>Telemovel:</span> <a href="tel:+35912084991">+351 912 084 991 </a></li>
               <li><span>Endereço:</span> Ponte de Vagos, Aveiro, Portugal</li>
             </ul>
           </motion.div>
