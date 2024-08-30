@@ -540,7 +540,7 @@ input[type="radio"]+label>.sites1>.icon {
   flex: 1 1 18%;
   max-width: 45%;
   box-sizing: border-box;
-  height: 400px;
+  height: 250px;
 }
 
 .row {

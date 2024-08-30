@@ -55,7 +55,7 @@ function Header(props) {
               Home
             </NavLink>
             <NavLink
-              to="/experience"
+              to="/portfolio"
               className={({ isActive }) => (isActive ? "desktop-menu-item active" : "desktop-menu-item")}
             >
               Portfolio
@@ -74,9 +74,9 @@ function Header(props) {
             </div>
 
             <NavLink
-              to="/contact"
+              to="/contacto"
               className={({ isActive }) =>
-                location.pathname === "/contact" && location.search !== "?type=orcamento"
+                location.pathname === "/contacto" && location.search !== "?type=orcamento"
                   ? "desktop-menu-item active"
                   : "desktop-menu-item"
               }
@@ -84,7 +84,7 @@ function Header(props) {
               Contacto
             </NavLink>
             <NavLink
-              to="/contact?type=orcamento"
+              to="/contacto?type=orcamento"
               className={({ isActive }) =>
                 location.search === "?type=orcamento"
                   ? "desktop-menu-item active"
@@ -103,7 +103,7 @@ function Header(props) {
               Home
             </NavLink>
             <NavLink
-              to="/experience"
+              to="/portfolio"
               className={({ isActive }) => (isActive ? "mobile-menu-item active" : "mobile-menu-item")}
             >
               Portfolio

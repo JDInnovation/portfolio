@@ -3,8 +3,8 @@ import { Route, Routes, HashRouter, Navigate } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
-import Experience from "../pages/experience/Experience";
-import Contact from "../pages/contact/ContactComponent";
+import Experience from "../pages/portfolio/Experience";
+import Contact from "../pages/contacto/ContactComponent.js";
 import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 
@@ -25,7 +25,7 @@ export default function Main(propss) {
               element={<Home theme={propss.theme} setTheme={propss.setTheme} />}
             />
             <Route
-              path="/experience"
+              path="/portfolio"
               element={
                 <Experience theme={propss.theme} setTheme={propss.setTheme} />
               }
@@ -37,7 +37,7 @@ export default function Main(propss) {
               }
             />
             <Route
-              path="/contact"
+              path="/contacto"
               element={
                 <Contact theme={propss.theme} setTheme={propss.setTheme} />
               }
@@ -73,7 +73,7 @@ export default function Main(propss) {
               element={<Home theme={propss.theme} setTheme={propss.setTheme} />}
             />
             <Route
-              path="/experience"
+              path="/portfolio"
               element={
                 <Experience theme={propss.theme} setTheme={propss.setTheme} />
               }
@@ -85,7 +85,7 @@ export default function Main(propss) {
               }
             />
             <Route
-              path="/contact"
+              path="/contacto"
               element={
                 <Contact theme={propss.theme} setTheme={propss.setTheme} />
               }
