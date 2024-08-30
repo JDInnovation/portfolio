@@ -14,12 +14,7 @@ export default function Main(propss) {
       <div>
         <HashRouter basename="/">
           <Routes>
-            <Route
-              path="/"
-              element={
-                <Splash theme={propss.theme} setTheme={propss.setTheme} />
-              }
-            />
+  
             <Route
               path="/home"
               element={<Home theme={propss.theme} setTheme={propss.setTheme} />}
