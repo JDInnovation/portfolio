@@ -1,4 +1,4 @@
-/* import React, { useState } from "react";
+import React, { useState } from "react";
 import "./Splash.css";
 import { Navigate } from "react-router-dom";
 
@@ -30,4 +30,3 @@ function Splash(props) {
 }
 
 export default Splash;
- */
