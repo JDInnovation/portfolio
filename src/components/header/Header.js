@@ -124,7 +124,7 @@ function Header(props) {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                location.pathname === "/contact" && location.search !== "?type=orcamento"
+                location.pathname === "/contacto" && location.search !== "?type=orcamento"
                   ? "mobile-menu-item active"
                   : "mobile-menu-item"
               }
