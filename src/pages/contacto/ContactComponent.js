@@ -199,12 +199,12 @@ export default function Contact(props) {
                       Mediante o seu consentimento, os seus dados pessoais serão tratados pela JD para uma questão de marketing.
                     </label>
                   </div>
-                  <div className="form-group recaptcha-container">
+            {/*       <div className="form-group recaptcha-container">
                     <ReCAPTCHA
                       sitekey="6LdNeB0qAAAAAKhCMX6HO5cl6-daM_GcUTt5D0tG"
                       onChange={(value) => setRecaptchaValue(value)}
                     />
-                  </div>
+                  </div> */}
                   <button type="submit" className="form-button">LIGUEM-ME GRÁTIS!</button>
                 </form>
 

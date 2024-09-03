@@ -173,7 +173,7 @@ form button.form-button:hover {
 .contact-info {
   display: flex;
   justify-content: space-around;
-  align-items: stretch; /* Ajuste para que os elementos tenham a mesma altura */
+  align-items: stretch;
   margin-top: 40px;
   padding: 20px;
   border: 1px solid #383838;
@@ -189,8 +189,8 @@ form button.form-button:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 10px; /* Ajustar margem para espaçamento uniforme */
-  gap: 30px; /* Ajuste para adicionar espaço entre os cartões */
+  margin: 0 10px;
+  gap: 30px;
 }
 
 .contact-info-left,
@@ -213,6 +213,9 @@ form button.form-button:hover {
 
 .contact-info-right iframe {
   flex-grow: 1;
+  width: 100%;
+  height: 250px;
+  /* Ajuste a altura para mobile */
 }
 
 .contact-info-left h2,
@@ -301,8 +304,9 @@ form button.form-button:hover {
   justify-content: center;
   margin-top: 10px;
 }
-.width-team{
-width: 250px;
+
+.width-team {
+  width: 250px;
 }
 
 @media (max-width: 1380px) {
@@ -334,18 +338,19 @@ width: 250px;
   .contact-box {
     margin: 0;
     gap: 20px;
+    flex-direction: column;
   }
-  .footer-section{
+
+  .footer-section {
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .contact-box {
-    flex-wrap: nowrap;
+    flex-direction: column;
+    /* Empilhar elementos no mobile */
   }
-
- 
 
   .contact-heading-text {
     font-size: 24px;
@@ -376,6 +381,15 @@ width: 250px;
   }
 
   .thank-you-message p {
-    font-size: 16px;
+    font-size: 16px
   }
+  @media (max-width: 768px) {
+    .contact-info-right {
+      display: none; /* Esconde o mapa no mobile */
+    }
+    .width-team{
+      width: auto;
+    }
+  }
+  
 }
