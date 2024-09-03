@@ -75,9 +75,9 @@ function SkillSection(props) {
                         lojas online e websites profissionais até estratégias de
                         marketing e branding profissional. Explore os nossos
                         serviços de E-commerce, Desenvolvimento de Sites,
-                        Marketing Digital e Branding a seguir. Estamos prontos
+                        Marketing Digital e Branding. Estamos prontos
                         para elevar sua presença digital ao próximo nível com
-                        soluções personalizadas para a necessidade de casa
+                        soluções personalizadas para a necessidade de cada
                         projeto.
                       </p>
                     </FadeInSection>
@@ -103,7 +103,7 @@ function SkillSection(props) {
                           </h2>
                         </label>
                         <div>
-                          Nosso serviço de e-commerce oferece soluções completas
+                          Os nossos serviços de e-commerce oferecem soluções completas
                           para sua loja online. Desenvolvemos plataformas
                           personalizadas, otimizadas para conversão, com design
                           responsivo e integrações seguras. Aumente suas vendas
@@ -151,8 +151,8 @@ function SkillSection(props) {
                           Oferecemos criação de sites modernos e responsivos,
                           adaptados às necessidades do seu negócio. Desenvolvemos
                           sites intuitivos, com design atraente e navegação
-                          eficiente. Nossa equipe garante performance otimizada,
-                          SEO amigável e suporte contínuo. Estabeleça sua presença
+                          eficiente. A nossa equipa garante performance otimizada,
+                          SEO avançado e suporte contínuo. Estabeleça a sua presença
                           online de forma profissional e atraia mais clientes.
                           <h2 className="simbolo">
                             <img
@@ -218,11 +218,11 @@ function SkillSection(props) {
                           </h2>
                         </label>
                         <div>
-                          Maximize sua visibilidade com nossas estratégias de
+                          Maximize sua visibilidade com as nossas estratégias de
                           marketing digital. Especializados em Google Ads e
-                          campanhas em redes sociais, impulsionamos seu alcance e
-                          engajamento. Analisamos e otimizamos anúncios para
-                          garantir resultados efetivos, aumentando conversões e
+                          campanhas em redes sociais, impulsionamos o seu alcance e
+                          envolvimento dos clientes. Analisamos e otimizamos anúncios para
+                          garantir resultados de alta performance, aumentando conversões e
                           ROI. Atraia e retenha clientes com marketing direcionado
                           e eficiente.
                           <h2 className="simbolo">
@@ -263,12 +263,12 @@ function SkillSection(props) {
                           </h2>
                         </label>
                         <div>
-                          Destaque-se no mercado com nosso serviço de branding.
+                          Destaque-se no mercado com o nosso serviço de branding.
                           Criamos identidades visuais impactantes e coerentes,
                           refletindo a essência do seu negócio. Desenvolvemos
                           logotipos, paletas de cores e materiais de comunicação
-                          que fortalecem sua marca. Construa uma presença sólida e
-                          memorável, conquistando a lealdade de seus clientes.
+                          que fortalecem a sua marca. Construa uma presença sólida e
+                          memorável, conquistando a lealdade dos seus clientes.
                           <h2 className="simbolo">
                             <img
                               src={illustrator}
@@ -297,16 +297,7 @@ function SkillSection(props) {
                       <div className="artqd">
                         <div className="tmd">
                           <p className="qsdef">
-                            Somos uma empresa de serviços digitais especializada
-                            na criação de lojas online e websites empresariais.{" "}
-                            <br />
-                            Desde 2019, João Teixeira e David Claro trabalham
-                            juntos para oferecer soluções perfeitas e adaptadas
-                            aos objetivos de cada negócio, com foco em aumentar a
-                            visibilidade e a faturação dos nossos clientes. <br />
-                            Em projetos maiores, reunimos freelancers
-                            especializados para agilizar o processo e garantir
-                            resultados de alta qualidade.
+                            Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br></br><br></br>Desde 2019, João Teixeira e David Claro, ambos com formação em Marketing e Engenharia Informática, têm trabalhado juntos para oferecer soluções personalizadas, focadas em aumentar a visibilidade e o faturamento dos nossos clientes.<br></br><br></br> Em projetos maiores, contamos com uma rede de freelancers especializados para garantir agilidade e resultados de alta qualidade.
                           </p>
                         </div>
                         <div className="caixa1">
@@ -359,13 +350,7 @@ function SkillSection(props) {
                     </FadeInSection>
                     <FadeInSection delay={300} duration={600} direction="right">
                       <h4 className="missao20">
-                        Valorizamos a confiança e buscamos relações duradouras e
-                        benéficas com nossos clientes. <br />
-                        Oferecemos total personalização durante a criação dos
-                        projetos e garantimos orçamentos precisos para cada
-                        serviço. <br />
-                        Nossa missão é tornar o processo simples e satisfatório,
-                        sempre focando na satisfação total dos nossos clientes.
+                      Valorizamos a confiança e procuramos estabelecer relações duradouras e vantajosas com os nossos clientes. A nossa missão é compreender plenamente a visão de cada cliente, oferecendo soluções personalizadas que vão ao encontro das suas expectativas. Garantimos orçamentos precisos e um processo simples e eficiente, com o objetivo de assegurar a total satisfação dos nossos clientes.
                       </h4>
                     </FadeInSection>
                     <FadeInSection delay={400} duration={700} direction="left">
@@ -447,9 +432,9 @@ function SkillSection(props) {
                     <div className="sec15-background"></div>
                     <section className="pricing-section">
                       <div className="pricing-header">
-                        <h1 className="SD123">Nossos Serviços e Preços</h1>
+                        <h1 className="SD123">Serviços e Preços</h1>
                         <p className="qsdef">
-                          Escolha a solução que melhor atende às necessidades do seu
+                          Escolha a solução que melhor corresponde às necessidades do seu
                           negócio.
                         </p>
                       </div>
@@ -519,7 +504,7 @@ function SkillSection(props) {
 
                   <FadeInSection>
                     <div className="secq4">
-                      <h1 className="SD12">Obtenha Orçamento Gratis</h1>
+                      <h1 className="SD12">Orçamento Gratis</h1>
                       <div className="sec7cont">
                         <h4 className="missao20">
                           Quer serviços de alta qualidade a preços acessíveis?
@@ -527,7 +512,7 @@ function SkillSection(props) {
                           receba um orçamento personalizado que atenda às suas
                           necessidades e expectativas.
                         </h4>
-                        <button className="button2">pedir orçamento</button>
+                        <a href="#/contacto" className="button2">pedir orçamento</a>
                       </div>
                     </div>
                   </FadeInSection>

@@ -60,7 +60,7 @@ export default function Greeting(props) {
 
                   className="button2"
                   rel="noopener noreferrer"
-                  href="#/contact"
+                  href="#/contacto"
                 >
                   Fale com um especialista
           

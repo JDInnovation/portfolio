@@ -47,7 +47,7 @@
 }
 
 .desktop-menu-item.active {
-  background-color: #b6d109;
+  background-color: #CCED31;
   border-radius: 20px;
   padding: 5px 10px;
   color: black;
@@ -77,7 +77,7 @@
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #b6d109;
+  background-color: #CCED31;
   bottom: 20px;
   left: 0;
   transition: width 0.4s;
@@ -137,7 +137,7 @@
 }
 
 .mobile-menu-item.active {
-  background-color: #b6d109;
+  background-color: #CCED31;
   border-radius: 20px;
   padding: 5px 10px;
 }

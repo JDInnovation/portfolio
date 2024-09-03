@@ -45,7 +45,7 @@
   border-radius: 13px;
   contain: content;
   margin: 4em auto 36px;
-  box-shadow: 0px 8px #b6d109, 0 6px 20px 0 rgb(0 0 0 / 19%),
+  box-shadow: 0px 8px #CCED31, 0 6px 20px 0 rgb(0 0 0 / 19%),
     0 6px 20px 0 rgb(0 0 0 / 19%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
@@ -108,7 +108,8 @@
  */
 .experience-card:hover {
  scale: 1.03;
- transition: ease .3s;
+ transition: ease-in-out .3s;
+ 
 }
 
 /* .experience-card-body:hover * {
@@ -179,6 +180,7 @@
 
 .experience-card-body:hover {
   transform: scale(1);
+  box-shadow: none !important;
 }
 
 .experience-card-1 .experience-card-body {
@@ -232,7 +234,7 @@ ul ol {
   justify-content: center;
   align-items: center;
   padding: 10px 40px;
-  background-color: #b6d109;
+  background-color: #CCED31;
   width: 150px;
   border-radius: 32px;
   color: black;

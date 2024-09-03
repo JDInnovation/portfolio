@@ -2,7 +2,7 @@
   margin-top: 1rem;  /* Reduzido para melhor ajuste em mobile */
   background-color: rgb(29, 29, 29);
   color: #ffffff;
-  padding: 1rem;  /* Reduzido para melhor ajuste em mobile */
+  padding: 2rem;  /* Reduzido para melhor ajuste em mobile */
   position: relative;
 
 }
@@ -12,7 +12,7 @@
   left: 0;
   width: 70%;
   height: 2px;
-  background-color: #CCED00;
+  background-color: #CCED31;
   animation: correr 2.5s ease-in-out  infinite ;
 }
 @keyframes correr{
@@ -68,7 +68,7 @@
 
 .footer-section ul li a,
 .footer-contact ul li a {
-  color: #b6d109;
+  color: #CCED31;
   text-decoration: none;
   transition: color 0.3s;
   font-size: 1.2rem; /* Reduzir o tamanho da fonte para telas menores */
@@ -76,7 +76,7 @@
 
 .footer-section ul li a:hover,
 .footer-contact ul li a:hover {
-  color: #CCED00;
+  color: #CCED31;
 }
 
 .footer-zaask .zaask-logo {
@@ -131,7 +131,7 @@
   height: 0.05em;
   bottom: 0;
   width: 100%;
-  background-color: #b6d109;
+  background-color: #CCED31;
   transition: all ease-in-out 280ms;
 }
 

@@ -21,7 +21,7 @@
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
-  color: #a5c507;
+  color: #CCED31;
 }
 
 .contact-header-detail-text {
@@ -57,7 +57,7 @@ form {
 }
 
 .form-title {
-  color: #b6d109;
+  color: #CCED31;
   text-align: center;
   font-size: 3rem;
 }
@@ -87,7 +87,7 @@ form button.form-button {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
-  background-color: #b6d109;
+  background-color: #CCED31;
   color: rgb(59, 59, 59);
   font-size: 1.2rem;
   font-weight: bold;
@@ -132,7 +132,7 @@ form button.form-button:hover {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
-  background-color: #b6d109;
+  background-color: #CCED31;
   color: black;
   font-size: 16px;
   cursor: pointer;
@@ -166,13 +166,13 @@ form button.form-button:hover {
   content: '✔';
   position: absolute;
   left: 0px;
-  color: #b6d109;
+  color: #CCED31;
   font-size: 22px;
 }
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch; /* Ajuste para que os elementos tenham a mesma altura */
   margin-top: 40px;
   padding: 20px;
@@ -208,6 +208,7 @@ form button.form-button:hover {
 .contact-info-right {
   display: flex;
   flex-direction: column;
+  max-width: 40%;
 }
 
 .contact-info-right iframe {
@@ -217,7 +218,7 @@ form button.form-button:hover {
 .contact-info-left h2,
 .contact-info-right h2 {
   font-size: 24px;
-  color: #a5c507;
+  color: #CCED31;
   margin-bottom: 10px;
 }
 
@@ -266,7 +267,7 @@ form button.form-button:hover {
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
-  border: 2px solid #b6d109;
+  border: 2px solid #CCED31;
   border-radius: 4px;
 }
 
@@ -277,7 +278,7 @@ form button.form-button:hover {
 .consent-container input[type="checkbox"]:checked::before {
   content: '✔';
   font-size: 18px;
-  color: #b6d109;
+  color: #CCED31;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -290,7 +291,7 @@ form button.form-button:hover {
 }
 
 .consent-text a {
-  color: #b6d109;
+  color: #CCED31;
   text-decoration: underline;
   white-space: nowrap;
 }
@@ -301,7 +302,7 @@ form button.form-button:hover {
   margin-top: 10px;
 }
 .width-team{
-width: 150px;
+width: 250px;
 }
 
 @media (max-width: 1380px) {
