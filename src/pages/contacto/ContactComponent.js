@@ -169,7 +169,7 @@ export default function Contact(props) {
                 
                   <div className="form-group recaptcha-container">
                     <ReCAPTCHA
-                      sitekey="6LeeuTYqAAAAAE3hB61jzn1C1mIgG2boMvc8Wrzw"
+                      sitekey="6LeeuTYqAAAAAL9-lt_cswJbyHcUJDYm-Q3ue865"
                       onChange={(value) => setRecaptchaValue(value)}
                     />
                   </div> 
