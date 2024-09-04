@@ -5,7 +5,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import loadingGif from '../../assets/images/loading.gif';
+import loadingGif from '../../assets/images/logo_gif.gif';
 import davide from "../../assets/images/d12.png";
 import joaoe from "../../assets/images/j12.png";
 
@@ -43,10 +43,10 @@ export default function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!recaptchaValue) {
-      alert("Por favor, confirme o reCAPTCHA.");
-      return;
-    }
+    // if (!recaptchaValue) {
+    //   alert("Por favor, confirme o reCAPTCHA.");
+    //   return;
+    // }
     if (!formData.consent) {
       alert("Por favor, dê seu consentimento.");
       return;
@@ -83,7 +83,7 @@ export default function Contact(props) {
     <div className="contact-main">
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-contact">
-        <Fade bottom duration={1000} distance="40px">
+        <Fade bottom duration={300} distance="40px">
           <div className="contact-heading-div">
             <h1 className="contact-heading-text" style={{ color: theme.text }}>
               Peça o seu orçamento grátis!
@@ -145,39 +145,6 @@ export default function Contact(props) {
                       required
                     />
                   </div>
-                  {/* <div className="form-group">
-                    <label>Horário de Contacto:</label>
-                    <select
-                      name="contactTime"
-                      value={formData.contactTime}
-                      onChange={handleChange}
-                      required
-                    >
-                      <option value="" disabled>Selecione um horário</option>
-                      <option value="8-10">8-10</option>
-                      <option value="10-12">10-12</option>
-                      <option value="12-14">12-14</option>
-                      <option value="14-16">14-16</option>
-                      <option value="16-18">16-18</option>
-                      <option value="18-20">18-20</option>
-                    </select>
-                  </div> */}
-                  {/* <div className="form-group">
-                    <label>Serviço:</label>
-                    <select
-                      name="service"
-                      value={formData.service}
-                      onChange={handleChange}
-                      required
-                    >
-                      <option value="" disabled>Selecione um serviço</option>
-                      <option value="website">Criação de Website</option>
-                      <option value="branding">Criação de Branding</option>
-                      <option value="marketing">Campanha de Marketing</option>
-                      <option value="ecommerce">Desenvolvimento de E-commerce</option>
-                      <option value="seo">Otimização SEO</option>
-                    </select>
-                  </div> */}
                   <div className="form-group">
                     <label>Mensagem:</label>
                     <textarea
@@ -196,15 +163,17 @@ export default function Contact(props) {
                       required
                     />
                     <label className="consent-text">
-                      Mediante o seu consentimento, os seus dados pessoais serão tratados pela JD para uma questão de marketing.
+                      Mediante o seu consentimento, os seus dados pessoais serão tratados pela CLICKSPOT para uma questão de marketing.
                     </label>
                   </div>
-            {/*       <div className="form-group recaptcha-container">
+                  {/* 
+                  <div className="form-group recaptcha-container">
                     <ReCAPTCHA
                       sitekey="6LdNeB0qAAAAAKhCMX6HO5cl6-daM_GcUTt5D0tG"
                       onChange={(value) => setRecaptchaValue(value)}
                     />
-                  </div> */}
+                  </div> 
+                  */}
                   <button type="submit" className="form-button">LIGUEM-ME GRÁTIS!</button>
                 </form>
 
