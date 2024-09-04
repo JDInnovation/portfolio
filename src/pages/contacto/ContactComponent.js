@@ -43,10 +43,10 @@ export default function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // if (!recaptchaValue) {
-    //   alert("Por favor, confirme o reCAPTCHA.");
-    //   return;
-    
+    if (!recaptchaValue) {
+      alert("Por favor, confirme o reCAPTCHA.");
+      return;
+    }
     if (!formData.consent) {
       alert("Por favor, dê seu consentimento.");
       return;
@@ -169,7 +169,7 @@ export default function Contact(props) {
                 
                   <div className="form-group recaptcha-container">
                     <ReCAPTCHA
-                      sitekey="6LeeuTYqAAAAAL9-lt_cswJbyHcUJDYm-Q3ue865"
+                      sitekey="6LdhuzYqAAAAACwTS6kEFvH_4TVipPoTw1YrWdo5"
                       onChange={(value) => setRecaptchaValue(value)}
                     />
                   </div> 
