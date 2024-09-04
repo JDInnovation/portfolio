@@ -46,7 +46,7 @@ export default function Contact(props) {
     // if (!recaptchaValue) {
     //   alert("Por favor, confirme o reCAPTCHA.");
     //   return;
-    // }
+    
     if (!formData.consent) {
       alert("Por favor, dê seu consentimento.");
       return;
@@ -166,14 +166,14 @@ export default function Contact(props) {
                       Mediante o seu consentimento, os seus dados pessoais serão tratados pela CLICKSPOT para uma questão de marketing.
                     </label>
                   </div>
-                  {/* 
+                
                   <div className="form-group recaptcha-container">
                     <ReCAPTCHA
-                      sitekey="6LdNeB0qAAAAAKhCMX6HO5cl6-daM_GcUTt5D0tG"
+                      sitekey="6LeeuTYqAAAAAE3hB61jzn1C1mIgG2boMvc8Wrzw"
                       onChange={(value) => setRecaptchaValue(value)}
                     />
                   </div> 
-                  */}
+               
                   <button type="submit" className="form-button">LIGUEM-ME GRÁTIS!</button>
                 </form>
 
