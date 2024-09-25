@@ -465,7 +465,7 @@ function SkillSection(props) {
                         </div>
                         <div className="pricing-card">
                           <h3>E-commerce Simples</h3>
-                          <p className="price">€1.290</p>
+                          <p className="price">€790</p>
                           <ul className="features">
                             <li>50 Produtos Máximos</li>
                             <li>Design Responsivo</li>
@@ -476,7 +476,7 @@ function SkillSection(props) {
                         </div>
                         <div className="pricing-card">
                           <h3>E-commerce Avançado</h3>
-                          <p className="price">€2.290</p>
+                          <p className="price">€1.290</p>
                           <ul className="features">
                             <li>Produtos Ilimitados</li>
                             <li>Design Personalizado Responsivo</li>
@@ -487,7 +487,7 @@ function SkillSection(props) {
                         </div>
                         <div className="pricing-card">
                           <h3>Website Personalizado</h3>
-                          <p className="price">€4.700</p>
+                          <p className="price">€2.290</p>
                           <ul className="features">
                             <li>Solução Sob Medida</li>
                             <li>Design Exclusivo</li>
