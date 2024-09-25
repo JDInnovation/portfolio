@@ -19,6 +19,7 @@
 .experience-heading-img-div {
   align-items: center;
   justify-content: center;
+  display: flex;
 }
 
 .experience-heading-text-div {
@@ -26,7 +27,7 @@
 }
 
 .experience-heading-img-div > * {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 

@@ -370,9 +370,14 @@ input[type="radio"]+label>.sites1>.icon {
   cursor: pointer;
 }
 
-.secq {
+.secq, .secq3 {
   position: relative;
   margin: auto;
+  max-width: 90vw;
+  padding-bottom: 5vw;
+}
+.padding-bottom-5vw{
+  padding-bottom: 10vw;
 }
 
 

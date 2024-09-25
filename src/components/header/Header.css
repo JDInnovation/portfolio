@@ -160,3 +160,11 @@
 body {
   padding-bottom: 80px;
 }
+
+@media (max-width:361px){
+  .mobile-menu-item{
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+}

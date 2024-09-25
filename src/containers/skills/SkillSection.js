@@ -344,7 +344,7 @@ function SkillSection(props) {
                     </div>
                   </div>
 
-                  <div ref={ref}>
+                  <div ref={ref}  className="padding-bottom-5vw">
                     <FadeInSection delay={100} duration={500} direction="right">
                       <h1 className="SD12">A NOSSA MISSÃO</h1>
                     </FadeInSection>
