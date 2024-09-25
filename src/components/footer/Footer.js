@@ -41,7 +41,7 @@ export default function Footer(props) {
               </li>
               <li>
                 <NavLink 
-                  to="/experience" 
+                  to="/portfolio" 
                   className={({ isActive }) => isActive ? "current-link" : ""}
                 >
                   Portfólio
@@ -49,7 +49,7 @@ export default function Footer(props) {
               </li>
               <li>
                 <NavLink 
-                  to="/contact" 
+                  to="/contacto" 
                   className={({ isActive }) => isActive ? "current-link" : ""}
                 >
                   Contato
