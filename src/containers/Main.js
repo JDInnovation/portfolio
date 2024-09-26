@@ -5,6 +5,7 @@ import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/portfolio/Experience";
 import Contact from "../pages/contacto/ContactComponent.js";
+import Ecommerce from "../pages/ecommerce/ecommerce.js";
 import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 
@@ -52,6 +53,12 @@ export default function Main(propss) {
               path="/projects"
               element={
                 <Projects theme={propss.theme} setTheme={propss.setTheme} />
+              }
+            />
+            <Route
+              path="/ecommerce"
+              element={
+                <Ecommerce theme={propss.theme} setTheme={propss.setTheme} />
               }
             />
             <Route path="*" element={<Navigate to={"/"} />} />

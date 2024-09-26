@@ -1,0 +1,146 @@
+/* Estilos para a Primeira Secção */
+.hero-section {
+    background-image: url("../../assets/images/8527.png"); /* Mantém o background original */
+    background-size: cover; /* Cobre toda a largura mantendo a proporção */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* 100% da altura da viewport */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px; /* Define um tamanho máximo para a secção */
+}
+
+.hero-text {
+    flex: 1; /* O texto ocupa 50% */
+    padding-right: 20px;
+    line-height: 40px;
+    color: white; /* Mantém o texto visível */
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+h1, h2{
+    line-height: 40px;
+}
+
+.cta-button {
+    background-color: #CCED31;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-image {
+    flex: 1; /* A imagem ocupa 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade para a Primeira Secção */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        padding-right: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para a Segunda Secção */
+.section-two {
+    background-image: url("../../assets/images/8524.png"); /* Define o background da secção */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.section-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-text {
+    flex: 1;
+    padding-left: 20px;
+    color: white; /* Mantém o texto visível sobre a imagem de fundo */
+}
+
+.section-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Responsividade para a Segunda Secção */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-text {
+        padding-left: 0;
+    }
+
+    .section-text h2 {
+        font-size: 2em;
+    }
+
+    .section-image {
+        margin-bottom: 20px;
+    }
+}
