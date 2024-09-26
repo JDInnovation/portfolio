@@ -5,6 +5,8 @@ import "./ecommerce.css";
 import heroImage from "../../assets/images/852aaa.png"; // Import da imagem da secção 1
 import section2Image from "../../assets/images/852aaa.png"; // Import da imagem da secção 2
 import section3Image from "../../assets/images/section3.png"; // Import da imagem da secção 3
+import section4Image from "../../assets/images/section4.png"; // Import da imagem da secção 4
+import section5Image from "../../assets/images/section5.png"; // Import da imagem da secção 5
 
 function Ecommerce(props) {
     const theme = props.theme;
@@ -58,6 +60,50 @@ function Ecommerce(props) {
                         </p>
                         <p>
                             Um design responsivo garante que o layout se adapta a diferentes tamanhos de ecrã, oferecendo uma experiência de compra contínua, o que aumenta a taxa de conversão e reduz o abandono de carrinho. As lojas que proporcionam uma boa experiência em dispositivos móveis vendem mais.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Quarta Secção */}
+            <section className="section-four">
+                <div className="section-four-content">
+                    <div className="section-four-left">
+                        <h3>Gestão Simplificada de Produtos</h3>
+                        <h4>Porque o seu público está em toda a parte.</h4>
+                        <p>
+                            O nosso sistema facilita a adição, edição e remoção de produtos na sua loja. Com uma interface intuitiva e rápida, qualquer pessoa poderá gerir o seu catálogo de produtos sem complicações técnicas.
+                        </p>
+                        <p>
+                            Não há necessidade de depender de um programador para fazer pequenas alterações. Isso poupa tempo e dinheiro, permitindo-lhe focar-se no crescimento do seu negócio.
+                        </p>
+                        <p>
+                            Além disso, o sistema é flexível para lojas de qualquer dimensão, desde pequenos comércios a grandes inventários.
+                        </p>
+                    </div>
+                    <div className="section-four-image">
+                        <img src={section4Image} alt="Gestão Simplificada de Produtos" />
+                    </div>
+                </div>
+            </section>
+
+            {/* Quinta Secção */}
+            <section className="section-five">
+                <div className="section-five-content">
+                    <div className="section-five-image">
+                        <img src={section5Image} alt="Otimização para SEO" />
+                    </div>
+                    <div className="section-five-right">
+                        <h3>Otimização para SEO</h3>
+                        <h4>Coloque a sua loja na linha da frente do Google.</h4>
+                        <p>
+                            O seu sucesso online depende de ser encontrado pelos clientes. Criamos lojas online totalmente otimizadas para motores de busca (SEO), ajudando o seu site a ser mais facilmente encontrado por potenciais clientes.
+                        </p>
+                        <p>
+                            Isso inclui otimizações nas páginas de produtos, URLs amigáveis, meta descrições e integração com ferramentas de análise para que possa monitorizar o seu progresso.
+                        </p>
+                        <p>
+                            Ao melhorar a sua visibilidade no Google e outros motores de busca, está a aumentar o tráfego qualificado para o seu site e, consequentemente, as vendas.
                         </p>
                     </div>
                 </div>

@@ -1,14 +1,17 @@
 /* Estilos para a Primeira Secção */
 .hero-section {
     background-image: url("../../assets/images/8527.png"); /* Mantém o background original */
-    background-size: cover; /* Cobre toda a largura mantendo a proporção */
-    background-position: center; /* Centraliza a imagem */
-    height: 100vh; /* 100% da altura da viewport */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 40px;
+}
+ul {
+    list-style: none;
 }
 
 .hero-content {
@@ -16,26 +19,19 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    max-width: 1200px; /* Define um tamanho máximo para a secção */
+    max-width: 1200px;
 }
 
 .hero-text {
-    flex: 1; /* O texto ocupa 50% */
+    flex: 1;
     padding-right: 20px;
     line-height: 40px;
-    color: black; /* Mantém o texto visível */
-}
-ul {
-    list-style: none;
-    text-align: right;
+    color: black;
 }
 
 .hero-text h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-}
-h1, h2{
-    line-height: 40px;
 }
 
 .cta-button {
@@ -50,7 +46,7 @@ h1, h2{
 }
 
 .hero-image {
-    flex: 1; /* A imagem ocupa 50% */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +79,7 @@ h1, h2{
 
 /* Estilos para a Segunda Secção */
 .section-two {
-    background-image: url("../../assets/images/8524.png"); /* Define o background da secção */
+    background-image: url("../../assets/images/8524.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -116,7 +112,7 @@ h1, h2{
 .section-text {
     flex: 1;
     padding-left: 20px;
-    color: white; /* Mantém o texto visível sobre a imagem de fundo */
+    color: white;
     text-align: right;
 }
 
@@ -124,10 +120,11 @@ h1, h2{
     font-size: 2.5em;
     margin-bottom: 20px;
     text-align: right;
+    line-height: 50px; /* Line-height original */
 }
 
 .section-text p {
-    font-size: 1.2em;
+    font-size: 0.9em;
     line-height: 1.5;
 }
 
@@ -148,5 +145,213 @@ h1, h2{
 
     .section-image {
         margin-bottom: 20px;
+    }
+}
+
+/* Estilos para a Terceira Secção */
+.section-three {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+    background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+    padding: 60px 20px;
+}
+
+.section-three-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-three-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-three-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-three-right {
+    flex: 1;
+    padding-left: 20px;
+    color: black;
+}
+
+.section-three-right h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px; /* Line-height conforme a secção 3 */
+}
+
+.section-three-right h4 {
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px; /* Line-height conforme a secção 3 */
+}
+
+.section-three-right p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Responsividade para a Terceira Secção */
+@media (max-width: 768px) {
+    .section-three-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-three-right {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .section-three-image {
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para a Quarta Secção */
+.section-four {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+    background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+    padding: 60px 20px;
+}
+
+.section-four-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-four-left {
+    flex: 1;
+    text-align: left;
+    color: black;
+}
+
+.section-four-left h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px; /* Mantido o line-height da secção 4 */
+}
+
+.section-four-left h4 {
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px; /* Mantido o line-height da secção 4 */
+}
+
+.section-four-left p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: black;
+}
+
+.section-four-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-four-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade para a Quarta Secção */
+@media (max-width: 768px) {
+    .section-four-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-four-left {
+        text-align: center;
+    }
+
+    .section-four-image {
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para a Quinta Secção */
+.section-five {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+    background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+    padding: 60px 20px;
+}
+
+.section-five-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-five-right {
+    flex: 1;
+    text-align: left;
+    color: black;
+}
+
+.section-five-right h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px; /* Line-height conforme o design anterior */
+    text-align: right;
+}
+
+.section-five-right h4 {
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px; /* Mantido o line-height */
+    text-align: right;
+}
+
+.section-five-right p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: black;
+    text-align: right;
+}
+
+.section-five-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-five-image img {
+    max-width: 90%;
+    height: auto;
+}
+
+/* Responsividade para a Quinta Secção */
+@media (max-width: 768px) {
+    .section-five-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-five-right {
+        text-align: center;
+    }
+
+    .section-five-image {
+        margin-top: 20px;
     }
 }
