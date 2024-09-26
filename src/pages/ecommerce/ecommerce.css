@@ -23,7 +23,11 @@
     flex: 1; /* O texto ocupa 50% */
     padding-right: 20px;
     line-height: 40px;
-    color: white; /* Mantém o texto visível */
+    color: black; /* Mantém o texto visível */
+}
+ul {
+    list-style: none;
+    text-align: right;
 }
 
 .hero-text h1 {
@@ -113,11 +117,13 @@ h1, h2{
     flex: 1;
     padding-left: 20px;
     color: white; /* Mantém o texto visível sobre a imagem de fundo */
+    text-align: right;
 }
 
 .section-text h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    text-align: right;
 }
 
 .section-text p {
