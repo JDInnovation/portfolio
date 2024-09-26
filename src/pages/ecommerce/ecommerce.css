@@ -179,6 +179,8 @@ ul{
     flex: 1;
     padding-left: 20px;
     color: black;
+    text-align: right;
+
 }
 
 .section-three-right h3 {
