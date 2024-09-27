@@ -78,6 +78,7 @@ export default function Contact(props) {
     setFormSubmitted(false);
     setRecaptchaValue(null);
   };
+  
 
   return (
     <div className="contact-main">
@@ -236,5 +237,6 @@ export default function Contact(props) {
       </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
+    
   );
 }

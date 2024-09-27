@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import "./ecommerce.css";
-import heroImage from "../../assets/images/852aaa.png"; // Import da imagem da secção 1
-import section2Image from "../../assets/images/852aaa.png"; // Import da imagem da secção 2
-import section3Image from "../../assets/images/section3.png"; // Import da imagem da secção 3
-import section4Image from "../../assets/images/section4.png"; // Import da imagem da secção 4
-import section5Image from "../../assets/images/section5.png"; // Import da imagem da secção 5
+import heroImage from "../../assets/images/852aaa.png"; 
+import section2Image from "../../assets/images/852aaa.png"; 
+import section3Image from "../../assets/images/section3.png"; 
+import section4Image from "../../assets/images/section4.png"; 
+import section5Image from "../../assets/images/section5.png"; 
 
 function Ecommerce(props) {
     const theme = props.theme;
+
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "//js-eu1.hsforms.net/forms/embed/v2.js";
+        script.async = true;
+        document.body.appendChild(script);
+        script.onload = () => {
+            window.hbspt.forms.create({
+                region: "eu1",
+                portalId: "145502623",
+                formId: "9c59b6b6-cbbd-4dde-a727-45c9aca65d09",
+                target: "#hubspot-form"
+            });
+        };
+    }, []);
+
     return (
         <div className="ecommerce-main">
             <Header theme={theme} setTheme={props.setTheme} />
@@ -107,6 +123,11 @@ function Ecommerce(props) {
                         </p>
                     </div>
                 </div>
+            </section>
+
+            {/* Última Secção com o Formulário */}
+            <section className="form-section">
+                <div id="hubspot-form"></div>
             </section>
 
             <Footer theme={props.theme} onToggle={props.onToggle} />
