@@ -2,11 +2,15 @@ import React, { useEffect } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import "./ecommerce.css";
-import heroImage from "../../assets/images/852aaa.png"; 
-import section2Image from "../../assets/images/852aaa.png"; 
-import section3Image from "../../assets/images/section3.png"; 
-import section4Image from "../../assets/images/section4.png"; 
-import section5Image from "../../assets/images/section5.png"; 
+import heroImage from "../../assets/images/852aaa.png";
+import section2Image from "../../assets/images/section1.png";
+import sectionNewImage from "../../assets/images/new-section.png";
+import section3Image from "../../assets/images/section3.png";
+import section4Image from "../../assets/images/section4.png";
+import section5Image from "../../assets/images/section5.png";
+import paymentsImage from "../../assets/images/payments.png"; // Imagem da secção de pagamentos
+import supportImage from "../../assets/images/support.png"; // Imagem da secção de suporte
+import arrowImage from "../../assets/images/arrow.png";
 
 function Ecommerce(props) {
     const theme = props.theme;
@@ -62,6 +66,25 @@ function Ecommerce(props) {
                 </div>
             </section>
 
+            {/* Nova Secção: Solução Personalizada */}
+            <section className="section-new">
+                <div className="section-new-content">
+                    <div className="section-new-left">
+                        <h3>Solução Personalizada ao Seu Negócio</h3>
+                        <h4>Porque cada negócio é único e merece uma solução à medida.</h4>
+                        <p>
+                            Ao contrário de plataformas genéricas, criamos lojas online personalizadas, feitas à medida das necessidades do seu negócio. Isto significa que desde o layout ao funcionamento, a sua loja refletirá a identidade da sua marca e oferecerá uma experiência de compra única para os seus clientes.
+                        </p>
+                        <p>
+                            Com um design exclusivo e funcionalidades adaptadas ao seu público, garantimos que a sua loja se destaca da concorrência e maximiza o envolvimento dos utilizadores. Essa personalização não só fortalece a sua marca, como também aumenta a lealdade dos clientes e as vendas.
+                        </p>
+                    </div>
+                    <div className="section-new-image">
+                        <img src={sectionNewImage} alt="Solução Personalizada" />
+                    </div>
+                </div>
+            </section>
+
             {/* Terceira Secção */}
             <section className="section-three">
                 <div className="section-three-content">
@@ -102,14 +125,13 @@ function Ecommerce(props) {
                     </div>
                 </div>
             </section>
-
-            {/* Quinta Secção */}
-            <section className="section-five">
-                <div className="section-five-content">
-                    <div className="section-five-image">
+             {/* Secção de Otimização para SEO */}
+             <section className="section-seo">
+                <div className="section-seo-content">
+                <div className="section-seo-image">
                         <img src={section5Image} alt="Otimização para SEO" />
                     </div>
-                    <div className="section-five-right">
+                    <div className="section-seo-left">
                         <h3>Otimização para SEO</h3>
                         <h4>Coloque a sua loja na linha da frente do Google.</h4>
                         <p>
@@ -122,9 +144,65 @@ function Ecommerce(props) {
                             Ao melhorar a sua visibilidade no Google e outros motores de busca, está a aumentar o tráfego qualificado para o seu site e, consequentemente, as vendas.
                         </p>
                     </div>
+                    
                 </div>
             </section>
 
+
+            {/* Secção de Pagamentos Seguros */}
+            <section className="section-payments">
+                <div className="section-payments-content">
+                    <div className="section-payments-left">
+                        <h3>Integração com Pagamentos Seguros</h3>
+                        <h4>Ofereça a tranquilidade de pagamentos seguros e variados.</h4>
+                        <p>
+                            Proporcionamos integração com as principais plataformas de pagamento, como cartões de crédito, PayPal, MB Way, e outras formas populares, garantindo que os seus clientes têm opções de pagamento rápidas e seguras.
+                        </p>
+                        <p>
+                            A segurança nas transações online é fundamental para gerar confiança no seu cliente e reduzir desistências no momento de pagamento. Utilizamos as melhores práticas e as mais recentes tecnologias de encriptação para garantir a proteção dos dados financeiros.
+                        </p>
+                    </div>
+                    <div className="section-payments-image">
+                        <img src={paymentsImage} alt="Integração com Pagamentos Seguros" />
+                    </div>
+                </div>
+            </section>
+
+            {/* Secção de Suporte Técnico */}
+            <section className="section-support">
+                <div className="section-support-content">
+                    <div className="section-support-image">
+                        <img src={supportImage} alt="Suporte Técnico Rápido e Eficaz" />
+                    </div>
+                    <div className="section-support-right">
+                        <h3>Suporte Técnico Rápido e Eficaz</h3>
+                        <h4>Estamos consigo em todos os momentos.</h4>
+                        <p>
+                            Oferecemos suporte técnico dedicado para garantir que a sua loja está sempre em pleno funcionamento. Desde o momento da criação até ao acompanhamento contínuo, estamos disponíveis para resolver qualquer questão ou problema que possa surgir.
+                        </p>
+                        <p>
+                            O nosso objetivo é que tenha tranquilidade ao saber que a sua loja está em boas mãos, com especialistas sempre prontos para ajudar. A disponibilidade do suporte 24/7 significa que pode contar connosco em qualquer altura.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            {/* Secção Nova: Criação de Loja */}
+            <section className="section-create-store">
+                <div className="section-create-store-content">
+                    <div className="section-create-store-left">
+                        <h3>Crie a Sua Loja Agora e Dê o Próximo Passo no Crescimento do Seu Negócio!</h3>
+                        <p>
+                            Reforce a importância de agir rapidamente para começar a colher os benefícios de uma loja online otimizada e profissional. Transforme visitantes em clientes e comece a vender mais!
+                        </p>
+                        <button className="cta-button">Peça orçamento grátis</button>
+                    </div>
+                    <div className="section-create-store-image">
+                        <img src={arrowImage} alt="Seta crescente" />
+                    </div>
+                </div>
+            </section>
+
+           
             {/* Última Secção com o Formulário */}
             <section className="form-section">
                 <div id="hubspot-form"></div>

@@ -409,3 +409,390 @@ ul{
         width: 90%;
     }
 }
+/* Nova Secção: Solução Personalizada */
+.section-new {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+    background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+    padding: 60px 20px;
+}
+
+.section-new-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-new-left {
+    flex: 1;
+    text-align: left;
+    color: black;
+}
+
+.section-new-left h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px; /* Mantendo o line-height consistente */
+}
+
+.section-new-left h4 {
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px; /* Mantendo o line-height consistente */
+}
+
+.section-new-left p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: black;
+}
+
+.section-new-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-new-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade para a Nova Secção */
+@media (max-width: 768px) {
+    .section-new-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-new-left {
+        text-align: center;
+    }
+
+    .section-new-image {
+        margin-top: 20px;
+    }
+}
+/* Estilos para a Primeira Secção */
+.hero-section {
+    background-image: url("../../assets/images/8527.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+    line-height: 40px;
+    color: black;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #CCED31;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade para a Primeira Secção */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        padding-right: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para a Secção de Pagamentos Seguros */
+.section-payments {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+    background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+    padding: 60px 20px;
+}
+
+.section-payments-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-payments-left {
+    flex: 1;
+    text-align: left;
+    color: black;
+}
+
+.section-payments-left h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px;
+}
+
+.section-payments-left h4 {
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px;
+}
+
+.section-payments-left p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: black;
+}
+
+.section-payments-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-payments-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para a Secção de Suporte Técnico */
+.section-support {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+    background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+    padding: 60px 20px;
+}
+
+.section-support-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-support-right {
+    flex: 1;
+    text-align: left;
+    color: black;
+}
+
+.section-support-right h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px;
+}
+
+.section-support-right h4 {
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px;
+}
+
+.section-support-right p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: black;
+}
+
+.section-support-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-support-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para a Secção de Otimização para SEO */
+.section-seo {
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
+    background: linear-gradient(to left, #FFFFFF, #cfcbc7);
+    padding: 60px 20px;
+}
+
+.section-seo-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-seo-left {
+    flex: 1;
+    text-align: left;
+    color: black;
+}
+
+.section-seo-left h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px;
+}
+
+.section-seo-left h4 {
+    margin-bottom: 20px;
+    color: black;
+    line-height: 50px;
+}
+
+.section-seo-left p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: black;
+}
+
+.section-seo-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-seo-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade para as Secções de Pagamentos e Suporte */
+@media (max-width: 768px) {
+    .section-payments-content, .section-support-content, .section-seo-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-payments-left, .section-support-right, .section-seo-left {
+        text-align: center;
+    }
+
+    .section-payments-image, .section-support-image, .section-seo-image {
+        margin-top: 20px;
+    }
+}
+/* Secção Nova: Criação de Loja */
+.section-create-store {
+    background: url("../../assets/images/8524.png"); /* Background igual ao da secção "Porque precisa de uma loja online" */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-create-store-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.section-create-store-left {
+    flex: 1;
+    color: white;
+    text-align: left;
+}
+
+.section-create-store-left h3 {
+    font-size: 1.em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.section-create-store-left p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.section-create-store-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-create-store-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cta-button {
+    background-color: #CCED31;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .section-create-store-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-create-store-left {
+        text-align: center;
+    }
+
+    .section-create-store-image {
+        margin-top: 20px;
+    }
+}
