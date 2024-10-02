@@ -78,6 +78,7 @@ ul{
 }
 
 /* Estilos para a Segunda Secção */
+/* Estilos para a Segunda Secção */
 .section-two {
     background-image: url("../../assets/images/8524.png");
     background-size: cover;
@@ -120,10 +121,10 @@ ul{
     font-size: 2.5em;
     margin-bottom: 20px;
     text-align: right;
-    line-height: 50px; /* Line-height original */
+    line-height: 50px;
 }
 
-.section-text p {
+.section-text p, .section-text ul {
     font-size: 1.2em;
     line-height: 1.5;
 }
@@ -135,18 +136,21 @@ ul{
         text-align: center;
     }
 
-    .section-text {
-        padding-left: 0;
-    }
-
-    .section-text h2 {
-        font-size: 2em;
-    }
-
     .section-image {
+        order: 1;
         margin-bottom: 20px;
     }
+
+    .section-text {
+        padding-left: 0;
+        order: 2;
+    }
+
+    .section-text h2, .section-text p, .section-text ul {
+        text-align: center;
+    }
 }
+
 
 /* Estilos para a Terceira Secção */
 .section-three {
@@ -794,5 +798,118 @@ ul{
 
     .section-create-store-image {
         margin-top: 20px;
+    }
+}
+/* Responsividade para as Secções */
+@media (max-width: 768px) {
+    /* Para a Terceira Secção */
+    .section-three-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-three-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-three-right {
+        order: 2;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /* Para a Quarta Secção */
+    .section-four-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-four-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-four-left {
+        order: 2;
+        text-align: center;
+    }
+
+    /* Para a Secção de SEO */
+    .section-seo-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-seo-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-seo-left {
+        order: 2;
+        text-align: center;
+    }
+
+    /* Para a Secção de Pagamentos */
+    .section-payments-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-payments-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-payments-left {
+        order: 2;
+        text-align: center;
+    }
+
+    /* Para a Secção de Suporte */
+    .section-support-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-support-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-support-right {
+        order: 2;
+        text-align: center;
+    }
+
+    /* Para a Secção de Criação de Loja */
+    .section-create-store-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-create-store-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-create-store-left {
+        order: 2;
+        text-align: center;
+    }
+    .section-new-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-new-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-new-left {
+        order: 2;
+        text-align: center;
     }
 }

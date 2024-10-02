@@ -66,6 +66,7 @@ function Ecommerce(props) {
                 </div>
             </section>
 
+
             {/* Nova Secção: Solução Personalizada */}
             <section className="section-new">
                 <div className="section-new-content">
@@ -125,10 +126,10 @@ function Ecommerce(props) {
                     </div>
                 </div>
             </section>
-             {/* Secção de Otimização para SEO */}
-             <section className="section-seo">
+            {/* Secção de Otimização para SEO */}
+            <section className="section-seo">
                 <div className="section-seo-content">
-                <div className="section-seo-image">
+                    <div className="section-seo-image">
                         <img src={section5Image} alt="Otimização para SEO" />
                     </div>
                     <div className="section-seo-left">
@@ -144,7 +145,7 @@ function Ecommerce(props) {
                             Ao melhorar a sua visibilidade no Google e outros motores de busca, está a aumentar o tráfego qualificado para o seu site e, consequentemente, as vendas.
                         </p>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -202,7 +203,7 @@ function Ecommerce(props) {
                 </div>
             </section>
 
-           
+
             {/* Última Secção com o Formulário */}
             <section className="form-section">
                 <div id="hubspot-form"></div>
