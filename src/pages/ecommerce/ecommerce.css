@@ -35,15 +35,55 @@ ul{
 }
 
 .cta-button {
+    align-items: center;
+    appearance: none;
     background-color: #CCED31;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1em;
+    border-radius: 1rem;
+    border-width: 0;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.548);
+    box-sizing: border-box;
+    color: #1D1D1D;
     cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding: 1.18em 1.32em 1.03em;
+    font-family: "Google Sans Regular", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transition: ease-in-out .2s;
+    overflow: hidden;
+    z-index: 2;
 }
+.cta-button::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: #1D1D1D;
+    transition: ease-in-out .3s;
+    z-index: -1;
+  }
+  
+  .cta-button:hover{
+    transform: translateY(-5px);
+    color: #CCED31;
+    background-color: #1d1d1d00;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.692);
+    
+  }
+  .cta-button:hover::before{
+    height: 100%;
+  }
 
 .hero-image {
     flex: 1;
@@ -148,6 +188,7 @@ ul{
 
     .section-text h2, .section-text p, .section-text ul {
         text-align: center;
+        padding: 0;
     }
 }
 
