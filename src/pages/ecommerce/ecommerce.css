@@ -954,3 +954,49 @@ ul{
         text-align: center;
     }
 }
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .section-two {
+    animation: slideIn 1s forwards;
+  }
+  
+  .section-three {
+    animation: slideInRight 1s forwards;
+  }
+  .section-four {
+    animation: slideIn 1s forwards;
+  }
+  .section-new {
+    animation: slideIn 1s forwards;
+  }
+  .section-seo {
+    animation: slideIn 1s forwards;
+  }
+  .section-payments {
+    animation: slideIn 1s forwards;
+  }
+  .section-support {
+    animation: slideIn 1s forwards;
+  }
+  .section-create-store {
+    animation: slideIn 1s forwards;
+  }
