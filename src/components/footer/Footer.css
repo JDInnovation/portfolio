@@ -30,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;  /* Reduzido para melhor ajuste em mobile */
-  padding: 1rem;  /* Reduzido para melhor ajuste em mobile */
+  
 }
 
 .footer-content h4 {

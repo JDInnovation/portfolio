@@ -401,6 +401,12 @@ ul{
     .section-five-image {
         margin-top: 20px;
     }
+    .section-seo-left{
+        margin-left: 0 !important;
+    }
+    h4{
+        line-height: 20px !important;
+    }
 }
 .form-section {
     background: -webkit-linear-gradient(to left, #FFFFFF, #cfcbc7);
@@ -409,7 +415,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #hubspot-form {
@@ -697,7 +703,7 @@ ul{
 }
 
 .section-support-image img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -722,6 +728,7 @@ ul{
     flex: 1;
     text-align: left;
     color: black;
+    margin-left: 50px;
 }
 
 .section-seo-left h3 {

@@ -31,6 +31,10 @@ function Ecommerce(props) {
         };
     }, []);
 
+    const scrollToForm = () => {
+        document.getElementById("form-section").scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <div className="ecommerce-main">
             <Header theme={theme} setTheme={props.setTheme} />
@@ -40,7 +44,7 @@ function Ecommerce(props) {
                 <div className="hero-content">
                     <div className="hero-text">
                         <h1>Transforme a sua ideia em uma loja online de sucesso</h1>
-                        <button className="cta-button">Peça orçamento grátis</button>
+                        <button className="cta-button" onClick={() => scrollToForm()}>Peça orçamento grátis</button>
                     </div>
                     <div className="hero-image">
                         <img src={heroImage} alt="Loja online" />
@@ -226,7 +230,7 @@ function Ecommerce(props) {
                             <p>
                                 Reforce a importância de agir rapidamente para começar a colher os benefícios de uma loja online otimizada e profissional. Transforme visitantes em clientes e comece a vender mais!
                             </p>
-                            <button className="cta-button">Peça orçamento grátis</button>
+                            <button className="cta-button" onClick={() => scrollToForm()}>Peça orçamento grátis</button>
                         </div>
                         <div className="section-create-store-image">
                             <img src={arrowImage} alt="Seta crescente" />
@@ -238,7 +242,7 @@ function Ecommerce(props) {
 
 
             {/* Última Secção com o Formulário */}
-            <section className="form-section">
+            <section className="form-section" id="form-section">
                 <Fade bottom duration={2000}>
                     <div id="hubspot-form"></div>
                 </Fade>
