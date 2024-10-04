@@ -11,74 +11,21 @@ import joaoe from "../../assets/images/j12.png";
 
 export default function Contact(props) {
   const theme = props.theme;
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    contactTime: '',
-    service: '',
-    message: '',
-    consent: false
-  });
-
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [recaptchaValue, setRecaptchaValue] = useState(null);
-
-  const loadingRef = useRef(null);
 
   useEffect(() => {
-    if (loading && loadingRef.current) {
-      loadingRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }, [loading]);
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === 'checkbox' ? checked : value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!recaptchaValue) {
-      alert("Por favor, confirme o reCAPTCHA.");
-      return;
-    }
-    if (!formData.consent) {
-      alert("Por favor, dê seu consentimento.");
-      return;
-    }
-    setLoading(true);
-
-    setTimeout(() => {
-      emailjs.sendForm('service_dq9gfwh', 'template_cp61hip', e.target, 'dXVyQQhCKcgjFrK0q')
-        .then((result) => {
-          setLoading(false);
-          setFormSubmitted(true);
-        }, (error) => {
-          setLoading(false);
-          alert('Erro ao enviar a mensagem. Tente novamente.');
-        });
-    }, 2000);
-  };
-
-  const handleNewContact = () => {
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      contactTime: '',
-      service: '',
-      message: '',
-      consent: false
-    });
-    setFormSubmitted(false);
-    setRecaptchaValue(null);
-  };
-  
+    const script = document.createElement("script");
+    script.src = "//js-eu1.hsforms.net/forms/embed/v2.js";
+    script.async = true;
+    document.body.appendChild(script);
+    script.onload = () => {
+      window.hbspt.forms.create({
+        region: "eu1",
+        portalId: "145502623",
+        formId: "7fd1034c-a952-4319-b988-20b49c9d25d6", // Novo formId
+        target: "#hubspot-form"
+      });
+    };
+  }, []);
 
   return (
     <div className="contact-main">
@@ -102,90 +49,8 @@ export default function Contact(props) {
           </div>
         </Fade>
         <Fade bottom duration={1000} distance="40px">
-          <div className="contact-form-div">
-            {formSubmitted ? (
-              <div className="thank-you-message">
-                <h2>Obrigado!</h2>
-                <p>Entraremos em contato em breve. Esteja atento.</p>
-                <button onClick={handleNewContact} className="form-button">Enviar outro contato</button>
-              </div>
-            ) : (
-              <>
-                <form onSubmit={handleSubmit} className={loading ? 'hidden' : ''}>
-                  <h2 className="form-title">ORÇAMENTO GRÁTIS:</h2>
-                  <div className="form-group">
-                    <label>Nome:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Seu nome"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label>Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="Seu email"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label>Número de Telefone:</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="Seu número de telefone"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label>Mensagem:</label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Mensagem (opcional)"
-                    />
-                  </div>
-                  <div className="form-group consent-container">
-                    <input
-                      type="checkbox"
-                      name="consent"
-                      checked={formData.consent}
-                      onChange={handleChange}
-                      required
-                    />
-                    <label className="consent-text">
-                      Mediante o seu consentimento, os seus dados pessoais serão tratados pela CLICKSPOT para uma questão de marketing.
-                    </label>
-                  </div>
-                
-                  <div className="form-group recaptcha-container">
-                    <ReCAPTCHA
-                      sitekey="6LeFvjYqAAAAAEY4hb5yqd1d2-9BTv4hJ6uZbvQ7"
-                      onChange={(value) => setRecaptchaValue(value)}
-                    />
-                  </div> 
-               
-                  <button type="submit" className="form-button">LIGUEM-ME GRÁTIS!</button>
-                </form>
-
-                {loading && (
-                  <div className="loading" ref={loadingRef}>
-                    <img src={loadingGif} alt="Loading..." />
-                  </div>
-                )}
-              </>
-            )}
-          </div>
+          {/* Formulário centralizado */}<div className="contact-form-section">
+          <div className="contact-form-div" id="hubspot-form"></div></div>
         </Fade>
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-info">
