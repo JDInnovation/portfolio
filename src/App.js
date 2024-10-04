@@ -9,8 +9,6 @@ import Main from "./containers/Main";
 import "./App.css";
 import "react-tooltip/dist/react-tooltip.css";
 
-
-Hotjar.init(siteId, hotjarVersion);
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
   const useCursor = settings.useCustomCursor;
