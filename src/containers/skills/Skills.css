@@ -370,13 +370,15 @@ input[type="radio"]+label>.sites1>.icon {
   cursor: pointer;
 }
 
-.secq, .secq3 {
+.secq,
+.secq3 {
   position: relative;
   margin: auto;
   max-width: 90vw;
   padding-bottom: 5vw;
 }
-.padding-bottom-5vw{
+
+.padding-bottom-5vw {
   padding-bottom: 10vw;
 }
 
@@ -387,7 +389,7 @@ input[type="radio"]+label>.sites1>.icon {
   text-shadow: 0 0 5px #caed311e;
   font-size: 4rem;
   position: relative;
-/*   margin-bottom: 3rem; */
+  /*   margin-bottom: 3rem; */
   margin-top: 10rem;
   z-index: 2;
 
@@ -852,17 +854,25 @@ input[type="radio"]+label>.sites1>.icon {
   justify-content: space-between;
 }
 
+
 .pricing-card {
   background-color: #dfdfdf;
   border-radius: 8px;
   box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.212);
   margin-bottom: 30px;
-  padding: 20px;
-  flex: 1 1 calc(20% - 20px);
-  max-width: calc(20% - 20px);
+  padding: 5px 20px;
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(20% - 15px);
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o espaço igualmente */
+  align-items: center;
+  text-align: center;
+  min-height: 450px; /* Altura mínima para alinhar todos os cartões */
   transition: transform 0.3s ease;
 }
+
 
 .pricing-card:hover {
   transform: translateY(-10px);
@@ -870,39 +880,45 @@ input[type="radio"]+label>.sites1>.icon {
 
 .pricing-card h3 {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #333;
 }
 
 .pricing-card .price {
   font-size: 28px;
   color: #2f2f2f;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .pricing-card .features {
   list-style: none;
   padding: 0;
   margin: 0;
-
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinha as features no topo */
+  align-items: center; /* Centraliza horizontalmente */
 }
 
 .pricing-card .features li {
-  font-size: 12px;
-  margin-bottom: 1px;
+  font-size: 14px;
+  margin-bottom: 5px;
   color: #555;
 }
+
 
 @media (max-width: 900px) {
   .pricing-card {
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
+
   .cartoesapr {
 
     width: 180px;
-  
-  
+
+
   }
 }
 
@@ -921,4 +937,23 @@ input[type="radio"]+label>.sites1>.icon {
   to {
     width: calc(100% + 20px);
   }
+}
+
+.button-ecommerce {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #CCED31;
+  color: #333;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0px;
+  transition: scale ease-in-out .3s;
+  box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.212);
+
+}
+.button-ecommerce:hover{
+  scale: 1.1;
+  box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.212);
 }

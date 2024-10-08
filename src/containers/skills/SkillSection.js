@@ -473,6 +473,7 @@ function SkillSection(props) {
                             <li>SEO Básico</li>
                             <li>Suporte 6 Meses</li>
                           </ul>
+                          <a href="/#/ecommerce" className="button-ecommerce">Saber Mais</a>
                         </div>
                         <div className="pricing-card">
                           <h3>E-commerce Avançado</h3>
@@ -484,6 +485,7 @@ function SkillSection(props) {
                             <li>Gestão Avançada Stocks</li>
                             <li>Suporte 1 Ano</li>
                           </ul>
+                          <a href="/#/ecommerce" className="button-ecommerce">Saber Mais</a>
                         </div>
                         <div className="pricing-card">
                           <h3>Website Personalizado</h3>
