@@ -141,8 +141,8 @@ function Header(props) {
               to="/home#solucoes-digitais"
               className={({ isActive }) =>
                 location.search === "?type=orcamento"
-                  ? "desktop-menu-item active"
-                  : "desktop-menu-item"
+                  ? "mobile-menu-item active"
+                  : "mobile-menu-item"
               }
             >
             Serviços
