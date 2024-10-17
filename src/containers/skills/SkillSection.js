@@ -428,7 +428,7 @@ function SkillSection(props) {
                   </div>
 
 
-                  <div className="sec15-container" id="precos">
+                  {/* <div className="sec15-container" id="precos">
                     <div className="sec15-background"></div>
                     <section className="pricing-section">
                       <div className="pricing-header">
@@ -502,7 +502,7 @@ function SkillSection(props) {
                       </div>
                     </section>
                   </div>
-
+ */}
 
                   <FadeInSection>
                     <div className="secq4">
