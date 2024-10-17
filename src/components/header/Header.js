@@ -44,9 +44,8 @@ function Header(props) {
   return (
     <>
       <div
-        className={`${
-          theme.name === "light" ? "header-container-light" : "header-container-dark"
-        }`}
+        className={`${theme.name === "light" ? "header-container-light" : "header-container-dark"
+          }`}
       >
         {!isMobile ? (
           <div className="desktop-menu">
@@ -88,15 +87,16 @@ function Header(props) {
 
             {/* Alteração no botão Preços */}
             <NavLink
-              to="/home#precos"
+              to="/home#solucoes-digitais"
               className={({ isActive }) =>
                 location.search === "?type=orcamento"
                   ? "desktop-menu-item active"
                   : "desktop-menu-item"
               }
             >
-              Preços
+              Serviços
             </NavLink>
+
           </div>
         ) : (
           <div className="mobile-menu">

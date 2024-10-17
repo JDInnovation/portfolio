@@ -69,7 +69,7 @@ function SkillSection(props) {
 
                   <div className="secq">
                     <FadeInSection delay={200} duration={750} direction="right">
-                      <h1 className="SD12">SOLUÇÕES DIGITAIS</h1>
+                    <h1 className="SD12" id="solucoes-digitais">SOLUÇÕES DIGITAIS</h1>
                       <p className="missao20">
                         As nossas soluções digitais abrangem desde a criação de
                         lojas online e websites profissionais até estratégias de

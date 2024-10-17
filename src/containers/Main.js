@@ -6,6 +6,7 @@ import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/portfolio/Experience";
 import Contact from "../pages/contacto/ContactComponent.js";
 import Ecommerce from "../pages/ecommerce/ecommerce.js";
+import Ebook from "../pages/e_book/ebook.js";
 import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 
@@ -61,6 +62,12 @@ export default function Main(propss) {
                 <Ecommerce theme={propss.theme} setTheme={propss.setTheme} />
               }
             />
+            <Route
+              path="/ebook"
+              element={
+                <Ebook theme={propss.theme} setTheme={propss.setTheme} />
+              }
+            />
             <Route path="*" element={<Navigate to={"/"} />} />
           </Routes>
         </HashRouter>
@@ -101,6 +108,12 @@ export default function Main(propss) {
               path="/projects"
               element={
                 <Projects theme={propss.theme} setTheme={propss.setTheme} />
+              }
+            />
+             <Route
+              path="/ebook"
+              element={
+                <Ebook theme={propss.theme} setTheme={propss.setTheme} />
               }
             />
             <Route path="*" element={<Navigate to={"/"} />} />
