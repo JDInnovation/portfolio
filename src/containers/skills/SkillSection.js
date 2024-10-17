@@ -31,6 +31,22 @@ import yeari from "../../assets/images/calendar (1).png";
 import patni from "../../assets/images/heart-partner-handshake.png";
 import davide from "../../assets/images/d12.png";
 import joaoe from "../../assets/images/j12.png";
+import { useLocation } from 'react-router-dom';
+
+function ScrollToHash() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
+  return null;
+}
 
 function AnimatedNumber({ number }) {
   const { number: animatedNumber } = useSpring({

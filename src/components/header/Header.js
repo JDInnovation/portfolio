@@ -138,14 +138,14 @@ function Header(props) {
 
             {/* Alteração no botão Preços */}
             <NavLink
-              to="/home#precos"
+              to="/home#solucoes-digitais"
               className={({ isActive }) =>
                 location.search === "?type=orcamento"
-                  ? "mobile-menu-item active"
-                  : "mobile-menu-item"
+                  ? "desktop-menu-item active"
+                  : "desktop-menu-item"
               }
             >
-              Preços
+              Serviços
             </NavLink>
           </div>
         )}
