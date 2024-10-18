@@ -4,10 +4,13 @@ import "./ebook.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import LeftImage from "../../assets/images/ebook.webp"; // Importe a imagem aqui
-import Icon1 from "../../assets/images/ebook.webp"; // Exemplo de ícone 1
-import Icon2 from "../../assets/images/ebook.webp"; // Exemplo de ícone 2
-import Icon3 from "../../assets/images/ebook.webp"; // Exemplo de ícone 3
+import Arrow from "../../assets/images/download.png"; // Importe a imagem aqui
+import Logo from "../../assets/images/feature.png"; // Importe a imagem aqui
+import Icon1 from "../../assets/images/alvo.png"; // Exemplo de ícone 1
+import Icon2 from "../../assets/images/easy.png"; // Exemplo de ícone 2
+import Icon3 from "../../assets/images/free.png"; // Exemplo de ícone 3
 import ReviewImage from "../../assets/images/review.png"; // Importe a imagem da review aqui
+import Carousel from "./carousel";
 
 function Ebook(props) {
     const theme = props.theme;
@@ -29,18 +32,19 @@ function Ebook(props) {
 
     return (
         <div className="ebook-main_ebook">
-            <Header theme={theme} setTheme={props.setTheme} />
+            {/*    <Header theme={theme} setTheme={props.setTheme} /> */}
             <div className="hero-section_ebook">
                 <div className="hero-content_ebook">
                     <div className="hero-image_ebook">
                         <img src={LeftImage} alt="Imagem à Esquerda" />
                     </div>
                     <div className="hero-text_ebook">
+                        <h3>― EBOOK GRÁTIS</h3>
                         <h1>8 Estratégias para Sites que <span className="highlighted-word_ebook">Vendem</span></h1>
                         <p className="description_ebook">
                             <strong>Transforme o seu site numa máquina de vendas!</strong> Descubra 8 estratégias comprovadas para converter visitantes em clientes. Faça download do nosso e-book <span className="highlighted-phrase_ebook">GRÁTIS</span> e veja como aumentar as suas vendas, mesmo sem ser especialista.
                         </p>
-                        <button className="cta-button_ebook">Quero o Meu Ebook Grátis</button>
+                        <button className="button-55">➔ Quero o Meu Ebook Grátis</button>
                     </div>
                 </div>
             </div>
@@ -68,20 +72,28 @@ function Ebook(props) {
             </section>
 
             <section className="review-section_ebook">
-                <div className="review-content_ebook">
-                    <div className="review-image_ebook">
-                        <img src={ReviewImage} alt="Imagem de Testemunho" />
+                <h2>Seja mais um caso de sucesso:</h2>
+                <Carousel />
+            </section>
+            <section className="about-section_ebook">
+                <div className="about-content_ebook">
+                    <div className="about-image_ebook">
+                        <img src={Logo} alt="Imagem da Clickspot" />
                     </div>
-                    <div className="review-text_ebook">
-                        <p>“Com este e-book, aprendi a aplicar estratégias simples e práticas que duplicaram as vendas do meu site em apenas um mês!”</p>
-                        <span>João Silva, Empreendedor e Especialista em Marketing Digital</span>
+                    <div className="about-text_ebook">
+                        <h2>Quem é a Clickspot?</h2>
+                        <p>
+                            Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br></br><br></br>Desde 2019, João Teixeira e David Claro, ambos com formação em Marketing e Engenharia Informática, têm trabalhado juntos para oferecer soluções personalizadas, focadas em aumentar a visibilidade e a faturação dos nossos clientes.<br></br><br></br> Em projetos maiores, contamos com uma rede de freelancers especializados para garantir agilidade e resultados de alta qualidade.
+
+                        </p>
                     </div>
                 </div>
             </section>
             <section className="form-section" id="form-section">
-            
-                    <div id="hubspot-form"></div>
-        
+                <h2>Converta visitantes em clientes<br></br>Faça o download do nosso eBook grátis!</h2>
+                <img src={Arrow} alt="Imagem do E-book" className="form-image" />
+                <div id="hubspot-form"></div>
+
             </section>
 
 
