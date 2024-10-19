@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-html{
+
+html {
     background: linear-gradient(to left, #FFFFFF, #cfcbc7);
 }
+
 .hero-section_ebook {
     background: linear-gradient(to left, #FFFFFF, #cfcbc7);
     background-size: cover;
@@ -50,7 +52,8 @@ html{
     line-height: 1.2;
     margin-top: 0;
 }
-.hero-text_ebook h3{
+
+.hero-text_ebook h3 {
     margin-bottom: 0;
     color: #252a01;
 }
@@ -72,44 +75,45 @@ html{
 
 /* CSS */
 .button-55 {
-  align-self: center;
-  background-color: #d0ed14;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 4px;
-  border: 4px solid #000000; /* Define a cor exata da borda */
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 2rem;
-  line-height: 23px;
-  outline: none;
-  padding: 1rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  font-family: "Oswald", sans-serif;
+    align-self: center;
+    background-color: #d0ed14;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 4px;
+    border: 4px solid #000000;
+    /* Define a cor exata da borda */
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 23px;
+    outline: none;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: "Oswald", sans-serif;
 }
 
 .button-55:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
 }
 
 .button-55:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
 
@@ -206,11 +210,13 @@ html{
     .second-section_ebook h2 {
         font-size: 2em;
     }
+
     .review-section_ebook h2 {
         font-size: 2em;
     }
 }
-.review-section_ebook{
+
+.review-section_ebook {
     background: linear-gradient(to left, #FFFFFF, #cfcbc7);
     margin: 0;
     display: flex;
@@ -218,6 +224,7 @@ html{
     align-items: center;
     justify-content: center;
 }
+
 .review-section_ebook h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
@@ -227,56 +234,68 @@ html{
 
 .carousel {
     position: relative;
-    width: 80%; /* Ajuste a largura para garantir centralização */
-    margin: 0 auto; /* Centraliza o carrossel */
+    width: 80%;
+    /* Ajuste a largura para garantir centralização */
+    margin: 0 auto;
+    /* Centraliza o carrossel */
     overflow: hidden;
 
     padding: 50px 0;
     box-sizing: border-box;
     max-width: 100vw;
     display: flex;
-    justify-content: center; /* Centraliza todo o conteúdo do carrossel */
-    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center;
+    /* Centraliza todo o conteúdo do carrossel */
+    align-items: center;
+    /* Alinha verticalmente no centro */
 }
 
 .carousel-inner {
     display: flex;
-    justify-content: center; /* Centraliza os itens dentro do carrossel */
+    justify-content: center;
+    /* Centraliza os itens dentro do carrossel */
     transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-    flex: 0 0 25%; /* Tamanho ajustado para os itens */
-    margin-right: 20px; /* Adiciona espaço entre os itens */
+    flex: 0 0 25%;
+    /* Tamanho ajustado para os itens */
+    margin-right: 20px;
+    /* Adiciona espaço entre os itens */
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* Sombra leve */
 }
 
 .carousel-item img {
-    width: 80px; /* Reduz o tamanho da imagem */
+    width: 80px;
+    /* Reduz o tamanho da imagem */
     height: 80px;
     border-radius: 50%;
 }
 
 .carousel-item p {
-    font-size: 1em; /* Tamanho do texto */
+    font-size: 1em;
+    /* Tamanho do texto */
     font-style: italic;
     color: #333;
     margin: 10px 0;
 }
 
 .carousel-item span {
-    font-size: 0.9em; /* Tamanho do nome */
+    font-size: 0.9em;
+    /* Tamanho do nome */
     color: #666;
     margin-top: 5px;
     font-weight: bold;
 }
 
 /* Setas de navegação */
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -290,18 +309,22 @@ html{
 }
 
 .prev {
-    left: 0px; /* Ajusta a posição da seta para a esquerda */
+    left: 0px;
+    /* Ajusta a posição da seta para a esquerda */
 }
 
 .next {
-    right: 0px; /* Ajusta a posição da seta para a direita */
+    right: 0px;
+    /* Ajusta a posição da seta para a direita */
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(95, 95, 95, 0.093);
     border-radius: 50px;
     color: rgba(45, 45, 45, 0.962);
 }
+
 .about-section_ebook {
     display: flex;
     justify-content: center;
@@ -316,13 +339,15 @@ html{
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 60%; /* Ocupa 60% da largura da página */
+    width: 60%;
+    /* Ocupa 60% da largura da página */
     padding: 20px;
 }
 
 .about-image_ebook {
     flex: 1;
-    max-width: 50%; /* A imagem ocupa 50% da largura do cartão */
+    max-width: 50%;
+    /* A imagem ocupa 50% da largura do cartão */
     height: 100%;
     display: flex;
     justify-content: center;
@@ -331,8 +356,10 @@ html{
 
 .about-image_ebook img {
     max-width: 100%;
-    height: 100%; /* A imagem ocupa toda a altura do cartão */
-    border-radius: 10px 0 0 10px; /* Bordas arredondadas */
+    height: 100%;
+    /* A imagem ocupa toda a altura do cartão */
+    border-radius: 10px 0 0 10px;
+    /* Bordas arredondadas */
 }
 
 .about-text_ebook {
@@ -355,13 +382,15 @@ html{
     color: #555;
     font-family: "Roboto", sans-serif;
 }
-.form-section{
+
+.form-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+
 .form-section h2 {
     font-size: 2.5em;
     margin-bottom: 0px;
@@ -387,23 +416,29 @@ html{
         text-align: center;
     }
 }
+
 .form-image {
     display: block;
-    margin: 50px 0; /* Centraliza a imagem */
-    width: 70px; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da altura */
+    margin: 50px 0;
+    /* Centraliza a imagem */
+    width: 70px;
+    /* Define a largura da imagem */
+    height: auto;
+    /* Mantém a proporção da altura */
 }
+
 /* Ajustes gerais para mobile e tablet */
 @media (max-width: 768px) {
-    .hero-section_ebook{
+    .hero-section_ebook {
         height: 100vh;
     }
+
     /* Ajuste para a seção do herói */
     .hero-content_ebook {
         flex-direction: column;
         width: 100%;
         padding: 30px;
-        
+
     }
 
     .hero-text_ebook {
@@ -414,7 +449,8 @@ html{
     .hero-text_ebook h1 {
         font-size: 2.2em;
     }
-    .hero-text_ebook{
+
+    .hero-text_ebook {
         text-align: left;
     }
 
@@ -423,9 +459,10 @@ html{
         padding: 0 0px;
     }
 
-    .cta-button_ebook, .button-55 {
+    .cta-button_ebook,
+    .button-55 {
         width: 100%;
-        font-size: 1.1em;
+        font-size: 1.4em;
         padding: 10px 20px;
     }
 
@@ -446,7 +483,8 @@ html{
     }
 
     .carousel-item {
-        flex: 0 0 100%; /* Exibe um item por vez no carrossel em mobile */
+        flex: 0 0 100%;
+        /* Exibe um item por vez no carrossel em mobile */
     }
 
     /* Ajuste para a secção 'Quem é a Clickspot?' */
@@ -480,7 +518,8 @@ html{
 
     .form-image {
         margin: 10px auto;
-        width: 40px; /* Ajusta a imagem do formulário */
+        width: 40px;
+        /* Ajusta a imagem do formulário */
     }
 
     /* Ajuste para botões */
@@ -488,64 +527,88 @@ html{
         width: 90%;
         margin: 20px auto;
     }
-    .about-image_ebook img{
+
+    .about-image_ebook img {
         max-width: 60%;
     }
 }
+
 /* Ajustes gerais para mobile e tablet */
 @media (max-width: 768px) {
 
     /* Ajuste específico para o carrossel em dispositivos móveis */
     .carousel-item {
-        flex: 0 0 100%; /* Exibe um item por vez no carrossel em mobile */
-        margin-right: 0; /* Remove margem direita para um único item */
+        flex: 0 0 100%;
+        /* Exibe um item por vez no carrossel em mobile */
+        margin-right: 0;
+        /* Remove margem direita para um único item */
     }
 
     .carousel {
-        width: 100%; /* Garante que o carrossel ocupe 100% da largura no mobile */
-        padding: 20px 0; /* Reduz o padding no mobile */
+        width: 100%;
+        /* Garante que o carrossel ocupe 100% da largura no mobile */
+        padding: 20px 0;
+        /* Reduz o padding no mobile */
     }
 
     .carousel-inner {
         display: flex;
         transition: transform 0.5s ease-in-out;
-        width: 100%; /* Garante que a largura se ajuste corretamente */
+        width: 80%;
+        /* Garante que a largura se ajuste corretamente */
+        overflow: hidden;
     }
 
     .carousel-item img {
-        width: 60px; /* Ajusta o tamanho da imagem para telas menores */
-        height: 60px; /* Mantém a proporção */
+        width: 60px;
+        /* Ajusta o tamanho da imagem para telas menores */
+        height: 60px;
+        /* Mantém a proporção */
     }
 
     .carousel-item p {
-        font-size: 0.9em; /* Ajusta o tamanho do texto para mobile */
+        font-size: 0.9em;
+        /* Ajusta o tamanho do texto para mobile */
     }
 
     .carousel-item span {
-        font-size: 0.8em; /* Ajusta o tamanho do nome */
+        font-size: 0.8em;
+        /* Ajusta o tamanho do nome */
     }
 
-    /* Setas de navegação */
-/* Setas de navegação */
-.prev, .next {
-    font-size: 24px; /* Reduz o tamanho das setas em mobile */
-    width: 40px;
-    height: 40px;
-    left: -40px;
-    right: -40px;
-}
-    .review-section_ebook{
+
+    .prev,
+    .next {
+        font-size: 24px;
+        /* Reduz o tamanho das setas em mobile */
+        width: 40px;
+        height: 40px;
+    }
+    .prev{
+        left: -10px;
+    }
+    .next{
+        right: -10px;
+    }
+
+    .review-section_ebook {
         padding: 40px;
     }
 }
+
 .carousel-item .profession {
     display: block;
-    font-size: 0.8em; /* Tamanho menor para a profissão */
-    color: #999; /* Cor cinza clara */
-    margin-top: 2px; /* Espaço entre o nome e a profissão */
+    font-size: 0.8em;
+    /* Tamanho menor para a profissão */
+    color: #999;
+    /* Cor cinza clara */
+    margin-top: 2px;
+    /* Espaço entre o nome e a profissão */
 }
+
 .button-55 i {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    margin-right: 8px;
+    /* Espaço entre o ícone e o texto */
 }
 
 /* Estilo para mobile/tablet */
@@ -556,11 +619,14 @@ html{
 /* Para dispositivos móveis, esconde a seta e mostra o dedo */
 @media (max-width: 768px) {
     .button-55 .desktop-icon {
-        display: none; /* Esconde a seta */
+        display: none;
+        /* Esconde a seta */
     }
-    
+
     .button-55 .mobile-icon {
-        display: inline-block; /* Mostra o dedo */
-        margin-right: 8px; /* Espaço entre o ícone e o texto */
+        display: inline-block;
+        /* Mostra o dedo */
+        margin-right: 8px;
+        /* Espaço entre o ícone e o texto */
     }
 }

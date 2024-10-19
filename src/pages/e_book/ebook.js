@@ -47,7 +47,8 @@ function Ebook(props) {
                         </p>
                         <button className="button-55">
                             <i className="fas fa-arrow-right desktop-icon"></i>
-                            <i className="fas fa-hand-pointer mobile-icon"></i> 
+                        
+                            <i class="far fa-hand-point-up mobile-icon"></i>
                             Quero o Meu Ebook Grátis
                         </button>
                     </div>
