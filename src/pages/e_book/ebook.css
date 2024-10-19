@@ -537,14 +537,33 @@ html {
         background-color: rgba(95, 95, 95, 0);
         color: rgba(45, 45, 45, 0.962);
     }
-    .prev, .next {
+
+    .prev,
+    .next {
         outline: none;
-        border: none; /* Garantir que não há borda ao clicar */
+        /* Remove o contorno de foco padrão */
+        border: none;
+        /* Remove qualquer borda */
+        box-shadow: none;
+        /* Remove qualquer sombra de foco */
+        background-color: transparent;
+        /* Assegura que o fundo é transparente */
     }
-    
-    .prev:focus, .next:focus {
-        outline: none; /* Remove o quadrado azul ao focar */
-        box-shadow: none; /* Remove qualquer sombra de foco */
+
+    .prev:focus,
+    .next:focus {
+        outline: none;
+        /* Remove o quadrado azul ao focar */
+        box-shadow: none;
+        /* Remove qualquer sombra */
+    }
+
+    .prev:active,
+    .next:active {
+        outline: none;
+        /* Remove o contorno quando o botão é pressionado */
+        border: none;
+        box-shadow: none;
     }
 }
 
