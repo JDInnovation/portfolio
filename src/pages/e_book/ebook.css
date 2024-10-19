@@ -531,6 +531,12 @@ html {
     .about-image_ebook img {
         max-width: 60%;
     }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(95, 95, 95, 0);
+        color: rgba(45, 45, 45, 0.962);
+    }
 }
 
 /* Ajustes gerais para mobile e tablet */
@@ -542,6 +548,7 @@ html {
         /* Exibe um item por vez no carrossel em mobile */
         margin-right: 0;
         /* Remove margem direita para um único item */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0)
     }
 
     .carousel {
@@ -584,10 +591,12 @@ html {
         width: 40px;
         height: 40px;
     }
-    .prev{
+
+    .prev {
         left: -10px;
     }
-    .next{
+
+    .next {
         right: -10px;
     }
 
