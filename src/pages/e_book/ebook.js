@@ -45,12 +45,12 @@ function Ebook(props) {
                         <p className="description_ebook">
                             <strong>Transforme o seu site numa máquina de vendas!</strong> Descubra 8 estratégias comprovadas para converter visitantes em clientes. Faça download do nosso e-book <span className="highlighted-phrase_ebook">GRÁTIS</span> e veja como aumentar as suas vendas, mesmo sem ser especialista.
                         </p>
-                        <button className="button-55">
+                        <button className="button-55" onClick={() => document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' })}>
                             <i className="fas fa-arrow-right desktop-icon"></i>
-                        
-                            <i class="far fa-hand-point-up mobile-icon"></i>
+                            <i className="far fa-hand-point-up mobile-icon"></i>
                             Quero o Meu Ebook Grátis
                         </button>
+
                     </div>
                 </div>
             </div>
