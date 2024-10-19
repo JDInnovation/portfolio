@@ -38,7 +38,7 @@ function Ebook(props) {
                         <img src={LeftImage} alt="Imagem à Esquerda" />
                     </div>
                     <div className="hero-text_ebook">
-                        <h3>― EBOOK GRÁTIS</h3>
+                        <h3>― E-BOOK GRÁTIS</h3>
                         <h1>8 Estratégias para Sites que <span className="highlighted-word_ebook">Vendem</span></h1>
                         <p className="description_ebook">
                             <strong>Transforme o seu site numa máquina de vendas!</strong> Descubra 8 estratégias comprovadas para converter visitantes em clientes. Faça download do nosso e-book <span className="highlighted-phrase_ebook">GRÁTIS</span> e veja como aumentar as suas vendas, mesmo sem ser especialista.
@@ -46,7 +46,7 @@ function Ebook(props) {
                         <button className="button-55" onClick={() => document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' })}>
                             <i className="fas fa-arrow-right desktop-icon"></i>
                             <i className="far fa-hand-point-up mobile-icon"></i>
-                            Quero o Meu Ebook Grátis
+                            Quero o Meu E-book Grátis
                         </button>
 
                     </div>
@@ -93,7 +93,8 @@ function Ebook(props) {
                 </div>
             </section>
             <section className="form-section" id="form-section">
-                <h2>Converta visitantes em clientes<br></br>Faça o download do nosso eBook grátis!</h2>
+                <h2>Converta visitantes em clientes<br></br>Faça o download do nosso E-Book grátis!</h2>
+                <p className="form-subtitle">Preencha o formulário e receba de imediato o E-Book gratuito.</p>
                 <img src={Arrow} alt="Imagem do E-book" className="form-image" />
                 <div id="hubspot-form"></div>
 

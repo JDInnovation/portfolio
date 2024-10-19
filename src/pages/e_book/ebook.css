@@ -664,3 +664,11 @@
         /* Espaço entre o ícone e o texto */
     }
 }
+.form-subtitle {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
