@@ -3,13 +3,12 @@ import { Fade } from "react-reveal";
 import "./ebook.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import LeftImage from "../../assets/images/ebook.webp"; // Importe a imagem aqui
-import Arrow from "../../assets/images/download.png"; // Importe a imagem aqui
-import Logo from "../../assets/images/feature.png"; // Importe a imagem aqui
-import Icon1 from "../../assets/images/alvo.png"; // Exemplo de ícone 1
-import Icon2 from "../../assets/images/easy.png"; // Exemplo de ícone 2
-import Icon3 from "../../assets/images/free.png"; // Exemplo de ícone 3
-import ReviewImage from "../../assets/images/review.png"; // Importe a imagem da review aqui
+import LeftImage from "../../assets/images/ebook.webp"; 
+import Arrow from "../../assets/images/download.png"; 
+import Logo from "../../assets/images/feature.png";
+import Icon1 from "../../assets/images/alvo.png"; 
+import Icon2 from "../../assets/images/easy.png"; 
+import Icon3 from "../../assets/images/free.png"; 
 import Carousel from "./carousel";
 
 
@@ -33,7 +32,6 @@ function Ebook(props) {
 
     return (
         <div className="ebook-main_ebook">
-            {/*    <Header theme={theme} setTheme={props.setTheme} /> */}
             <div className="hero-section_ebook">
                 <div className="hero-content_ebook">
                     <div className="hero-image_ebook">
@@ -55,7 +53,6 @@ function Ebook(props) {
                 </div>
             </div>
 
-            {/* Segunda Secção */}
             <section className="second-section_ebook">
                 <h2>Porque escolher o nosso e-book?</h2>
                 <div className="three-columns_ebook">
