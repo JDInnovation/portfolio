@@ -537,6 +537,15 @@ html {
         background-color: rgba(95, 95, 95, 0);
         color: rgba(45, 45, 45, 0.962);
     }
+    .prev, .next {
+        outline: none;
+        border: none; /* Garantir que não há borda ao clicar */
+    }
+    
+    .prev:focus, .next:focus {
+        outline: none; /* Remove o quadrado azul ao focar */
+        box-shadow: none; /* Remove qualquer sombra de foco */
+    }
 }
 
 /* Ajustes gerais para mobile e tablet */
