@@ -538,3 +538,29 @@ html{
         padding: 40px;
     }
 }
+.carousel-item .profession {
+    display: block;
+    font-size: 0.8em; /* Tamanho menor para a profissão */
+    color: #999; /* Cor cinza clara */
+    margin-top: 2px; /* Espaço entre o nome e a profissão */
+}
+.button-55 i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+/* Estilo para mobile/tablet */
+.button-55 .mobile-icon {
+    display: none;
+}
+
+/* Para dispositivos móveis, esconde a seta e mostra o dedo */
+@media (max-width: 768px) {
+    .button-55 .desktop-icon {
+        display: none; /* Esconde a seta */
+    }
+    
+    .button-55 .mobile-icon {
+        display: inline-block; /* Mostra o dedo */
+        margin-right: 8px; /* Espaço entre o ícone e o texto */
+    }
+}

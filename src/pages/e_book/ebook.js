@@ -12,6 +12,7 @@ import Icon3 from "../../assets/images/free.png"; // Exemplo de ícone 3
 import ReviewImage from "../../assets/images/review.png"; // Importe a imagem da review aqui
 import Carousel from "./carousel";
 
+
 function Ebook(props) {
     const theme = props.theme;
 
@@ -44,7 +45,11 @@ function Ebook(props) {
                         <p className="description_ebook">
                             <strong>Transforme o seu site numa máquina de vendas!</strong> Descubra 8 estratégias comprovadas para converter visitantes em clientes. Faça download do nosso e-book <span className="highlighted-phrase_ebook">GRÁTIS</span> e veja como aumentar as suas vendas, mesmo sem ser especialista.
                         </p>
-                        <button className="button-55">➔ Quero o Meu Ebook Grátis</button>
+                        <button className="button-55">
+                            <i className="fas fa-arrow-right desktop-icon"></i>
+                            <i className="fas fa-hand-pointer mobile-icon"></i> 
+                            Quero o Meu Ebook Grátis
+                        </button>
                     </div>
                 </div>
             </div>
