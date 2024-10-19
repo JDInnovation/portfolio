@@ -94,7 +94,7 @@ function Ebook(props) {
             </section>
             <section className="form-section" id="form-section">
                 <h2>Converta visitantes em clientes<br></br>Faça o download do nosso E-Book grátis!</h2>
-                <p className="form-subtitle">Preencha o formulário e receba de imediato o E-Book gratuito.</p>
+                <p className="form-subtitle">Preencha o formulário e receba de imediato o E-Book gratuito no seu e-mail.</p>
                 <img src={Arrow} alt="Imagem do E-book" className="form-image" />
                 <div id="hubspot-form"></div>
 
