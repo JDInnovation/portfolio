@@ -353,7 +353,7 @@
 
 .about-image_ebook img {
     max-width: 100%;
-    height: 100%;
+    height: 200%;
     /* A imagem ocupa toda a altura do cartão */
     border-radius: 10px 0 0 10px;
     /* Bordas arredondadas */

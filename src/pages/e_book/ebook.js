@@ -3,9 +3,10 @@ import { Fade } from "react-reveal";
 import "./ebook.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import LeftImage from "../../assets/images/ebook.webp"; 
+import LeftImage from "../../assets/images/ebookcapa.png"; 
 import Arrow from "../../assets/images/download.png"; 
 import Logo from "../../assets/images/feature.png";
+import Office from "../../assets/images/office.jpg";
 import Icon1 from "../../assets/images/alvo.png"; 
 import Icon2 from "../../assets/images/easy.png"; 
 import Icon3 from "../../assets/images/free.png"; 
@@ -22,13 +23,13 @@ function Ebook(props) {
         document.body.appendChild(script);
         script.onload = () => {
             window.hbspt.forms.create({
-                region: "eu1",
                 portalId: "145502623",
-                formId: "9c59b6b6-cbbd-4dde-a727-45c9aca65d09",
+                formId: "8871a299-f90d-46d0-a8bc-8ce29d4fc7f8",
                 target: "#hubspot-form"
             });
         };
     }, []);
+    
 
     return (
         <div className="ebook-main_ebook">
@@ -81,7 +82,7 @@ function Ebook(props) {
             <section className="about-section_ebook">
                 <div className="about-content_ebook">
                     <div className="about-image_ebook">
-                        <img src={Logo} alt="Imagem da Clickspot" />
+                        <img src={Office} alt="Imagem da Clickspot" />
                     </div>
                     <div className="about-text_ebook">
                         <h2>Quem é a Clickspot?</h2>
