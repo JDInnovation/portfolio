@@ -25,13 +25,14 @@ function Ebook(props) {
             window.hbspt.forms.create({
                 portalId: "145502623",
                 formId: "8871a299-f90d-46d0-a8bc-8ce29d4fc7f8",
-                target: "#hubspot-form"
+                target: "#hubspot-form",
+                onFormSubmit: function () {
+                    fbq('track', 'Lead');  // Dispara o evento Lead no Facebook Pixel
+                }
             });
         };
-        document.getElementById('hubspot-form').onsubmit = function () {
-            fbq('track', 'Lead');
-        };
     }, []);
+
 
 
     return (
