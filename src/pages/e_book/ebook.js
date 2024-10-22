@@ -21,18 +21,25 @@ function Ebook(props) {
         script.src = "//js-eu1.hsforms.net/forms/embed/v2.js";
         script.async = true;
         document.body.appendChild(script);
+    
         script.onload = () => {
             window.hbspt.forms.create({
                 portalId: "145502623",
                 formId: "8871a299-f90d-46d0-a8bc-8ce29d4fc7f8",
                 target: "#hubspot-form",
-                onFormSubmit: function () {
-                    // Dispara o evento de Lead no Facebook Pixel após o envio do formulário
-                    fbq('track', 'Lead');
-                }
             });
+    
+            // Captura o envio do formulário manualmente
+            const formElement = document.querySelector('#hubspot-form form');
+            if (formElement) {
+                formElement.addEventListener('submit', function () {
+                    console.log('Formulário enviado - Evento Lead disparado');
+                    fbq('track', 'Lead');  // Dispara o evento Lead no Facebook Pixel
+                });
+            }
         };
     }, []);
+    
 
 
 
