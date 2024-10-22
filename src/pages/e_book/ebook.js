@@ -27,7 +27,8 @@ function Ebook(props) {
                 formId: "8871a299-f90d-46d0-a8bc-8ce29d4fc7f8",
                 target: "#hubspot-form",
                 onFormSubmit: function () {
-                    fbq('track', 'Lead');  // Dispara o evento Lead no Facebook Pixel
+                    // Dispara o evento de Lead no Facebook Pixel após o envio do formulário
+                    fbq('track', 'Lead');
                 }
             });
         };
