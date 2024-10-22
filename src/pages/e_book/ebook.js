@@ -28,6 +28,9 @@ function Ebook(props) {
                 target: "#hubspot-form"
             });
         };
+        document.getElementById('hubspot-form').onsubmit = function () {
+            fbq('track', 'Lead');
+        };
     }, []);
 
 
