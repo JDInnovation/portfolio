@@ -3,13 +3,13 @@ import { Fade } from "react-reveal";
 import "./ebook.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import LeftImage from "../../assets/images/ebookcapa.png"; 
-import Arrow from "../../assets/images/download.png"; 
+import LeftImage from "../../assets/images/ebookcapa.png";
+import Arrow from "../../assets/images/download.png";
 import Logo from "../../assets/images/feature.png";
 import Office from "../../assets/images/office.jpg";
-import Icon1 from "../../assets/images/alvo.png"; 
-import Icon2 from "../../assets/images/easy.png"; 
-import Icon3 from "../../assets/images/free.png"; 
+import Icon1 from "../../assets/images/alvo.png";
+import Icon2 from "../../assets/images/easy.png";
+import Icon3 from "../../assets/images/free.png";
 import Carousel from "./carousel";
 
 
@@ -29,7 +29,7 @@ function Ebook(props) {
             });
         };
     }, []);
-    
+
 
     return (
         <div className="ebook-main_ebook">
@@ -87,8 +87,11 @@ function Ebook(props) {
                     <div className="about-text_ebook">
                         <h2>Quem é a Clickspot?</h2>
                         <p>
-                            Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br></br><br></br>Desde 2019, João Teixeira e David Claro, ambos com formação em Marketing e Engenharia Informática, têm trabalhado juntos para oferecer soluções personalizadas, focadas em aumentar a visibilidade e a faturação dos nossos clientes.<br></br><br></br> Em projetos maiores, contamos com uma rede de freelancers especializados para garantir agilidade e resultados de alta qualidade.
+                            Somos uma empresa de serviços digitais especializada na criação de lojas online e websites empresariais. <br></br> <br></br>
 
+                            Desde 2019, temos desenvolvido soluções personalizadas que ajudam os nossos clientes a aumentar a visibilidade e a faturação, sempre com foco em resultados e excelência.<br></br> <br></br>
+
+                            Além dos nossos serviços principais, oferecemos uma gama de serviços complementares que asseguram o sucesso digital, como marketing digital, SEO, e integração de ferramentas de automação. Isso permite-nos criar estratégias completas e adaptadas às necessidades de cada cliente.<br></br> <br></br>
                         </p>
                     </div>
                 </div>

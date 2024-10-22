@@ -38,7 +38,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/icons/FaviconCS.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/FaviconCS.png">
   <link rel="manifest" href="/manifest.json">
-  
+
   <!-- Hotjar Tracking Code for https://www.click-spot.com/ -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYCG6P0D9Y"></script>
@@ -49,6 +49,25 @@
 
     gtag('config', 'G-CYCG6P0D9Y');
   </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '472603738445854');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=472603738445854&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/icons/FaviconCS.png">
   <meta name="theme-color" content="#000000">
