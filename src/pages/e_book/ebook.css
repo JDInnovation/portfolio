@@ -672,3 +672,8 @@
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
+@media (max-height: 786px){
+    .hero-section_ebook{
+        height: 120vh;
+    }
+}

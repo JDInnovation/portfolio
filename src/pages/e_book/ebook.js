@@ -12,6 +12,7 @@ import Icon2 from "../../assets/images/easy.png";
 import Icon3 from "../../assets/images/free.png";
 import Carousel from "./carousel";
 
+/* global fbq */
 
 function Ebook(props) {
     const theme = props.theme;
