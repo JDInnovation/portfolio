@@ -22,14 +22,21 @@ function Ebook(props) {
         script.src = "//js-eu1.hsforms.net/forms/embed/v2.js";
         script.async = true;
         document.body.appendChild(script);
-    
+
         script.onload = () => {
+            // Formulário para a primeira seção
+            window.hbspt.forms.create({
+                portalId: "145502623",
+                formId: "6a2871bc-17cf-4b79-87fa-330949c5d419",
+                target: "#hubspot-form-hero",
+            });
+            // Formulário original no final da página
             window.hbspt.forms.create({
                 portalId: "145502623",
                 formId: "8871a299-f90d-46d0-a8bc-8ce29d4fc7f8",
                 target: "#hubspot-form",
             });
-    
+
             // Captura o envio do formulário manualmente
             const formElement = document.querySelector('#hubspot-form form');
             if (formElement) {
@@ -40,7 +47,7 @@ function Ebook(props) {
             }
         };
     }, []);
-    
+
 
 
 
@@ -57,11 +64,7 @@ function Ebook(props) {
                         <p className="description_ebook">
                             <strong>Transforme o seu site numa máquina de vendas!</strong> Descubra 8 estratégias comprovadas para converter visitantes em clientes. Faça download do nosso e-book <span className="highlighted-phrase_ebook">GRÁTIS</span> e veja como aumentar as suas vendas, mesmo sem ser especialista.
                         </p>
-                        <button className="button-55" onClick={() => document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' })}>
-                            <i className="fas fa-arrow-right desktop-icon"></i>
-                            <i className="far fa-hand-point-up mobile-icon"></i>
-                            Quero o Meu E-book Grátis
-                        </button>
+                        <div  id="hubspot-form-hero"></div>
 
                     </div>
                 </div>
