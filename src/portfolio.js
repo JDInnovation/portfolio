@@ -548,7 +548,7 @@ const experience = {
       {
         title: "PRÍNCIPE PORTO",
         company: "E-COMMERCE",
-        company_url: "https://www.instagram.com/silversurfculture?igsh=dXFldGJ3YTQ4a3I4",
+        company_url: "",
         logo_path: "principe.png",
         alt_name: "principe",
         duration: "",
@@ -556,6 +556,18 @@ const experience = {
         description: "<li>Design Refletindo a Cultura Portuguesa: Criação de um design que incorpora elementos da cultura e tradição portuguesa, proporcionando uma experiência autêntica e única aos visitantes.</li><br><li>Desenvolvimento de Website Funcional e Intuitivo: Implementação de um site e-commerce profissional em Shopify, garantindo uma navegação intuitiva e uma experiência de compra agradável.</li><br><li>Coesão e Consistência Visual: Manutenção de uma identidade visual harmoniosa e consistente em todas as páginas do site, refletindo a elegância e o estilo da marca Príncipe Porto.</li>",
         color: "#00000",
         background_path: "principe1.png"
+      },
+      {
+        title: "ITSXLILIX MERCH",
+        company: "E-COMMERCE",
+        company_url: "",
+        logo_path: "lili23.png",
+        alt_name: "lili",
+        duration: "",
+        location: "Gurugram (Hybrid)",
+        description: "<li>Design Atraente e Exclusivo para Merch: Criação de uma interface visualmente impactante que destaca a personalidade da marca ItsxLillix, utilizando um layout sedutor e dinâmico. Cada produto é exibido com imagens de alta qualidade e descrições detalhadas, proporcionando uma experiência de compra visualmente cativante e ajustada ao público-alvo da loja.</li><br><li>Experiência de Compras Segura e Discreta: Implementação de funcionalidades que priorizam a segurança e a privacidade dos clientes, com opções de checkout seguro e discreto. A navegação é fluida e otimizada para dispositivos móveis, garantindo uma experiência envolvente, intuitiva e confidencial, especialmente desenhada para maximizar a conversão e a satisfação dos fãs da criadora de conteúdo.</li><br>",
+        color: "#00000",
+        background_path: "lili23.png"
       },
       {
         title: "SANTINI",

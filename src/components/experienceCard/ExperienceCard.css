@@ -184,6 +184,10 @@
   background-image: url('../../assets/images/prior1.png');
 }
 
+.background-lili {
+  background-image: url('../../assets/images/lili1.png');
+}
+
 .button_companypath.disabled {
   cursor: default;
   pointer-events: none;

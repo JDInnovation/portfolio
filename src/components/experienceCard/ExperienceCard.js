@@ -44,7 +44,7 @@ function ExperienceCard(props) {
                   __html: experience.description,
                 }}
               ></ol>
-              {experience.title === "PRÍNCIPE PORTO" ? (
+              {["PRÍNCIPE PORTO", "ITSXLILIX MERCH"].includes(experience.title) ? (
                 <div className="button_companypath disabled">Em desenvolvimento</div>
               ) : (
                 <a
