@@ -64,7 +64,7 @@ function Ebook(props) {
                         <p className="description_ebook">
                             <strong>Transforme o seu site numa máquina de vendas!</strong> Descubra 8 estratégias comprovadas para converter visitantes em clientes. Faça download do nosso e-book <span className="highlighted-phrase_ebook">GRÁTIS</span> e veja como aumentar as suas vendas, mesmo sem ser especialista.
                         </p>
-                        <div  id="hubspot-form-hero"></div>
+                        <div id="hubspot-form-hero"></div>
 
                     </div>
                 </div>

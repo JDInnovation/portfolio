@@ -14,7 +14,7 @@
 .experience-card-description {
   text-align: left;
   padding-inline-start: 20px !important;
-  list-style:disc ;
+  list-style: disc;
 }
 
 .experience-card {
@@ -52,7 +52,7 @@
 .experience-card-1:hover {
   border-radius: 13px;
   z-index: 0;
- 
+
 }
 
 .experience-card-body .pre-heading {
@@ -107,9 +107,9 @@
 }
  */
 .experience-card:hover {
- scale: 1.03;
- transition: ease-in-out .3s;
- 
+  scale: 1.03;
+  transition: ease-in-out .3s;
+
 }
 
 /* .experience-card-body:hover * {
@@ -136,37 +136,52 @@
   padding: 10px;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 200px; /* Adicionando uma altura mínima */
+  min-height: 200px;
+  /* Adicionando uma altura mínima */
 }
+
 .background-bravery {
   background-image: url('../../assets/images/teste.png');
 }
-.background-vela{
+
+.background-vela {
   background-image: url('../../assets/images/vela1.png');
 }
-.background-flimp{
+
+.background-flimp {
   background-image: url('../../assets/images/flimp1.png');
 }
-.background-ascp{
+
+.background-ascp {
   background-image: url('../../assets/images/ascp1.png');
 }
-.background-ssc{
+
+.background-ssc {
   background-image: url('../../assets/images/ssc1.png');
 }
-.background-principe{
+
+.background-principe {
   background-image: url('../../assets/images/principe1.png');
 }
-.background-bea{
+
+.background-bea {
   background-image: url('../../assets/images/bea1.png');
 }
-.background-string{
+
+.background-string {
   background-image: url('../../assets/images/string1.png');
 }
-.background-lglabs{
+
+.background-lglabs {
   background-image: url('../../assets/images/lg1.png');
 }
-.background-santini{
+
+.background-santini {
   background-image: url('../../assets/images/sant1.png');
+}
+
+.background-prior {
+  background-image: url('../../assets/images/prior1.png');
 }
 
 .button_companypath.disabled {
@@ -232,7 +247,8 @@ ul ol {
   height: auto;
   width: 300px;
 }
-.button_companypath{
+
+.button_companypath {
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -246,16 +262,19 @@ ul ol {
   color: black;
   font-weight: bolder;
 }
-.button_companypath svg{
+
+.button_companypath svg {
   margin-left: 10px;
   color: black;
 }
-.button_companypath:hover{
-scale: 1.1;
-transition: ease .3s;
-color: black;
+
+.button_companypath:hover {
+  scale: 1.1;
+  transition: ease .3s;
+  color: black;
 }
-.feather{
+
+.feather {
   stroke: black !important;
 }
 

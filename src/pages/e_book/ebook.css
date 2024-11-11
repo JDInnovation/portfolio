@@ -664,6 +664,7 @@
         /* Espaço entre o ícone e o texto */
     }
 }
+
 .form-subtitle {
     font-size: 1.2em;
     color: #333;
@@ -672,13 +673,15 @@
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
-@media (max-height: 786px){
-    .hero-section_ebook{
+
+@media (max-height: 786px) {
+    .hero-section_ebook {
         height: 151vh;
     }
 }
+
 /* Estilos para o formulário da primeira seção */
-#hubspot-form-hero  {
+#hubspot-form-hero {
     width: 100%;
     max-width: 600px;
     background-color: white;
@@ -686,6 +689,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-.actions{
+
+.actions {
     margin-top: 0 !important;
 }

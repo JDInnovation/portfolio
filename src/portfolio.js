@@ -34,14 +34,14 @@ const skills = {
     {
       _id: "354c54b7-ffd8-40f1-972f-1d006733df25",
       title: "Soluções Digitais",
-      fileName: "FullStackImg", 
+      fileName: "FullStackImg",
       skills: [/*
         "✰ Desenvolvimento de websites personalizados para uso pessoal ou empresarial. ✰",
         "❰ Criação e gestão de lojas online para maximizar as vendas. ❱",
         " ❖ Desenvolvimento de websites para reservas, garantindo agendamento eficiente e fácil. ❖",
         "⚊ Desenvolvimento de branding completo para garantir presença consistente e profissional.⚊",
-        "✔ Campanhas de Marketing para aumentar a presença online significativamente.",*/  
-      ], 
+        "✔ Campanhas de Marketing para aumentar a presença online significativamente.",*/
+      ],
       softwareSkills: [
         {
           skillName: "HTML5",
@@ -65,7 +65,7 @@ const skills = {
             color: "#CCED31",
           },
         },
-        
+
 
         {
           skillName: "Bootstrap",
@@ -82,7 +82,7 @@ const skills = {
             color: "#CCED31",
           },
         },
-        
+
         {
           skillName: "Stripe",
           fontAwesomeClassname: "simple-icons:stripe",
@@ -90,7 +90,7 @@ const skills = {
             color: "#CCED31",
             width: "1em",
             height: "1em",
-           
+
           },
         },
 
@@ -101,7 +101,7 @@ const skills = {
             color: "#CCED31",
             width: "1em",
             height: "1em",
-           
+
           },
         },
         {
@@ -111,7 +111,7 @@ const skills = {
             color: "#CCED31",
             width: "1em",
             height: "1em",
-           
+
           },
         },
         {
@@ -121,9 +121,9 @@ const skills = {
             color: "#CCED31",
             width: "1em",
             height: "1em",
-           
+
           },
-          
+
         },
         {
           skillName: "PayPal",
@@ -132,10 +132,10 @@ const skills = {
             color: "#CAED31",
             width: "1em",
             height: "1em",
-  
+
           },
         },
-        
+
 
         {
           skillName: "Git",
@@ -228,7 +228,7 @@ const skills = {
             height: "1em",
           },
         },
-   
+
         {
           skillName: "GitHub Actions",
           fontAwesomeClassname: "simple-icons:githubactions",
@@ -498,30 +498,6 @@ const experience = {
         background_path: "teste.png"
       },
       {
-        title: "SANTINI",
-        company: "WEBSITE",
-        company_url: "https://www.santini.pt/",
-        logo_path: "sant23.png",
-        alt_name: "santini",
-        duration: "",
-        location: "Gurugram (Hybrid)",
-        description: "<li></li><br><li></li><br><li></li>",
-        color: "#00000",
-        background_path: "lg1.png"
-      },
-      {
-        title: "LG LABS",
-        company: "WEBSITE",
-        company_url: "https://lglabs.io/",
-        logo_path: "lg_labs_logo.png",
-        alt_name: "lglabs",
-        duration: "",
-        location: "Gurugram (Hybrid)",
-        description: "<li>Desenvolvimento em React: Implementação em React, explorando as vantagens dessa tecnologia para criar componentes reutilizáveis e melhorar a performance do website, assegurando carregamento rápido e interações dinâmicas.</li><br><li>Usabilidade e Experiência do Usuário (UX): Foco na experiência do usuário ao estruturar uma interface intuitiva, com navegação simplificada e elementos visuais atraentes que facilitam a interação e a retenção de visitantes.</li><br><li>Otimização de Performance e SEO: Aplicação de técnicas de otimização de carregamento e práticas de SEO para aumentar a visibilidade do site em motores de busca, garantindo uma experiência rápida e eficiente.</li>",
-        color: "#00000",
-        background_path: "lg1.png"
-      },
-      {
         title: "VELA",
         company: "WEBSITE",
         company_url: "https://www.velacustoms.com/",
@@ -582,6 +558,42 @@ const experience = {
         background_path: "principe1.png"
       },
       {
+        title: "SANTINI",
+        company: "WEBSITE",
+        company_url: "https://www.santini.pt/",
+        logo_path: "sant23.png",
+        alt_name: "santini",
+        duration: "",
+        location: "Gurugram (Hybrid)",
+        description: "<li>Experiência de Usuário (UX) para Geladaria: Desenvolvimento focado em criar uma experiência interativa e fluida para os clientes da Santini, facilitando a navegação e a escolha de sabores de gelado de forma intuitiva. O design visual é adaptado para capturar o ambiente da gelataria, promovendo uma interface acolhedora e envolvente.</li><br><li>Vitrine Virtual e Interatividade: Implementação de uma vitrine digital que permite aos clientes explorar os sabores e novidades da gelataria, com atualizações frequentes e animações de transição que tornam a experiência de navegação dinâmica e atrativa. Com essa abordagem, os visitantes podem desfrutar de uma experiência que reflete a experiência física da loja, incentivando o engajamento.</li><br>",
+        color: "#00000",
+        background_path: "lg1.png"
+      },
+      {
+        title: "JPRIOR",
+        company: "WEBSITE",
+        company_url: "https://www.jprior.pt/pt/",
+        logo_path: "prior23.png",
+        alt_name: "prior",
+        duration: "",
+        location: "Gurugram (Hybrid)",
+        description: "<li>Catálogo Dinâmico de Produtos: Criação de um catálogo digital em React, com organização dos produtos de material de raga em categorias e filtros que facilitam a busca e comparação de itens específicos. A estrutura modular permite atualização rápida e eficiente, facilitando a gestão de inventário e a apresentação de novos lançamentos.</li><br><li>Otimização para Ecommerce Técnico: Foco na performance e SEO para melhorar a visibilidade dos produtos nos motores de busca, destacando materiais de raga com descrições otimizadas para o público-alvo. A interface foi desenvolvida para ser responsiva e rápida, garantindo uma experiência de compra eficiente e sem fricções em dispositivos móveis e desktops.</li><br>",
+        color: "#00000",
+        background_path: "lg1.png"
+      },
+      {
+        title: "LG LABS",
+        company: "WEBSITE",
+        company_url: "https://lglabs.io/",
+        logo_path: "lg_labs_logo.png",
+        alt_name: "lglabs",
+        duration: "",
+        location: "Gurugram (Hybrid)",
+        description: "<li>Desenvolvimento em React: Implementação em React, explorando as vantagens dessa tecnologia para criar componentes reutilizáveis e melhorar a performance do website, assegurando carregamento rápido e interações dinâmicas.</li><br><li>Usabilidade e Experiência do Usuário (UX): Foco na experiência do usuário ao estruturar uma interface intuitiva, com navegação simplificada e elementos visuais atraentes que facilitam a interação e a retenção de visitantes.</li><br><li>Otimização de Performance e SEO: Aplicação de técnicas de otimização de carregamento e práticas de SEO para aumentar a visibilidade do site em motores de busca, garantindo uma experiência rápida e eficiente.</li>",
+        color: "#00000",
+        background_path: "lg1.png"
+      },
+      {
         title: "BEATRIZ BRITES",
         company: "BRANDING",
         company_url: "https://www.instagram.com/md.beatriz.brites?igsh=MTJ1eTkwZXA1b3Rhbg==",
@@ -592,7 +604,7 @@ const experience = {
         description: "<li>Identidade Visual Personalizada: Criação de uma identidade visual que reflete a personalidade e os valores da Drª Beatriz Brites.</li><br><li>Elementos Representativos: Integração de gráficos e símbolos que correspondem aos serviços oferecidos.</li>           <br><li>Consistência no Branding: Garantir uma imagem profissional e unificada em todos os materiais de branding.</li>",
         color: "#00000",
         background_path: "principe1.png"
-      },{
+      }, {
         title: "STRINGLAB",
         company: "BRANDING",
         company_url: "https://www.instagram.com/stringlab_109?igsh=ZWIxcjJobXF5djN0",
