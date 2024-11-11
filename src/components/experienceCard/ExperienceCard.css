@@ -162,6 +162,12 @@
 .background-string{
   background-image: url('../../assets/images/string1.png');
 }
+.background-lglabs{
+  background-image: url('../../assets/images/lg1.png');
+}
+.background-santini{
+  background-image: url('../../assets/images/sant1.png');
+}
 
 .button_companypath.disabled {
   cursor: default;
